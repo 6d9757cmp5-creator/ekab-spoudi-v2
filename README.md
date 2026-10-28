@@ -22,10 +22,19 @@
 - `sw.js` παρέχει βασικό offline cache μόνο στον ανεξάρτητο HTTPS origin όπου φιλοξενείται.
 - Δεν έχει γίνει ιατρική πιστοποίηση των εκπαιδευτικών δεδομένων.
 
-## Δημοσίευση σε νέο repository
-1. Δημιουργήστε **καινούργιο** repository `ekab-spoudi-v2`. ΜΗΝ ανεβάσετε το project στο `ekab-spoudi` ή σε οποιοδήποτε branch του.
-2. Ανεβάστε μόνο τα περιεχόμενα αυτού του φακέλου στη ρίζα του **νέου** repo (index.html, main.js, data.js, assets, sw.js κτλ).
-3. GitHub → Settings → Pages → Deploy from a branch → main / root. Αυτό δημιουργεί δημόσια HTTPS διεύθυνση κατάλληλη για εγκατάσταση PWA.
-4. Για iPhone: Safari → Κοινή χρήση → Προσθήκη στην οθόνη αφετηρίας. Για Android: Chrome → Εγκατάσταση εφαρμογής.
+## Δημοσίευση GitHub Pages
+
+Το repository `6d9757cmp5-creator/ekab-spoudi-v2` έχει ήδη δημιουργηθεί και τα web αρχεία έχουν ανέβει στο `main`.
+
+**Απαιτείται μία ρύθμιση από τον ιδιοκτήτη** (το GitHub Actions token δεν έχει δικαίωμα να ενεργοποιήσει για πρώτη φορά το Pages):
+
+1. Ανοίξτε [Settings → Pages](https://github.com/6d9757cmp5-creator/ekab-spoudi-v2/settings/pages).
+2. Στο **Build and deployment → Source** επιλέξτε **GitHub Actions**.
+3. Μεταβείτε στο [Actions → Deploy EKAB Spoudi V2 Web](https://github.com/6d9757cmp5-creator/ekab-spoudi-v2/actions/workflows/deploy-pages.yml) και πατήστε **Run workflow** (εναλλακτικά μπορεί να επανεκτελεστεί το αποτυχημένο workflow).
+4. Μετά την επιτυχή ανάπτυξη, η διεύθυνση θα είναι: `https://6d9757cmp5-creator.github.io/ekab-spoudi-v2/`.
+
+Για iPhone: Safari → Κοινή χρήση → Προσθήκη στην οθόνη αφετηρίας. Για Android: Chrome → Εγκατάσταση εφαρμογής.
+
+**Σημείωση:** Αν η ρύθμιση Pages δεν ενεργοποιηθεί, ο παραπάνω σύνδεσμος δεν είναι ακόμη ενεργός. Δεν έχει γίνει παραγωγή native APK ή IPA.
 
 Μην συγχωνεύετε με το αρχικό GitHub. Μην μεταφέρετε το αρχικό `google-services.json`, `.env` ή προσωπικά στοιχεία.
