@@ -1,0 +1,59 @@
+name: Import original Android Kotlin sources into V2
+on:
+  push:
+    paths:
+      - '.github/workflows/import-native-source.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  import-original:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Check original immutable source bundle
+        shell: bash
+        run: |
+          test -f native-android/EKAB-Spoudi-V2-Exact-Android-Source.zip
+          unzip -tq native-android/EKAB-Spoudi-V2-Exact-Android-Source.zip
+      - name: Expand archive into separate source folder
+        shell: bash
+        run: |
+          mkdir -p native-android/source
+          python3 - <<'PY'
+          from pathlib import Path
+          from zipfile import ZipFile
+          import hashlib, json
+          out = Path('native-android/source')
+          with ZipFile('native-android/EKAB-Spoudi-V2-Exact-Android-Source.zip') as z:
+              manifest = json.loads(z.read('SOURCE_SHA256.json'))
+              for name, expected in manifest['kept_files'].items():
+                  assert not name.startswith('/') and '..' not in Path(name).parts
+                  assert name not in ('app/google-services.json','app/src/main/res/values/firebase_applet_config.xml')
+                  blob = z.read(name)
+                  assert hashlib.sha256(blob).hexdigest() == expected, name
+                  p = out / name
+                  p.parent.mkdir(parents=True, exist_ok=True)
+                  p.write_bytes(blob)
+              (out / 'SOURCE_FIDELITY.md').write_bytes(z.read('SOURCE_FIDELITY.md'))
+              (out / 'SOURCE_SHA256.json').write_bytes(z.read('SOURCE_SHA256.json'))
+          assert len(manifest['kept_files']) == 86
+          print('Imported all 86 authentic files with verified SHA-256.')
+          PY
+      - name: Commit only extracted independent native source
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add native-android/source
+          if git diff --cached --quiet; then
+            echo 'Native source already synchronized.'
+          else
+            git commit -m 'feat(native): expose all 86 original Compose source files verbatim'
+            git push origin HEAD:main
+          fi
