@@ -13,7 +13,7 @@ on:
       - 'extra-data.js'
       - 'assets/**'
 permissions:
-  contents: read
+  contents: write
 jobs:
   unsigned-ipa:
     runs-on: macos-15
@@ -72,3 +72,20 @@ jobs:
           path: EKAB-Spoudi-V2-unsigned.ipa
           if-no-files-found: error
           retention-days: 30
+      - name: Publish downloadable IPA on GitHub Releases
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          tag="v1.0.1-ios-unsigned"
+          asset="EKAB-Spoudi-V2-1.0.1-unsigned.ipa"
+          cp EKAB-Spoudi-V2-unsigned.ipa "$asset"
+          if gh release view "$tag" >/dev/null 2>&1; then
+            gh release upload "$tag" "$asset" --clobber
+          else
+            gh release create "$tag" "$asset" \
+              --target "${GITHUB_SHA}" \
+              --title "ΕΚΑΒ Σπουδή V2 iOS 1.0.1 (unsigned)" \
+              --notes "Unsigned iOS build for the independent EKAB Spoudi V2 web container. Download for manual signing using an appropriate iOS signing tool. Not installable directly on iPhone; not a native Kotlin port."
+          fi
