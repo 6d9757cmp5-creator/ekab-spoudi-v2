@@ -1,5 +1,20 @@
 # ΕΚΑΒ Σπουδή V2 — ανεξάρτητη λειτουργική εφαρμογή
 
+## Safari / iPhone — ενημέρωση 29 Οκτωβρίου 2026
+
+**Δημοσιευμένη διεύθυνση:** https://6d9757cmp5-creator.github.io/ekab-spoudi-v2/
+
+- Προστέθηκαν iOS web-app meta tags, Apple touch icon, safe-area spacing και βελτιώσεις ιστορικού πλοήγησης για Safari.
+- Εισήχθησαν από το αρχικό ZIP τα αρχεία `contacts.json`, `mentor_mci.json`, `mentor_equipment.json`, `mentor_faculty.json`, `mentor_library_catalog.json` στη web έκδοση (`extra-data.js`).
+- Υλοποιήθηκαν λειτουργικές web οθόνες για **Επαφές ΕΚΑΒ**, **Πρακτικό ΕΟΠΠΕΠ**, **MCI Triage**, **Ιατρικό Εξοπλισμό**, **Ομάδα Εκπαιδευτών** και **Ιατρική Βιβλιοθήκη**, διατηρώντας εκπαιδευτικές επισημάνσεις.
+- Έλεγχος σε mobile viewport 390×844 με Chromium σε iPhone-like διαμόρφωση: home, six nav tabs, MENTOR, triage, equipment, tutor, contacts, practical. Δεν έγινε φυσική δοκιμή σε Safari/WebKit.
+- Μετάβαση από Safari: **Κοινή χρήση → Προσθήκη στην οθόνη αφετηρίας → Άνοιγμα ως εφαρμογή → Προσθήκη**.
+
+**Όρια πιστότητας:** Η web έκδοση παραμένει μεταφορά του native Android (Compose), όχι κωδικομεταγλώττιση ή ακριβές 1:1. Η πραγματική συνομιλία AI, πλήρης 3D/WebGL ανατομία και όλες οι native αλληλεπιδράσεις δεν έχουν μεταφερθεί. Το GitHub APK είναι Android-only. Δεν έχει παραχθεί iOS IPA — απαιτείται native iOS project, Xcode, υπογραφή/Apple provisioning και δοκιμή σε iPhone.
+
+**Διαχωρισμός:** Το `6d9757cmp5-creator/ekab-spoudi` δεν τροποποιήθηκε. Η πρόοδος της web V2 αποθηκεύεται τοπικά, ανεξάρτητα από την native Android εφαρμογή.
+
+
 Αυτός ο φάκελος είναι **web/PWA** έκδοση από τα εκπαιδευτικά JSON δεδομένα του πρωτότυπου ZIP Android (29/10/2026). Δεν είναι Kotlin->web μεταγλώττιση και η διεπαφή δεν αντιγράφει κατά γράμμα το Android UI.
 
 ## Εμφάνιση
