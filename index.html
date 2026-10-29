@@ -8,7 +8,7 @@
 <meta name="apple-mobile-web-app-title" content="ΕΚΑΒ Σπουδή V2">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="format-detection" content="telephone=no">
-<meta name="description" content="ΕΚΑΒ Σπουδή V2 — ανεξάρτητη δοκιμαστική web έκδοση για ΣΑΕΚ, ΕΟΠΠΕΠ και MENTOR OS.">
+<meta name="description" content="ΕΚΑΒ Σπουδή V2 — ανεξάρτητη δοκιμαστική web έκδοση για ΣΑΕΚ, ΕΟΠΠΕΠ και MENTOR.">
 <link rel="icon" href="assets/icon-192.png" type="image/png">
 <link rel="apple-touch-icon" href="assets/icon-192.png">
 <link rel="manifest" href="manifest.webmanifest">
@@ -116,6 +116,41 @@ main{padding:13px 13px 100px}.contentwidth{max-width:750px}.native-hero{backgrou
 .nav{background:#0f5588;border-top:1px solid #276d96}.nav>div{max-width:750px}.nav button{color:#c2def3;padding:9px 1px 8px;font-size:10px}.nav button strong{font-size:19px}.nav button.on{border-top-color:#64b5f6;color:#fff;background:#0d659d}
 .nav button.on strong{color:#c4ecff}
 @media(max-width:500px){main{padding:11px 11px 94px}.native-stats{gap:5px}.native-stat b{font-size:14px}.native-stat span{font-size:9px}.native-module{min-height:87px;padding:11px}.native-icon{flex-basis:42px;height:42px}.native-module-title{font-size:13px}.native-module-copy small{font-size:10.8px}.native-module-badge{font-size:9.5px}.sectiontitle{font-size:16px}header .shell .header-actions button{padding:4px}}
+/* MENTOR: one responsive identity, not five selectable personas. */
+.mentor-single{font-family:"Avenir Next","Trebuchet MS",system-ui,-apple-system,sans-serif;margin:14px 0 22px;padding:18px;background:linear-gradient(146deg,#172e40,#102430 70%);border:1px solid #3c7496;border-radius:18px;color:#eef7fc;box-shadow:0 6px 28px rgba(0,0,0,.13)}
+.mentor-person{display:flex;align-items:center;gap:15px}
+.mentor-orb{width:58px;height:58px;display:grid;place-items:center;border-radius:18px;background:radial-gradient(circle at 30% 20%,#4cd6ff,#126b9c 60%,#153448);font-size:34px;color:white;box-shadow:0 0 0 3px rgba(98,198,250,.12);flex-shrink:0}
+.mentor-person h2{margin:0 0 3px;font-size:24px;letter-spacing:.08em;font-weight:850}
+.mentor-person p{margin:0;color:#bddeee;font-size:13px}
+.mentor-description{font-size:14px;line-height:1.65;color:#d6e8f2;margin:17px 0}
+.mentor-learning-summary{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:18px 0}
+.mentor-learning-summary>div{padding:13px 12px;border-radius:12px;border:1px solid #34586d;background:#132838}
+.mentor-learning-summary strong{display:block;font-size:24px;color:#9bdaff}
+.mentor-learning-summary small{display:block;margin-top:3px;font-size:11px;color:#b7ccd9}
+.mentor-label{display:block;font-weight:750;margin:18px 0 9px;font-size:14px}
+.mentor-request-row{display:flex;gap:8px;align-items:stretch}
+.mentor-request-row input{flex:1;min-width:0;font:inherit;border-radius:10px;border:1px solid #54809a;background:#091e2a;color:white;padding:12px;font-size:14px}
+.mentor-request-row input::placeholder{color:#a9c1d0}
+.mentor-request-row button{flex-shrink:0;min-height:44px}
+.mentor-fine{color:#b8cdd8;font-size:12px;line-height:1.6}
+.mentor-suggestion{padding:14px;margin:18px 0;background:#1b3849;border:1px solid #456e83;border-radius:13px}
+.mentor-suggestion .chip{background:#294e65;color:#d8f2ff}
+.mentor-suggestion p{font-weight:800;font-size:17px;margin:9px 0 3px}
+.mentor-suggestion small{display:block;color:#c3dbe7;font-size:12px;margin-bottom:12px}
+.mentor-guidance{padding:15px;background:#102a39;border:1px solid #4d8ab0;border-radius:13px;margin-top:16px}
+.mentor-guidance h3{margin:0 0 8px;color:#e8f6ff;font-size:17px}
+.mentor-guidance p{color:#d2e5f1;line-height:1.62;font-size:14px}
+.mentor-guidance small{color:#b9d4e3;font-size:12px}
+.mentor-review{margin-top:16px;border-top:1px solid #325268;padding-top:12px}
+.mentor-review p{font-weight:700;margin:0 0 8px}
+.mentor-settings{margin:18px 0 12px;border:1px solid #3b6076;border-radius:12px;padding:12px;background:#132d3e}
+.mentor-settings summary{font-size:14px;color:#def3ff;min-height:27px}
+.mentor-settings label{display:block;margin-top:13px;margin-bottom:5px;font-size:13px}
+.mentor-settings select{font:inherit;display:block;width:100%;background:#0b2331;color:#f1faff;border:1px solid #56829a;border-radius:10px;padding:11px;min-height:44px}
+.mentor-single button:focus-visible,.mentor-single input:focus-visible,.mentor-single select:focus-visible{outline:3px solid #f9c953;outline-offset:2px}
+@media(max-width:480px){.mentor-single{padding:14px}.mentor-request-row{flex-direction:column}.mentor-request-row button{width:100%}.mentor-person h2{font-size:22px}.mentor-learning-summary strong{font-size:21px}.mentor-review .btn{flex:1 1 100%}}
+
+
 </style>
 </head>
 <body>
@@ -139,6 +174,6 @@ main{padding:13px 13px 100px}.contentwidth{max-width:750px}.native-hero{backgrou
   });
 })();
 </script>
-<script src="data.js?v=20261029-startup-fix1" onerror="ekabV2ScriptError()"></script><script src="extra-data.js?v=20261029-startup-fix1" onerror="ekabV2ScriptError()"></script><script src="v1-content/v1-bridge.js?v=20261029-import1" onerror="ekabV2ScriptError()"></script><script src="main.js?v=20261029-startup-fix1" onerror="ekabV2ScriptError()"></script><script src="auto-update.js?v=20261029-v2-data-sync1" onerror="ekabV2ScriptError()"></script>
+<script src="data.js?v=20261029-startup-fix1" onerror="ekabV2ScriptError()"></script><script src="extra-data.js?v=20261029-startup-fix1" onerror="ekabV2ScriptError()"></script><script src="v1-content/v1-bridge.js?v=20261029-import1" onerror="ekabV2ScriptError()"></script><script src="mentor-adaptive.js?v=20261029-mentor-one2" onerror="ekabV2ScriptError()"></script><script src="main.js?v=20261029-mentor-one2" onerror="ekabV2ScriptError()"></script><script src="auto-update.js?v=20261029-v2-data-sync1" onerror="ekabV2ScriptError()"></script>
 <script>if("serviceWorker" in navigator && location.protocol.indexOf("http")===0){window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js").catch(()=>{}));}</script>
 </body></html>

@@ -1,0 +1,32 @@
+name: MENTOR unified tutor verification
+on:
+  push:
+    branches: [feature/mentor-one-adaptive-tutor]
+  pull_request:
+    paths: [main.js, index.html, mentor-adaptive.js, sw.js, scripts/**, .github/workflows/**]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check syntax
+        run: |
+          node --check main.js
+          node --check mentor-adaptive.js
+          node --check scripts/test-mentor-adaptive.cjs
+      - name: Verify personalized routing and isolation
+        run: node scripts/test-mentor-adaptive.cjs
+      - name: Generate same read-only EKAB 1 bridge used by Pages
+        shell: bash
+        run: |
+          git clone --quiet --depth 1 --branch main https://github.com/6d9757cmp5-creator/ekab-spoudi.git "$RUNNER_TEMP/ekab-v1-public"
+          mkdir -p _site/assets
+          cp index.html main.js mentor-adaptive.js data.js extra-data.js _site/
+          python3 scripts/import-v1-data.py "$RUNNER_TEMP/ekab-v1-public" _site
+      - name: Verify V2 boot and one-MENTOR screen
+        run: node scripts/smoke-v2-web.cjs _site
