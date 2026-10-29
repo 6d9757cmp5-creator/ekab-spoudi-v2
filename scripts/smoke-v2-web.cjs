@@ -25,9 +25,9 @@ console.log('PASS: scripts present and EKAB Spoudi V2 booted with V1 library: '+
 
 // Verify all three study collections, archive index and reachable V2 screen.
 const library=sandbox.EKAB_V2_LIBRARY;
-if(!library || library.sos.length!==314 || library.terms.length!==203 || library.checks.length!==247 || library.files.length<350)
+if(!library || library.sos.length!==314 || library.terms.length!==203 || library.checks.length!==247 || library.files.length<350 || library.exercises.length!==121 || library.written.length!==7 || library.bibliography.length!==15)
   throw Error('Public V1 library incomplete: '+JSON.stringify({sos:library?.sos?.length,terms:library?.terms?.length,checks:library?.checks?.length,files:library?.files?.length}));
-if(!sandbox.V1StudyLibrary || sandbox.V1StudyLibrary.stats().length!==4)
+if(!sandbox.V1StudyLibrary || sandbox.V1StudyLibrary.stats().length!==5)
   throw Error('New study library module missing');
 // Screen-level regression: there must be one MENTOR, not a selector of five teachers.
 function press(action){const element={dataset:{action},closest(){return this;}};listeners.click({target:element,preventDefault(){}});}
