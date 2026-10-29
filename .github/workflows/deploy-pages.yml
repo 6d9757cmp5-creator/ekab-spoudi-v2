@@ -3,6 +3,8 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  schedule:
+    - cron: '23 4 * * *' # refresh independent V2 public educational snapshot daily
 permissions:
   contents: read
   pages: write
@@ -21,6 +23,9 @@ jobs:
       - uses: actions/configure-pages@v5
         with:
           enablement: true
+      - name: Read public EKAB 1 content into a temporary checkout
+        shell: bash
+        run: git clone --quiet --depth 1 --branch main https://github.com/6d9757cmp5-creator/ekab-spoudi.git "$RUNNER_TEMP/ekab-v1-public"
       - name: Prepare isolated Safari website
         shell: bash
         run: |
@@ -29,8 +34,10 @@ jobs:
           node --check _site/data.js
           node --check _site/extra-data.js
           node --check _site/main.js
-          node scripts/smoke-v2-web.cjs _site
           cp assets/* _site/assets/
+          python3 scripts/import-v1-data.py "$RUNNER_TEMP/ekab-v1-public" _site
+          node --check _site/v1-content/v1-bridge.js
+          node scripts/smoke-v2-web.cjs _site
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
