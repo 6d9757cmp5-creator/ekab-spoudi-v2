@@ -1,0 +1,1632 @@
+{
+  "updated": "2026-10-26",
+  "scope": "20 μαθήματα · 4 εξάμηνα · 247 κεφάλαια",
+  "note": "Ενδιάμεσο μητρώο με αντιστοίχιση πηγών εικόνων. Πηγή/άδεια έχουν τεκμηριωθεί για τις νέες επιλογές· ΔΕΝ έχει γίνει ανεξάρτητη επιστημονική πιστοποίηση, πλήρης κλινικός έλεγχος ή live δοκιμή των εικόνων. Άλλα 247-κεφαλαία recap διαγράμματα είναι μόνο σχηματικές συνόψεις κειμένου.",
+  "legend": {
+    "source-selected-pending-independent-scientific-review": "επιλεγμένη εικόνα με διαθέσιμη άδεια, δεν έχει ολοκληρωθεί ανεξάρτητος επιστημονικός έλεγχος",
+    "no-image-approved": "εκκρεμεί κατάλληλη εικόνα και άδεια"
+  },
+  "assets": {
+    "skeleton": {
+      "filename": "Human_skeleton_front_el.svg",
+      "title": "Ανθρώπινος σκελετός με ελληνικές επισημάνσεις",
+      "author": "Αντιγόνη, βασικό σχέδιο LadyofHats",
+      "license": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:Human_skeleton_front_el.svg",
+      "caption": "Απεικόνιση βασικών οστών σε πρόσθια όψη. Δεν παρουσιάζει κάκωση."
+    },
+    "spine": {
+      "filename": "Spinal_column_curvature-el.svg",
+      "title": "Μοίρες της σπονδυλικής στήλης",
+      "author": "Jmarchn",
+      "license": "CC BY-SA 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Spinal_column_curvature-el.svg",
+      "caption": "Πλάγια ανατομική όψη της σπονδυλικής στήλης και των φυσιολογικών κυρτωμάτων. Δεν παρουσιάζει κάκωση."
+    },
+    "heart": {
+      "filename": "Diagram_of_the_human_heart_el.svg",
+      "title": "Κοιλότητες και βαλβίδες καρδιάς",
+      "author": "Jmarchn",
+      "license": "CC BY-SA 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Diagram_of_the_human_heart_el.svg",
+      "caption": "Ανατομική τομή καρδιάς με ελληνικούς όρους. Δεν απεικονίζει συγκεκριμένη καρδιακή νόσο."
+    },
+    "upper": {
+      "filename": "Ανατομία-_ανώτερο_αναπνευστικό_σύστημα.png",
+      "title": "Ανώτερος αεραγωγός",
+      "author": "Open courses TEI Athinas",
+      "license": "CC BY-SA 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Ανατομία-_ανώτερο_αναπνευστικό_σύστημα.png",
+      "caption": "Ανατομία ανώτερου αναπνευστικού. Δεν αποτελεί οδηγία χειρισμού αεραγωγού."
+    },
+    "lower": {
+      "filename": "Ανατομία-_κατώτερο_αναπνευστικό_σύστημα.png",
+      "title": "Κατώτερο αναπνευστικό",
+      "author": "Open courses TEI Athinas",
+      "license": "CC BY-SA 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Ανατομία-_κατώτερο_αναπνευστικό_σύστημα.png",
+      "caption": "Ανατομικές δομές κατώτερου αναπνευστικού. Δεν απεικονίζει θεραπεία δύσπνοιας."
+    },
+    "respiratory": {
+      "filename": "Respiratory_system_complete_el.svg",
+      "title": "Αναπνευστικό σύστημα και πνευμονικές κυψελίδες",
+      "author": "Aris berd (μετάφραση), βασικό διάγραμμα LadyofHats",
+      "license": "CC0 1.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Respiratory_system_complete_el.svg",
+      "caption": "Συνολική ανατομική απεικόνιση αεραγωγών, πνευμόνων και πνευμονικών κυψελίδων στα ελληνικά. Δεν αποτελεί διάγραμμα επείγουσας θεραπείας.",
+      "sourcePageReviewed": "2026-10-26",
+      "sourcePageCheckedFor": [
+        "file name",
+        "creator",
+        "Greek language",
+        "reuse license"
+      ],
+      "clinicalReview": "pending"
+    },
+    "brain_medial": {
+      "filename": "Gray727_el.svg",
+      "title": "Έσω επιφάνεια αριστερού εγκεφαλικού ημισφαιρίου",
+      "author": "Henry Vandyke Carter · διανυσματική μετατροπή Mysid · ελληνική μετάφραση Badseed",
+      "license": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:Gray727_el.svg",
+      "caption": "Έσω επιφάνεια του αριστερού εγκεφαλικού ημισφαιρίου με ελληνική ορολογία. Ιστορικός ανατομικός πίνακας Gray· δεν απεικονίζει μήνιγγες, εγκεφαλικό επεισόδιο ή θεραπευτική πράξη.",
+      "sourcePageReviewed": "2026-10-26",
+      "sourcePageCheckedFor": [
+        "file name",
+        "creator",
+        "Greek language",
+        "public-domain status"
+      ],
+      "clinicalReview": "pending"
+    }
+  },
+  "placements": {
+    "01-02": [
+      "skeleton"
+    ],
+    "01-03": [
+      "lower",
+      "respiratory"
+    ],
+    "01-07": [
+      "spine"
+    ],
+    "01-10": [
+      "heart"
+    ],
+    "01-11": [
+      "upper",
+      "lower",
+      "respiratory"
+    ],
+    "02-02": [
+      "lower",
+      "respiratory"
+    ],
+    "02-03": [
+      "heart"
+    ],
+    "10-01": [
+      "heart"
+    ],
+    "10-03": [
+      "upper",
+      "lower",
+      "respiratory"
+    ],
+    "10-07": [
+      "heart"
+    ],
+    "10-09": [
+      "lower",
+      "respiratory"
+    ],
+    "14-03": [
+      "spine"
+    ],
+    "14-04": [
+      "skeleton"
+    ],
+    "14-10": [
+      "spine"
+    ],
+    "14-11": [
+      "skeleton"
+    ],
+    "16-08": [
+      "lower"
+    ],
+    "17-02": [
+      "upper",
+      "lower"
+    ],
+    "17-08": [
+      "upper"
+    ],
+    "17-11": [
+      "heart"
+    ],
+    "18-06": [
+      "skeleton"
+    ],
+    "18-08": [
+      "spine"
+    ],
+    "18-09": [
+      "lower"
+    ],
+    "01-05": [
+      "brain_medial"
+    ],
+    "01-08": [
+      "brain_medial"
+    ],
+    "02-09": [
+      "respiratory"
+    ],
+    "10-02": [
+      "brain_medial"
+    ]
+  },
+  "courses": [
+    {
+      "course": 1,
+      "semester": "Α",
+      "title": "Ανατομία",
+      "chapters": [
+        {
+          "anchor": "#lesson-1",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-2",
+          "images": [
+            "skeleton"
+          ],
+          "status": "source-selected-pending-independent-scientific-review"
+        },
+        {
+          "anchor": "#lesson-3",
+          "images": [
+            "lower",
+            "respiratory"
+          ],
+          "status": "source-selected-pending-independent-scientific-review"
+        },
+        {
+          "anchor": "#lesson-4",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-5",
+          "images": [
+            "brain_medial"
+          ],
+          "status": "source-selected-pending-independent-scientific-review"
+        },
+        {
+          "anchor": "#lesson-6",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-7",
+          "images": [
+            "spine"
+          ],
+          "status": "source-selected-pending-independent-scientific-review"
+        },
+        {
+          "anchor": "#lesson-8",
+          "images": [
+            "brain_medial"
+          ],
+          "status": "source-selected-pending-independent-scientific-review"
+        },
+        {
+          "anchor": "#lesson-9",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-10",
+          "images": [
+            "heart"
+          ],
+          "status": "source-selected-pending-independent-scientific-review"
+        },
+        {
+          "anchor": "#lesson-11",
+          "images": [
+            "upper",
+            "lower",
+            "respiratory"
+          ],
+          "status": "source-selected-pending-independent-scientific-review"
+        },
+        {
+          "anchor": "#lesson-12",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-13",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-14",
+          "images": [],
+          "status": "no-image-approved"
+        }
+      ]
+    },
+    {
+      "course": 2,
+      "semester": "Α",
+      "title": "Φυσιολογία",
+      "chapters": [
+        {
+          "anchor": "#lesson-1",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-2",
+          "images": [
+            "lower",
+            "respiratory"
+          ],
+          "status": "source-selected-pending-independent-scientific-review"
+        },
+        {
+          "anchor": "#lesson-3",
+          "images": [
+            "heart"
+          ],
+          "status": "source-selected-pending-independent-scientific-review"
+        },
+        {
+          "anchor": "#lesson-4",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-5",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-6",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-7",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-8",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-9",
+          "images": [
+            "respiratory"
+          ],
+          "status": "source-selected-pending-independent-scientific-review"
+        },
+        {
+          "anchor": "#lesson-10",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-11",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-12",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-13",
+          "images": [],
+          "status": "no-image-approved"
+        }
+      ]
+    },
+    {
+      "course": 3,
+      "semester": "Α",
+      "title": "Ο Διασώστης – Επαγγελματίας Υγείας",
+      "chapters": [
+        {
+          "anchor": "#lesson-1",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-2",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-3",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-4",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-5",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-6",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-7",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-8",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-9",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-10",
+          "images": [],
+          "status": "no-image-approved"
+        }
+      ]
+    },
+    {
+      "course": 4,
+      "semester": "Α",
+      "title": "Βασικές Αρχές Δημόσιας Υγείας",
+      "chapters": [
+        {
+          "anchor": "#lesson-1",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-2",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-3",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-4",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-5",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-6",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-7",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-8",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-9",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-10",
+          "images": [],
+          "status": "no-image-approved"
+        }
+      ]
+    },
+    {
+      "course": 5,
+      "semester": "Α",
+      "title": "Εισαγωγή στην Προνοσοκομειακή Εκτίμηση και Υποστήριξη του Ασθενούς",
+      "chapters": [
+        {
+          "anchor": "#lesson-1",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-2",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-3",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-4",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-5",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-6",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-7",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-8",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-9",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-10",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-11",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-12",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-13",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-14",
+          "images": [],
+          "status": "no-image-approved"
+        }
+      ]
+    },
+    {
+      "course": 6,
+      "semester": "Α",
+      "title": "Βασική Αγγλική Ορολογία Προνοσοκομειακής Φροντίδας",
+      "chapters": [
+        {
+          "anchor": "#lesson-1",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-2",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-3",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-4",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-5",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-6",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-7",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-8",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-9",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-10",
+          "images": [],
+          "status": "no-image-approved"
+        }
+      ]
+    },
+    {
+      "course": 7,
+      "semester": "Β",
+      "title": "Τεχνικές Επικοινωνίας Επείγουσας Κλήσης",
+      "chapters": [
+        {
+          "anchor": "#lesson-1",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-2",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-3",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-4",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-5",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-6",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-7",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-8",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-9",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-10",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-11",
+          "images": [],
+          "status": "no-image-approved"
+        }
+      ]
+    },
+    {
+      "course": 8,
+      "semester": "Β",
+      "title": "Τεχνολογίες Πληροφορικής και Επικοινωνιών Προνοσοκομειακά",
+      "chapters": [
+        {
+          "anchor": "#lesson-1",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-2",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-3",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-4",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-5",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-6",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-7",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-8",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-9",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-10",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-11",
+          "images": [],
+          "status": "no-image-approved"
+        }
+      ]
+    },
+    {
+      "course": 9,
+      "semester": "Β",
+      "title": "Ασφαλής Χειρισμός – Οδήγηση Ασθενοφόρου",
+      "chapters": [
+        {
+          "anchor": "#lesson-1",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-2",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-3",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-4",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-5",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-6",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-7",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-8",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-9",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-10",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-11",
+          "images": [],
+          "status": "no-image-approved"
+        }
+      ]
+    },
+    {
+      "course": 10,
+      "semester": "Β",
+      "title": "Επείγουσες Παθολογικές Καταστάσεις Προνοσοκομειακά",
+      "chapters": [
+        {
+          "anchor": "#lesson-1",
+          "images": [
+            "heart"
+          ],
+          "status": "source-selected-pending-independent-scientific-review"
+        },
+        {
+          "anchor": "#lesson-2",
+          "images": [
+            "brain_medial"
+          ],
+          "status": "source-selected-pending-independent-scientific-review"
+        },
+        {
+          "anchor": "#lesson-3",
+          "images": [
+            "upper",
+            "lower",
+            "respiratory"
+          ],
+          "status": "source-selected-pending-independent-scientific-review"
+        },
+        {
+          "anchor": "#lesson-4",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-5",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-6",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-7",
+          "images": [
+            "heart"
+          ],
+          "status": "source-selected-pending-independent-scientific-review"
+        },
+        {
+          "anchor": "#lesson-8",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-9",
+          "images": [
+            "lower",
+            "respiratory"
+          ],
+          "status": "source-selected-pending-independent-scientific-review"
+        },
+        {
+          "anchor": "#lesson-10",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-11",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-12",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-13",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-14",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-15",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-16",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-17",
+          "images": [],
+          "status": "no-image-approved"
+        }
+      ]
+    },
+    {
+      "course": 11,
+      "semester": "Β",
+      "title": "Αγγλική Ορολογία Προνοσοκομειακών Πρακτικών",
+      "chapters": [
+        {
+          "anchor": "#lesson-1",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-2",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-3",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-4",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-5",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-6",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-7",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-8",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-9",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-10",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-11",
+          "images": [],
+          "status": "no-image-approved"
+        }
+      ]
+    },
+    {
+      "course": 12,
+      "semester": "Β",
+      "title": "Προνοσοκομειακή Χρήση Φαρμάκων",
+      "chapters": [
+        {
+          "anchor": "#lesson-1",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-2",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-3",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-4",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-5",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-6",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-7",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-8",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-9",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-10",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-11",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-12",
+          "images": [],
+          "status": "no-image-approved"
+        }
+      ]
+    },
+    {
+      "course": 13,
+      "semester": "Γ",
+      "title": "Τεχνικές Λήψης Επείγουσας Κλήσης",
+      "chapters": [
+        {
+          "anchor": "#lesson-1",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-2",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-3",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-4",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-5",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-6",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-7",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-8",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-9",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-10",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-11",
+          "images": [],
+          "status": "no-image-approved"
+        }
+      ]
+    },
+    {
+      "course": 14,
+      "semester": "Γ",
+      "title": "Προνοσοκομειακή Αντιμετώπιση Τραύματος",
+      "chapters": [
+        {
+          "anchor": "#lesson-1",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-2",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-3",
+          "images": [
+            "spine"
+          ],
+          "status": "source-selected-pending-independent-scientific-review"
+        },
+        {
+          "anchor": "#lesson-4",
+          "images": [
+            "skeleton"
+          ],
+          "status": "source-selected-pending-independent-scientific-review"
+        },
+        {
+          "anchor": "#lesson-5",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-6",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-7",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-8",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-9",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-10",
+          "images": [
+            "spine"
+          ],
+          "status": "source-selected-pending-independent-scientific-review"
+        },
+        {
+          "anchor": "#lesson-11",
+          "images": [
+            "skeleton"
+          ],
+          "status": "source-selected-pending-independent-scientific-review"
+        },
+        {
+          "anchor": "#lesson-12",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-13",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-14",
+          "images": [],
+          "status": "no-image-approved"
+        }
+      ]
+    },
+    {
+      "course": 15,
+      "semester": "Γ",
+      "title": "Διαχείριση Μαζικού Συμβάντος",
+      "chapters": [
+        {
+          "anchor": "#lesson-1",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-2",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-3",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-4",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-5",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-6",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-7",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-8",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-9",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-10",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-11",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-12",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-13",
+          "images": [],
+          "status": "no-image-approved"
+        }
+      ]
+    },
+    {
+      "course": 16,
+      "semester": "Γ",
+      "title": "Πρωτόκολλα Διαχείρισης στα Συνήθη Επείγοντα Προνοσοκομειακά Περιστατικά",
+      "chapters": [
+        {
+          "anchor": "#lesson-1",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-2",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-3",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-4",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-5",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-6",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-7",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-8",
+          "images": [
+            "lower"
+          ],
+          "status": "source-selected-pending-independent-scientific-review"
+        },
+        {
+          "anchor": "#lesson-9",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-10",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-11",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-12",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-13",
+          "images": [],
+          "status": "no-image-approved"
+        }
+      ]
+    },
+    {
+      "course": 17,
+      "semester": "Δ",
+      "title": "Πρακτική Εφαρμογή σε Τεχνικές και Δεξιότητες Επειγόντων Παθολογικών",
+      "chapters": [
+        {
+          "anchor": "#lesson-1",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-2",
+          "images": [
+            "upper",
+            "lower"
+          ],
+          "status": "source-selected-pending-independent-scientific-review"
+        },
+        {
+          "anchor": "#lesson-3",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-4",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-5",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-6",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-7",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-8",
+          "images": [
+            "upper"
+          ],
+          "status": "source-selected-pending-independent-scientific-review"
+        },
+        {
+          "anchor": "#lesson-9",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-10",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-11",
+          "images": [
+            "heart"
+          ],
+          "status": "source-selected-pending-independent-scientific-review"
+        },
+        {
+          "anchor": "#lesson-12",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-13",
+          "images": [],
+          "status": "no-image-approved"
+        }
+      ]
+    },
+    {
+      "course": 18,
+      "semester": "Δ",
+      "title": "Πρακτική Εφαρμογή σε Τεχνικές και Δεξιότητες Αντιμετώπισης Τραύματος",
+      "chapters": [
+        {
+          "anchor": "#lesson-1",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-2",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-3",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-4",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-5",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-6",
+          "images": [
+            "skeleton"
+          ],
+          "status": "source-selected-pending-independent-scientific-review"
+        },
+        {
+          "anchor": "#lesson-7",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-8",
+          "images": [
+            "spine"
+          ],
+          "status": "source-selected-pending-independent-scientific-review"
+        },
+        {
+          "anchor": "#lesson-9",
+          "images": [
+            "lower"
+          ],
+          "status": "source-selected-pending-independent-scientific-review"
+        },
+        {
+          "anchor": "#lesson-10",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-11",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-12",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-13",
+          "images": [],
+          "status": "no-image-approved"
+        }
+      ]
+    },
+    {
+      "course": 19,
+      "semester": "Δ",
+      "title": "Διακομιδές Ασθενών",
+      "chapters": [
+        {
+          "anchor": "#lesson-1",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-2",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-3",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-4",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-5",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-6",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-7",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-8",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-9",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-10",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-11",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-12",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-13",
+          "images": [],
+          "status": "no-image-approved"
+        }
+      ]
+    },
+    {
+      "course": 20,
+      "semester": "Δ",
+      "title": "Ο Διασώστης/ρια στα ΤΕΠ",
+      "chapters": [
+        {
+          "anchor": "#lesson-1",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-2",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-3",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-4",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-5",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-6",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-7",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-8",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-9",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-10",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-11",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-12",
+          "images": [],
+          "status": "no-image-approved"
+        },
+        {
+          "anchor": "#lesson-13",
+          "images": [],
+          "status": "no-image-approved"
+        }
+      ]
+    }
+  ],
+  "sourcePriority": {
+    "policyDocument": "docs/SAEK-SOURCE-HIERARCHY-2026.md",
+    "rule": "Ευρωπαϊκές και αμερικανικές επιστημονικές πηγές πρώτα για γενική ιατρική. Ελληνικές επίσημες πηγές υπερισχύουν για νομοθεσία, αρμοδιότητες και ειδικά εθνικά πρωτόκολλα.",
+    "groups": {
+      "clinicalEuropean": [
+        "ERC Guidelines 2025",
+        "ECDC",
+        "EMA SmPC",
+        "NICE"
+      ],
+      "clinicalAmerican": [
+        "AHA Guidelines 2025",
+        "NIH/NLM MedlinePlus",
+        "CDC"
+      ],
+      "greekSpecific": [
+        "ΦΕΚ / Εθνικό Τυπογραφείο",
+        "ΕΚΑΒ",
+        "Υπουργείο Υγείας",
+        "ΕΟΦ"
+      ]
+    },
+    "important": "Επιστημονική αξιοπιστία πηγής ≠ άδεια χρήσης εικόνας. Έλεγχος δημιουργού, άδειας και κλινικού περιεχομένου γίνεται ανά συγκεκριμένη εικόνα."
+  }
+}

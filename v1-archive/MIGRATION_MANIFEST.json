@@ -1,0 +1,1791 @@
+{
+  "source": "public GitHub 6d9757cmp5-creator/ekab-spoudi",
+  "source_commit": "859f7d0bf2b432b2ec1818cea15ace38712beb72",
+  "generated_utc": "2026-10-29T01:54:00.355891+00:00",
+  "note": "Archived for V2 migration; not loaded automatically, never overwrites V2 UI.",
+  "total_source_files": 368,
+  "copied_files": 299,
+  "copied_bytes": 10371556,
+  "excluded_files": 69,
+  "files": [
+    {
+      "path": "AUDIT_CHAPTER_B_07_01.md",
+      "size": 3285,
+      "sha256": "92b7060e37e5aa407d92874b3df194220709fa88f7a0174a549e72bb096ee883"
+    },
+    {
+      "path": "AUDIT_CHAPTER_B_07_02.md",
+      "size": 2949,
+      "sha256": "68b2dcb27cb95299e3cb0731c605c43b3594f42dcec2b1f73106550ae269d9f2"
+    },
+    {
+      "path": "AUDIT_CHAPTER_B_10_03_07_11.md",
+      "size": 2709,
+      "sha256": "890457295a652b6662ff56dfd5b681c42bbc092fde5bbefb138b028f5ae746fc"
+    },
+    {
+      "path": "ECLASS_INVENTORY.json",
+      "size": 5543,
+      "sha256": "308f906cfc228b153fc4f8c1c93d0e495b23479ff61aba521784a3f7037d6926"
+    },
+    {
+      "path": "EOPPEP_AUDIT.md",
+      "size": 1495,
+      "sha256": "55b3576a7a711300846616353814a79cd6749f65454343db0d079f1d29bf7d03"
+    },
+    {
+      "path": "HISTORICAL_V15_EOPPEP_AUDIT.md",
+      "size": 1495,
+      "sha256": "55b3576a7a711300846616353814a79cd6749f65454343db0d079f1d29bf7d03"
+    },
+    {
+      "path": "HISTORICAL_V15_OFFICIAL_WRITTEN_AUDIT.md",
+      "size": 1833,
+      "sha256": "ad3f79a3b9ff6f2e8cc28ea3f818eff3e3fb87c47137d0259c7c46f700ef4384"
+    },
+    {
+      "path": "HISTORICAL_V15_REVIEW_REPORT.md",
+      "size": 1664,
+      "sha256": "782941167e47064a91782a8ae9d870a6bc06a7487b2351a82d7f6c3e320f6ab7"
+    },
+    {
+      "path": "HISTORICAL_V15_SOLUTIONS_AUDIT.md",
+      "size": 2128,
+      "sha256": "a13abfce92b2b239af3b6a624bea365a76dd2c7a317885f64c0c6e7a29366942"
+    },
+    {
+      "path": "NOT_VERIFIED.md",
+      "size": 3256,
+      "sha256": "a1e169b9f19a4ace5d74e9515a072397cb875570d5ea25095248c23e0766d57f"
+    },
+    {
+      "path": "OFFICIAL_WRITTEN_AUDIT.md",
+      "size": 1833,
+      "sha256": "ad3f79a3b9ff6f2e8cc28ea3f818eff3e3fb87c47137d0259c7c46f700ef4384"
+    },
+    {
+      "path": "PRACTICAL_SOURCE.md",
+      "size": 1077,
+      "sha256": "f605a78697f82ca46898e4f9ec8645e5aa16b4c9631bd09364333d037637e611"
+    },
+    {
+      "path": "README.md",
+      "size": 32520,
+      "sha256": "84718a725d4814f58ddfbc18de412830e1a09c437a9217a79838ee1bda601037"
+    },
+    {
+      "path": "REVIEW_REPORT.md",
+      "size": 720,
+      "sha256": "c240e3280f8c054a9d05857616aefd950dbd3822eb14595f3a6b8181b8b795da"
+    },
+    {
+      "path": "SCIENTIFIC_AUDIT_V27_1_BCD.md",
+      "size": 42510,
+      "sha256": "37e0f0010dc3a266fb19f3b5b4494213e3f16d6765db1ccb165817542746a958"
+    },
+    {
+      "path": "SCIENTIFIC_AUDIT_V27_PHASE1.md",
+      "size": 10991,
+      "sha256": "3ce01fdfd4086d10d8d11c84332c65bc2cdad4220d84562383b62f1da73915c0"
+    },
+    {
+      "path": "SCIENTIFIC_AUDIT_V27_PHASE2.md",
+      "size": 11707,
+      "sha256": "60699dc9863185fdcfe2adf04742e1d22d3289d96ba935181fe349efc3d9407a"
+    },
+    {
+      "path": "SCIENTIFIC_FIXES_V27_1_4.md",
+      "size": 2505,
+      "sha256": "089c3e759e3de6056589b343ba380f098666163d29aead64054ee8d41aca7804"
+    },
+    {
+      "path": "SCIENTIFIC_REVIEW.md",
+      "size": 11009,
+      "sha256": "de5a66f9118fd015f8e183931cd168ddc85387923eef6cae16cd2e431205927d"
+    },
+    {
+      "path": "SOLUTIONS_AUDIT.md",
+      "size": 2128,
+      "sha256": "a13abfce92b2b239af3b6a624bea365a76dd2c7a317885f64c0c6e7a29366942"
+    },
+    {
+      "path": "SOURCE_CROSSWALK_2026.md",
+      "size": 3431,
+      "sha256": "926bc8affe916adc984072b5820cf2e637dc475c1ecc3d28da1f2a31616348e5"
+    },
+    {
+      "path": "V11_SOURCES.md",
+      "size": 1821,
+      "sha256": "d80118d105733a8052f748a818847228000dea6b2f50a12dc4078d79d20042c9"
+    },
+    {
+      "path": "V16_AUDIT.md",
+      "size": 860,
+      "sha256": "d2cafc3f992d2f3391b099bf21e19c81b4dabfc9bc1c75121f1b426b3bba52a3"
+    },
+    {
+      "path": "V17_ANSWER_AUDIT.md",
+      "size": 11065,
+      "sha256": "4b76efb639b3912665e3243e1965958b923cdcba8805834a1354dc1f3ed344f2"
+    },
+    {
+      "path": "V18_SOURCE_CHECK.md",
+      "size": 6586,
+      "sha256": "dde270f39bde73e474b90c9df502092bfceb78d84c7f5d04b2b3e8bc5c843443"
+    },
+    {
+      "path": "V19_CHANGES.md",
+      "size": 1594,
+      "sha256": "6d0e69403825c88d63698915653ef9a3238d19383bdae9e11b88e029721ee6f8"
+    },
+    {
+      "path": "V20_SAEK_READER.md",
+      "size": 3706,
+      "sha256": "097350aa43b59a04214efababf581e613b29432cb27e8109c4c21ae6838a9992"
+    },
+    {
+      "path": "V21_SAEK_REVIEW.md",
+      "size": 1242,
+      "sha256": "aaab8bdac6cdad502c96c7c5eefd954c3055f4cda5c3d87a76ec85ba1ca66b37"
+    },
+    {
+      "path": "V22_UPDATES_AND_BACKUP.md",
+      "size": 2685,
+      "sha256": "f73cf31fe037d318285c687566e11d8b3c8fee1bef4d7ab9e70cc6184c6e5763"
+    },
+    {
+      "path": "V23_UI_CHANGE.md",
+      "size": 1036,
+      "sha256": "cba29689cb7de86296f58fbb30f407931c2e1cd424ef1e0de1124091e444305a"
+    },
+    {
+      "path": "V24_SEMESTER_A.md",
+      "size": 2156,
+      "sha256": "a2e78899b18232d93b7107343146c1b8affdda7845e9fba362ef934bc56a1dc1"
+    },
+    {
+      "path": "V25_SEMESTER_A_REVIEW.md",
+      "size": 2739,
+      "sha256": "ba37a211ded2b1e7751515ac2d55d66909f63b895b2edff6ccbc09859b223f3d"
+    },
+    {
+      "path": "V26_ALL_SEMESTERS_AUDIT.md",
+      "size": 5808,
+      "sha256": "7c557332b76a31647919bf539079819371ae752f87c43fe555e7596cdfb17e7c"
+    },
+    {
+      "path": "V27_1_CLINICAL_CHANGES.md",
+      "size": 2683,
+      "sha256": "522d6cdcf6cf29a8cbb4556f384ab9b594cf2c9de0a20afba6ed89fe8677566b"
+    },
+    {
+      "path": "V27_SOS_REVIEW.md",
+      "size": 3156,
+      "sha256": "638ffe4c124b4c0489f0f75238cecdc04bdc87421dd394fccbf3431caba9621c"
+    },
+    {
+      "path": "_inline_test.js",
+      "size": 9190,
+      "sha256": "3eaf2e4d3776e7309962f0a658e8b976f0edcde0f11cc0b6cb81799013a03531"
+    },
+    {
+      "path": "activity-time.js",
+      "size": 3169,
+      "sha256": "bfd843d8fc2339e6d556bae42dc0eaaec8fb8358abaae3ba7696cd2ac7fd18b6"
+    },
+    {
+      "path": "agglika.html",
+      "size": 38028,
+      "sha256": "ab901bd9001a65ed9d0fde49123102be6dbcce09377a5e8661e95019e0321b8b"
+    },
+    {
+      "path": "ai-grading.css",
+      "size": 3623,
+      "sha256": "f490cfd44b87676fe8fff57b8a8415ba3127b19709752e01a0baf13ccfb4d004"
+    },
+    {
+      "path": "anatomia.html",
+      "size": 164524,
+      "sha256": "70d36fecd0c7623ad42dff488d11972dc2017231096e7b7e36b26ca0ef6aeaa4"
+    },
+    {
+      "path": "apantiseis.html",
+      "size": 72844,
+      "sha256": "a15a9f01a590bc225f667b5e50f2387c9039239d69b458f598c5f2e559660abd"
+    },
+    {
+      "path": "app-pages-search-1.json",
+      "size": 120132,
+      "sha256": "26c768ce5ef48d7a2990351312fe6d1b183ce986a95752a122fef1beffbee991"
+    },
+    {
+      "path": "app-pages-search-2.json",
+      "size": 351881,
+      "sha256": "62b5ae2f3a74225fe27ad1fb93d476985fc5c08e5b93bf54249890967996041f"
+    },
+    {
+      "path": "app-pages-search-3.json",
+      "size": 212373,
+      "sha256": "dffbc1c6d03faf9ff6c8014b7769d2931811179189e931593c6fcbfcec036f9e"
+    },
+    {
+      "path": "app.js",
+      "size": 37437,
+      "sha256": "9e1db38b2f2446299c0437290f2f6ac2b791ffc3ede29197d72489c86b57644a"
+    },
+    {
+      "path": "build_audit.json",
+      "size": 1832,
+      "sha256": "a283fa101f052dcdfc87977784b63b4012b5017f9e031486700244655b7b1c58"
+    },
+    {
+      "path": "classroom-images.js",
+      "size": 4137,
+      "sha256": "44935bc7d62eba4db08d4eb40dc6dae7f0a2aea3b95741858bdda2f8ca2bd08a"
+    },
+    {
+      "path": "clinical-review.json",
+      "size": 40,
+      "sha256": "288fe394163c569c697bdcdf7350a33fd5e7c540144bcac31f6e0307e612c43d"
+    },
+    {
+      "path": "contacts-aed.css",
+      "size": 4625,
+      "sha256": "104b5b60cce2bef8d7fced5d99036ac65b925a5613f83cd863f714fbc3acd17a"
+    },
+    {
+      "path": "contacts-nearby-aed.js",
+      "size": 8628,
+      "sha256": "48ef54954248657f11b623d6beec9727b19177ce6bcd0c3316ee79922e25498e"
+    },
+    {
+      "path": "contacts.html",
+      "size": 9111,
+      "sha256": "a11493a08aa49f4341e748d9db68e0668bfcffe1247c789d231c803db5f4d141"
+    },
+    {
+      "path": "diasostis.html",
+      "size": 42632,
+      "sha256": "49878589cd1f36ac1a3ae4e1406c1a176350594948ef3920311e0f5937e121dd"
+    },
+    {
+      "path": "dimosia_ygeia.html",
+      "size": 115652,
+      "sha256": "98b19d30b3bdc11bd89e0a4a8e99e7d68a88526e5f7b60b8eccc760d29d3d382"
+    },
+    {
+      "path": "docs/EOPPEP-44-FOLLOWUP-2026-10-26.json",
+      "size": 16768,
+      "sha256": "0a4a590722a6576c923850f97fc520e27054432a5f1e67ae63b34eeba0056f2c"
+    },
+    {
+      "path": "docs/EOPPEP-44-FOLLOWUP-2026-10-26.md",
+      "size": 20345,
+      "sha256": "0655282ef16f7847d7da01139f1813a4f065888b43eddc7e5010810756dc94e0"
+    },
+    {
+      "path": "docs/EOPPEP-7-WEB-RESEARCH-2026-10-26.md",
+      "size": 11744,
+      "sha256": "9ebb227ac1b5466f843dddaaf77a32341c9b63a0f9e1fc6c24907cbcf5b54a12"
+    },
+    {
+      "path": "docs/EOPPEP-70-REVIEW-2026-10-26.json",
+      "size": 24615,
+      "sha256": "62f1800696ee2a1f46d69c60d720836a0cc7d88adf400ce1d9a58478dec41837"
+    },
+    {
+      "path": "docs/EOPPEP-70-REVIEW-2026-10-26.md",
+      "size": 25312,
+      "sha256": "11ebaf532445bc21eb1b0baed383427bcf2aa39b342be5bbfcae2de5f675a671"
+    },
+    {
+      "path": "docs/EOPPEP-9-FINAL-AUDIT-2026-10-26.md",
+      "size": 11942,
+      "sha256": "b3da7c4a2ceed0dd0062658fba2306e84a85eedc494a7de8c94d8006723b1572"
+    },
+    {
+      "path": "docs/EOPPEP-CLINICAL-PROTOCOL-RECHECK-2026-10-26.md",
+      "size": 5778,
+      "sha256": "ced032a894a88dbb14cd36e276cea99e6988cff5b83ac8f8a13e9db77bce7342"
+    },
+    {
+      "path": "docs/EOPPEP-SOURCE-INVENTORY-2026-10-26.json",
+      "size": 841158,
+      "sha256": "ed688a30cca1d53f0f1844ffc4a026f88293f262da65738faa6899fb4c0ccc30"
+    },
+    {
+      "path": "docs/EOPPEP-STUDY-PROGRESS-RULES.md",
+      "size": 8151,
+      "sha256": "bb7e25637e2fca958976eb8f1930c48d2e454900c1fb7221b7be6057ee7ea082"
+    },
+    {
+      "path": "docs/MEDIA_PUBLICATION_SECURITY.md",
+      "size": 3519,
+      "sha256": "4af3ba7d60923e3970d18cbbcb7f76cac38aef3e506718c1c8f29ed16b43363d"
+    },
+    {
+      "path": "docs/PHARMACOLOGY-CLINICAL-AUDIT-2026-10-26.md",
+      "size": 8136,
+      "sha256": "11fba5b4df824a7394ec9e07c6edb1b52c9d756e3de0e80383b47e1444d014e5"
+    },
+    {
+      "path": "docs/QUALITY-CHECK-FIVE-AREAS-2026-10-26.md",
+      "size": 5518,
+      "sha256": "625f97ada1335dca1ca4d3a37126d526128b4666200e628b14ce0fd26240ade2"
+    },
+    {
+      "path": "docs/QUALITY-RULES-2026-10-28.md",
+      "size": 4880,
+      "sha256": "c280b18f6bfb610e19de1c632e5db4d22517fdd69f94d346031c712cd621b64f"
+    },
+    {
+      "path": "docs/SAEK-FIRST-PASS-COMPLETION-2026-10-26.md",
+      "size": 5157,
+      "sha256": "dfab8c0e5550e06954f29dd5bac5dafcd9357bc0a386cc76c5f23de554e78489"
+    },
+    {
+      "path": "docs/SAEK-REVIEW-SUMMARY-2026-10-25.md",
+      "size": 4763,
+      "sha256": "83bcf97cb542dd0e4c6d4c789f147cd120823e4c720425e863ac3c420ee61fd3"
+    },
+    {
+      "path": "docs/SAEK-SEARCH-EOPPEP-READER-2026-10-26.md",
+      "size": 9087,
+      "sha256": "9b5a13c249247993cc3fe75d1c58ef8faf531ee8ce910f409178b5fc250bf701"
+    },
+    {
+      "path": "docs/SAEK-SECOND-AI-VIDEO-REVIEW.md",
+      "size": 8070,
+      "sha256": "c803cae068d68d2ac16403e04bf1954fe7e76809ab9235ab5398b96f5bfbc3e6"
+    },
+    {
+      "path": "docs/SAEK-SOURCE-HIERARCHY-2026.md",
+      "size": 6887,
+      "sha256": "1d81205b0efddd28836f7447fad66550c3a3a8e692cea589661882683c03c091"
+    },
+    {
+      "path": "docs/SECURITY-AND-CLINICAL-VERIFICATION.md",
+      "size": 4323,
+      "sha256": "408feb25285c907848117c7f5bce08f833590aa1354f7866f3862bdc4bb215db"
+    },
+    {
+      "path": "docs/SEMINAR-AUTOMATIC-ASSESSMENT-RULES.md",
+      "size": 7551,
+      "sha256": "8067d248de8d8881d8cb65aa9f5d2dd4ee10f1cd1488244715760e36fed0c365"
+    },
+    {
+      "path": "docs/SYNC-COMPRESSION.md",
+      "size": 2131,
+      "sha256": "b520476f541c5978456f3e74a3e5a0fa9359db3071d212a170324a66ef64e0ca"
+    },
+    {
+      "path": "docs/UI-FASTLANE.md",
+      "size": 3312,
+      "sha256": "5f19cf4f83d96e0837c8dd5f2fc478a657245e7af15a825712d48f022969ab5f"
+    },
+    {
+      "path": "docs/eoppep-academic-review.pdf",
+      "size": 298291,
+      "sha256": "375a9b6ea4bedc47ab07df041a36f67123ad1e448cc05eea0e81fddbf5a6e312"
+    },
+    {
+      "path": "docs/pharmacology-review-status-2026-10-26.pdf",
+      "size": 298303,
+      "sha256": "bf73e787fe69e11cae1d4522158bba8033073755539ac2f7d6391bb7c888e959"
+    },
+    {
+      "path": "docs/saek-academic-review.pdf",
+      "size": 298619,
+      "sha256": "61f9adc706b08eade6ccf72b7e4483c76921cca529032bdb5332b03557d67a69"
+    },
+    {
+      "path": "docs/saek-audit-semester-A.md",
+      "size": 14067,
+      "sha256": "04fb2b660e5db9055dd76a403469668d15ce56006f1bfe5c6455bb9baa91b6fc"
+    },
+    {
+      "path": "docs/saek-audit-semester-B.md",
+      "size": 10426,
+      "sha256": "6cba3949dc64c3e90c12ed469b5307864d0d5f299e93344c2eae969f9a78c8df"
+    },
+    {
+      "path": "docs/saek-audit-semester-C.md",
+      "size": 7561,
+      "sha256": "e360f759c8727c4b4d7dec07a9ef6a42fa9ae504fbf09f9175811663e71fe786"
+    },
+    {
+      "path": "docs/saek-audit-semester-D.md",
+      "size": 7813,
+      "sha256": "68c7a575d2391419cd5a0be1a9567c6dc28c5b0fa47883e799f0fe23b0b743a5"
+    },
+    {
+      "path": "docs/saek-expansion-notes-b.json",
+      "size": 15649,
+      "sha256": "e5d6ae44731762a3dc4ee8c5735f10d6ed1f78682f0336c2eba7a5fd7c98ebcb"
+    },
+    {
+      "path": "docs/saek-expansion-notes-c-d.json",
+      "size": 22649,
+      "sha256": "14b46c2ef028e687617df3696eb68de41e774cc9d716fb79760755939d3ef791"
+    },
+    {
+      "path": "docs/saek-first-pass-progress.json",
+      "size": 182708,
+      "sha256": "0f128f792d8b5fa3347e892946272b3be61e1aa5a1de5188af1d2939f2fc0505"
+    },
+    {
+      "path": "docs/seminars-academic-review.pdf",
+      "size": 298426,
+      "sha256": "3732dfd672a72702d80cdd56c5d6d4ca34b8c234221ef4b05cfc42cfc378e50c"
+    },
+    {
+      "path": "docs/video-audit-anatomy-10.md",
+      "size": 5939,
+      "sha256": "b8a9aafbd34bc8017b5848c2b0434b4bb98b171d227285e5b6dc3510e84a11bd"
+    },
+    {
+      "path": "eclass.html",
+      "size": 3910,
+      "sha256": "fe037bfbeada27f6c257a7c8f1427c11c4b85c792af19422146f7caffa3ada5d"
+    },
+    {
+      "path": "ekab-first-run.js",
+      "size": 5562,
+      "sha256": "9860b46b61206c0062a269aee7174000147696d8d14b2cb1194cc8f39b875939"
+    },
+    {
+      "path": "ektimisi.html",
+      "size": 75750,
+      "sha256": "3ea50d5062e758e98dfbca3909b3bf92cc93a41b5e61391bc5220c31aa0aa02a"
+    },
+    {
+      "path": "eoppep-hub.css",
+      "size": 1751,
+      "sha256": "2a86b9bbbbb4d88c6935003593aa3484e79a348f8bab26964b57a436cfc8d8b3"
+    },
+    {
+      "path": "eoppep-hub.js",
+      "size": 2565,
+      "sha256": "2d0d16b04e69c8408a7f27fa46fc82963122041f010314c169063045f82014d1"
+    },
+    {
+      "path": "eoppep-sos.json",
+      "size": 255484,
+      "sha256": "f0e5cd4737fba3d48425ca7cadf22d2cb04e0abf9a014ca77ffe722b913ce41e"
+    },
+    {
+      "path": "eoppep.html",
+      "size": 9073,
+      "sha256": "f3bc083070b30178bcfb7c0b930e4a4b7fc838e0318af507da9188e4eb9d09a4"
+    },
+    {
+      "path": "exam_focus.html",
+      "size": 7423,
+      "sha256": "22ff07c18ccdb00dd31c9d7f07cc1212aff27145719444923b49ce9b43f45b9a"
+    },
+    {
+      "path": "extra-exercises-search.json",
+      "size": 130869,
+      "sha256": "393151101fdf3d0903ccf537e3ded788621bf4142526bb890c3a81941d2ce349"
+    },
+    {
+      "path": "farmaka-adaptive-bank.js",
+      "size": 47303,
+      "sha256": "1a3891440323145c7800876e21e9b943e39bee256d586dfb487e44cee524f872"
+    },
+    {
+      "path": "farmaka-cases.js",
+      "size": 8229,
+      "sha256": "1fa736a81be64cbe3f453e8f73f9424995977e183353f517c2c172d0c1176e22"
+    },
+    {
+      "path": "farmaka-catalog.js",
+      "size": 62265,
+      "sha256": "60fce4d5482d67366a88736b102f3c1c51f1e561006cc4ac4528b30150eb2442"
+    },
+    {
+      "path": "farmaka-clinical-2026.js",
+      "size": 31618,
+      "sha256": "90c11fb207fcfe571d919efc71eda0e38c5e62fe6f6dd8853a43277ac90457b9"
+    },
+    {
+      "path": "farmaka-ui.js",
+      "size": 16294,
+      "sha256": "5cfc00fdf07475eed0f50378bb83fb3d133d8398d2114acebb5a181b4caf3fa5"
+    },
+    {
+      "path": "farmaka.html",
+      "size": 31977,
+      "sha256": "11e154ec0c1c6664e275ae5a629e2ff7544e4c123ac16fe0b52226be07763a28"
+    },
+    {
+      "path": "fysiologia.html",
+      "size": 114602,
+      "sha256": "9e2cc2f7bac336a8a4734aabec7bd7a3f6be97cfb449cd8ade53dca44d650539"
+    },
+    {
+      "path": "global-tools.css",
+      "size": 17228,
+      "sha256": "413580d8559edc64a8ad458ac304518084bf8054def45e06006b5b3269aea099"
+    },
+    {
+      "path": "global-tools.js",
+      "size": 24792,
+      "sha256": "731d020818258df11d740df39dc90a3cf0a2859138f268e19ee4eb27946635b2"
+    },
+    {
+      "path": "home-mini-progress.js",
+      "size": 1789,
+      "sha256": "bdb0ad216cc87ed082480ea49e28de5a03e6bbb199d7838ba14a6ed957e51d83"
+    },
+    {
+      "path": "home-progress-panel.css",
+      "size": 17749,
+      "sha256": "c76dc70d889388ab3a01fd9a508ff0b005e05c5242c440528afb1b6f44c29ba7"
+    },
+    {
+      "path": "home-progress-panel.js",
+      "size": 13684,
+      "sha256": "7c61c3f17e64d4b969aefbbf50400e5dcc37c671631be0f4861032f77d495e1f"
+    },
+    {
+      "path": "home-tracker-v2.js",
+      "size": 4014,
+      "sha256": "e91eee1ae56813b2c42347a957e4afb5043dd3ec17730c91fd95f962b54ae304"
+    },
+    {
+      "path": "home.css",
+      "size": 34469,
+      "sha256": "c038b741b489bd7fade19c4e55909c61d75a99c98cb2205544afe0db3598c795"
+    },
+    {
+      "path": "icon.svg",
+      "size": 279,
+      "sha256": "0486493ab21efa3733993e5b256a317f7b70ef61af683fa7b22a8edda6981e44"
+    },
+    {
+      "path": "index.html",
+      "size": 13274,
+      "sha256": "f04bb08222b0f21f80a1ca6f6adfbd40b51b8b22a1d213cb642f83702d50b410"
+    },
+    {
+      "path": "inline-check.js",
+      "size": 8786,
+      "sha256": "b0c3173293bda402444053fd72ebd6c09c28683aeb3b667e9175e00631cbccd3"
+    },
+    {
+      "path": "manifest.webmanifest",
+      "size": 364,
+      "sha256": "ddf09ecd194849e77f6c2a99a5386512311f98b7e5b1bf1f5ea91faac0beab97"
+    },
+    {
+      "path": "manual.html",
+      "size": 9010,
+      "sha256": "d8b4c5ddfdd2122a2453fb46d8eea564b3a67608409bd75c07cf4ba1063dd581"
+    },
+    {
+      "path": "media-review.json",
+      "size": 40,
+      "sha256": "c207a1f8e78a941e7efd31370636319b6cd5105c968d241a10464d28be308be5"
+    },
+    {
+      "path": "medical-terms.json",
+      "size": 91350,
+      "sha256": "b51cf6c2d0ba38793c0dcd9887aae86bbedfd0cd4957328d8e869146e5386d91"
+    },
+    {
+      "path": "mentor-ecg.html",
+      "size": 6677,
+      "sha256": "43622d247199a1482412aae4d4a95ac7b2870a3ff0d590f49693418c4e41c7b2"
+    },
+    {
+      "path": "mentor-ecg.js",
+      "size": 1316,
+      "sha256": "0a2fe350e4b8a415a4b376beff376b282c5e031394756493a098e80a256c869b"
+    },
+    {
+      "path": "mentor-home.js",
+      "size": 3505,
+      "sha256": "b87f8a46635ae29ea6661ab5ae7be9c5a9e47ba56824bc9364b9e0ee46928861"
+    },
+    {
+      "path": "mentor-lab.css",
+      "size": 22201,
+      "sha256": "4b5fdab76116691e645b0146f9c4fa8373a25b2e23fb149476ac50b049f7fe5d"
+    },
+    {
+      "path": "mentor-lab.html",
+      "size": 24074,
+      "sha256": "e9a98a6de1639c8f2f42b4239d4b1c742d53e696a3e6c50e3ba451d6c62e2f72"
+    },
+    {
+      "path": "mentor-lab.js",
+      "size": 24439,
+      "sha256": "1f6f79ca5dd85dc19aa1cc0e676882265a41abc04a703ecfb4e9b1d97e0382b1"
+    },
+    {
+      "path": "mentor-library.html",
+      "size": 3489,
+      "sha256": "4a6729a6cf5305a9af5a876a9a1501739268c34a0c5f7e1178adc4add4cd1a80"
+    },
+    {
+      "path": "mentor-library.js",
+      "size": 3090,
+      "sha256": "ee2639ce854e3a325f8342470524075596ecc2bdac0140da431c7f814e1c5475"
+    },
+    {
+      "path": "mentor-live.html",
+      "size": 8377,
+      "sha256": "859744a50d1612530b21800ea8b86abb4d5cb1aba317a2f63f1b368c1ea3d7b9"
+    },
+    {
+      "path": "mentor-live.js",
+      "size": 4797,
+      "sha256": "c213d68671ee0d23a98225756351ab46fbe56674c47e43515f0d9e5841e5915e"
+    },
+    {
+      "path": "mentor-oral.html",
+      "size": 6144,
+      "sha256": "8637e11aa533baec6f33eaafe758d9253cde23be226359da40e410199603828e"
+    },
+    {
+      "path": "mentor-oral.js",
+      "size": 2653,
+      "sha256": "c02f46acadaeb35e6893c963b5b7dfe51a40281980197578b567b1bfcb84e66e"
+    },
+    {
+      "path": "mentor-readonly.html",
+      "size": 6983,
+      "sha256": "4abefa75b03d4c4e2476c6801438c7be9af01bd94eaedb50f52956e818bab75f"
+    },
+    {
+      "path": "mentor-readonly.js",
+      "size": 7300,
+      "sha256": "d081b2bd9a577d2319efea678d058df213ede6c8ff4d1b01aa9492fce057e3a4"
+    },
+    {
+      "path": "mentor-voice.mjs",
+      "size": 1974,
+      "sha256": "2cd49524a2ca99df600a8ece1608b38f9dbf21acbec590e02c5e221760cb0d2d"
+    },
+    {
+      "path": "mentor/FOUNDATION-README.md",
+      "size": 10127,
+      "sha256": "f1e285c960a604fc3399c325b83288b090314443fbfcfd4cb33b549a842cd13b"
+    },
+    {
+      "path": "mentor/activities-ui.mjs",
+      "size": 7191,
+      "sha256": "c92cfec512169c0d75d762c77750f139bb336b783191face76d9d6cb67a92dee"
+    },
+    {
+      "path": "mentor/core/activities.mjs",
+      "size": 10392,
+      "sha256": "7237bae87632310b65ce01eeadc5d663e73f8d9cae409f07a6a4173cbf663fcc"
+    },
+    {
+      "path": "mentor/core/activity-engine.mjs",
+      "size": 4664,
+      "sha256": "d2e705d665092d629833f4e58cc7b2fd8395785ee7ea9262268d9e15a0f261b1"
+    },
+    {
+      "path": "mentor/core/activity-engine.test.mjs",
+      "size": 3518,
+      "sha256": "8792207b8d28066d5c03feac27d66763894f17e23634ba6a74370db18e215afb"
+    },
+    {
+      "path": "mentor/core/activity-store.mjs",
+      "size": 5765,
+      "sha256": "441d1cbbf912be65b7bcfcab262e7077b2703344ddeba7bb10258433a1274291"
+    },
+    {
+      "path": "mentor/core/activity-store.test.mjs",
+      "size": 1826,
+      "sha256": "ea5cfa2f9d17331f0cbcc4ff513af2ff8916baa3eee0a94a895c86ef08b8b29e"
+    },
+    {
+      "path": "mentor/core/ecg-synthetic.mjs",
+      "size": 1696,
+      "sha256": "a301f00f882ceff6df68751364c884e2fdee6b0275e1e86171d02296e8776c64"
+    },
+    {
+      "path": "mentor/core/ecg-synthetic.test.mjs",
+      "size": 2046,
+      "sha256": "6b7dc3009d45d659f12bce31b7355fbf5ec1eaae3fa03f041524e4f900eb302e"
+    },
+    {
+      "path": "mentor/core/engine.mjs",
+      "size": 4619,
+      "sha256": "bea4ed034a8aa618bbb7a4be2f02f998ec2c89f6a67cd262a96b45c79090c836"
+    },
+    {
+      "path": "mentor/core/engine.test.mjs",
+      "size": 2770,
+      "sha256": "9b35b420d432458c6a857e44120588e583c7947956221963db29d29234d59c6c"
+    },
+    {
+      "path": "mentor/core/guided-coach.mjs",
+      "size": 5459,
+      "sha256": "ac8e69ae417423ed6a7352f40521aed72f2fd2e03c776bdef9956e8c871d1a57"
+    },
+    {
+      "path": "mentor/core/guided-coach.test.mjs",
+      "size": 1839,
+      "sha256": "9a0201fad7b9d2a59ec93596faa7ec741d6552d2aebcf22122b797831040f4fa"
+    },
+    {
+      "path": "mentor/core/identity.mjs",
+      "size": 1207,
+      "sha256": "66811286f581cd41f59510147a3b70f26cff8d8cfdf064d6b31d1af2d84fdbff"
+    },
+    {
+      "path": "mentor/core/legacy-readonly.mjs",
+      "size": 1773,
+      "sha256": "208f1d0fe1f4914ddb024d1fe07cf3f0fb59abc65270a0ea593dad9e26514c35"
+    },
+    {
+      "path": "mentor/core/legacy-readonly.test.mjs",
+      "size": 1307,
+      "sha256": "d271cacf6400453d79b47507ff29c0ca5c8a9d36e7a4eb19ca1462cf8102d9fa"
+    },
+    {
+      "path": "mentor/core/live-sim.mjs",
+      "size": 7955,
+      "sha256": "43fc6021db96bdf835f07eacf5575caf9e9ca4c8f0d59b232adb17aa4e258fbb"
+    },
+    {
+      "path": "mentor/core/live-sim.test.mjs",
+      "size": 3204,
+      "sha256": "ea212612adae08180cd9dfeb1d6e46340d507192b0464bf1be710265120d8079"
+    },
+    {
+      "path": "mentor/core/oral-practice.mjs",
+      "size": 4304,
+      "sha256": "073e1af6557177ef61ed3bee9437fd425ee3e3c26a1fd8a8307f0801b5bae3d1"
+    },
+    {
+      "path": "mentor/core/oral-practice.test.mjs",
+      "size": 1962,
+      "sha256": "197304ff5f52ef993e68b4c10c0ab0ef7c39c61cef6873fe7f04c9c217f9d9dc"
+    },
+    {
+      "path": "mentor/core/read-only-index.mjs",
+      "size": 7195,
+      "sha256": "872d1093179545a28207ca1702000d7965c227fece5aecc382235b493f834c3e"
+    },
+    {
+      "path": "mentor/core/read-only-index.test.mjs",
+      "size": 3723,
+      "sha256": "76dcb520b7f0c7ddc178f5d42f9a17cc23a0b50651d15dbe9589b73294ab28d2"
+    },
+    {
+      "path": "mentor/core/scenarios.mjs",
+      "size": 5898,
+      "sha256": "a58ff93b2490548be20a049ae12a4880d317c69196262b29381a450f0328c297"
+    },
+    {
+      "path": "mentor/core/store.mjs",
+      "size": 6292,
+      "sha256": "5c5427fafb9abfad652f4d2921628f4e6cb9680a589f198c68641a3f0c0ede59"
+    },
+    {
+      "path": "mentor/core/store.test.mjs",
+      "size": 2536,
+      "sha256": "fc2739804188f2b2c94e81e6916f5468a83e03a6f260087a9f746cbdefca8f6f"
+    },
+    {
+      "path": "mentor/core/study-goals.mjs",
+      "size": 2663,
+      "sha256": "4f51cbb717675773078333bb036cd2abb450bd418a75696686f9a8dac04c05e7"
+    },
+    {
+      "path": "mentor/core/study-goals.test.mjs",
+      "size": 2568,
+      "sha256": "d0fa9a86500ef1c16044e61a33ac4787dbf3fc4016ce8598e70285bfc68a98ff"
+    },
+    {
+      "path": "mentor/core/workflow.mjs",
+      "size": 1293,
+      "sha256": "a3806fa7b86d2a49e771063257d44e49709bae261d750b4aa7ae0a3a52d6be5d"
+    },
+    {
+      "path": "mentor/core/workflow.test.mjs",
+      "size": 1062,
+      "sha256": "9b6486499feb87d4d537f4929d21657380cf59dbfa0df3acc9d705d3e1a0d597"
+    },
+    {
+      "path": "mentor/library/catalog-search.mjs",
+      "size": 1948,
+      "sha256": "151e69c05300361d3d06e4892d01aa0a6e95e2b185aa129dc756171eff2f950e"
+    },
+    {
+      "path": "mentor/library/source-index.json",
+      "size": 7051,
+      "sha256": "7f0986c4ec5cc638d2f758f4ddf94222172b02aecc799ab08d340426551351d6"
+    },
+    {
+      "path": "navigation.css",
+      "size": 1889,
+      "sha256": "ae18bed6566fc7d128d38241608daf6f528769624a4f4bee8a901f5486a4082b"
+    },
+    {
+      "path": "navigation.js",
+      "size": 3901,
+      "sha256": "13693e239ed3bd2c4a2e9cf00af746adc1e6e82f87c9d56a134f1facf39bda0d"
+    },
+    {
+      "path": "notes-delete.js",
+      "size": 2776,
+      "sha256": "95afb4196e8e4411b077083c15fc7a977cf987f932d09d9258163faff6cdd99f"
+    },
+    {
+      "path": "notes-panel.css",
+      "size": 15106,
+      "sha256": "37ee7fcd565c6c83e6e7e252377973c41e951a6513a239cc7cd46664bc495bef"
+    },
+    {
+      "path": "notes-panel.js",
+      "size": 25545,
+      "sha256": "829dc3d97f7545e93dc9c96afca176a69bab3415c4924258a12ea470613e765b"
+    },
+    {
+      "path": "notes-position.js",
+      "size": 2908,
+      "sha256": "7d5a59fe240a843b511309f1fe28885f13207127391606bf0eefd4e9b32e5eb3"
+    },
+    {
+      "path": "notes-store.js",
+      "size": 2537,
+      "sha256": "f69de76473254ebb476f51b0527a07f1064c958015a7f98c0c8ab0155b268fb4"
+    },
+    {
+      "path": "official_questions.json",
+      "size": 1063173,
+      "sha256": "7b881f089fa5c5275741982b756bda8fc5de42dc88336637469681dac2715da7"
+    },
+    {
+      "path": "old_type_written.js",
+      "size": 2398,
+      "sha256": "ababd6fc64960a3ca26ca1c899eef3a782be41508c75f5fe836107334d26b01e"
+    },
+    {
+      "path": "old_type_written.json",
+      "size": 16231,
+      "sha256": "09bee14357d1a96b553c8eadb60f9500b430067ce020037d568acc3228498db1"
+    },
+    {
+      "path": "pdf-library.html",
+      "size": 4480,
+      "sha256": "7fc6d4806aaaa972e624c3bc5815bdd7a86f796f6554c288819e277336b7787b"
+    },
+    {
+      "path": "pdf-library.js",
+      "size": 6678,
+      "sha256": "5673079dfb5dfa3041f8e05ba7d725ae26ba54727bdb33bae42092502a8d11d1"
+    },
+    {
+      "path": "piges.html",
+      "size": 42281,
+      "sha256": "5494812254828ada63cbc5249d4697e884e39cb76cfd214f357099d608e243f4"
+    },
+    {
+      "path": "practical-exam.css",
+      "size": 5913,
+      "sha256": "05fcba7623c05abd6f44ff3b31e373dacab20f72240f870a977844c4a436392e"
+    },
+    {
+      "path": "practical-exam.js",
+      "size": 2114,
+      "sha256": "0d89fc6a48238b862af9fa3fc312f76bfa0ab75e9a7e0e429eedf8bac148b8f6"
+    },
+    {
+      "path": "practical_exam.html",
+      "size": 45348,
+      "sha256": "5234c908831655945cf38705c944a3f2bd9ea7c0131ad54652535a8d64248eff"
+    },
+    {
+      "path": "profession-acts.js",
+      "size": 18937,
+      "sha256": "fe82bc06aa1d3251f957a5f2375d227c28583183cf8705a2c13ec2b84f1ca38f"
+    },
+    {
+      "path": "profession-law.html",
+      "size": 23507,
+      "sha256": "d434e8613b713e0ab00dc11c2f4a8e9b55a850fe3d155801ee9106e926739fce"
+    },
+    {
+      "path": "progress.js",
+      "size": 7616,
+      "sha256": "54b26a20e4f46923bbdf5d0a2c83920765a5024760a9762d5eab96982ceb9950"
+    },
+    {
+      "path": "reader.css",
+      "size": 7018,
+      "sha256": "d22f2350705cc117063d84af21997918c32e386ad2a32d5c76e058509ea3415f"
+    },
+    {
+      "path": "reader.js",
+      "size": 2117,
+      "sha256": "e4798366d40e734c524ab29c19249ebc43dd36d3befa8770ea114d12a01fc855"
+    },
+    {
+      "path": "repair.html",
+      "size": 2762,
+      "sha256": "861ef7f81ee872d40b747887640659c8028afc81d0e282d7635f7bfe15c9ced8"
+    },
+    {
+      "path": "saek-auto-video-drafts.json",
+      "size": 587,
+      "sha256": "d9bd0427d6f0f91d7b7b075720c87bc214a73de204ef9a575f8ea462e3069ab4"
+    },
+    {
+      "path": "saek-circulation.svg",
+      "size": 2368,
+      "sha256": "54c88b04bb58eab7715912d4dad6fd6a8b0fedb7a91492fd79f07f97754c7204"
+    },
+    {
+      "path": "saek-course-01.html",
+      "size": 78322,
+      "sha256": "8c4135b99a4ee8db5357515d56317d1a999f2493108765d5c294db6ce6581c13"
+    },
+    {
+      "path": "saek-course-02.html",
+      "size": 70851,
+      "sha256": "f56b875a83dade8b3306efd6086aac3f2ca84862068164eeea2435ab04970b83"
+    },
+    {
+      "path": "saek-course-03.html",
+      "size": 57779,
+      "sha256": "e8f05d9c250619e09b6d18dfcc25df7027aff3e407655073cf9eb22596e5197f"
+    },
+    {
+      "path": "saek-course-04.html",
+      "size": 57635,
+      "sha256": "a8d18acaaabe52c65bd2fb9eef4a33b58dd968f03d063d35826fe37846b579f0"
+    },
+    {
+      "path": "saek-course-05.html",
+      "size": 77288,
+      "sha256": "58ff14f932efdec49e21d4474b7846ad5d9dd668edbe4d00f6f83af169324805"
+    },
+    {
+      "path": "saek-course-06.html",
+      "size": 56298,
+      "sha256": "b2076c0fbdb26abcdea0990fb2ee52cc94be24c6711a6f4968ff7a4c687c4e6f"
+    },
+    {
+      "path": "saek-course-07.html",
+      "size": 76554,
+      "sha256": "f977096b14b56582913c0c04f296d237bad47839034b9adfe09e419fe5701ed9"
+    },
+    {
+      "path": "saek-course-08.html",
+      "size": 69873,
+      "sha256": "dd4b64e8f7347965074bfde8e67dab3866d80020cd24369dc50ea398139e8673"
+    },
+    {
+      "path": "saek-course-09.html",
+      "size": 70132,
+      "sha256": "9a7940626adbf2a099d7e74dc16ad0100dcb1dff4b796254581a488dfcc5720e"
+    },
+    {
+      "path": "saek-course-10.html",
+      "size": 110680,
+      "sha256": "e1824a44ab4fd1e20494cb3a8e054c920c3d8e8ee6a604e024568d98923a66c5"
+    },
+    {
+      "path": "saek-course-11.html",
+      "size": 64696,
+      "sha256": "fba9a18bdd56ababcecd0f3eb17130364b76193553657096da09918fc81c4bb6"
+    },
+    {
+      "path": "saek-course-12.html",
+      "size": 77464,
+      "sha256": "0054093eacc2d9c317e0c8f882a3f4e9b958d9819489f733b582135981719ef3"
+    },
+    {
+      "path": "saek-course-13.html",
+      "size": 71454,
+      "sha256": "f896c71e096afd2bd1feee157fdaa85fc838f642e625b9ee2bea21457d763c0d"
+    },
+    {
+      "path": "saek-course-14.html",
+      "size": 98278,
+      "sha256": "4d7c8515f3a85ddfcc348c25640468b2756317aedba6e3646628ca105718653b"
+    },
+    {
+      "path": "saek-course-15.html",
+      "size": 82701,
+      "sha256": "d5bbf49a0a7930017d809f586a6d8510afd41832cc321cd9896f1860139198d6"
+    },
+    {
+      "path": "saek-course-16.html",
+      "size": 85356,
+      "sha256": "0b75f3674fea3a7b2c002541905fabb6af10e588df0c17e7a768ce18c42d5fd9"
+    },
+    {
+      "path": "saek-course-17.html",
+      "size": 90101,
+      "sha256": "ab737e3dbcca8ce6aa9f8ec644baf50d337c6feb4f6e0268ee1969eea2fd9dc5"
+    },
+    {
+      "path": "saek-course-18.html",
+      "size": 89249,
+      "sha256": "576f22191df49b9b584aac97d440164b42d9573f1c9534f5752b29adf086feb8"
+    },
+    {
+      "path": "saek-course-19.html",
+      "size": 82675,
+      "sha256": "116f08da4e9d031170f048cca9ace83252b44484610dd3862aed5a7cf0fc585a"
+    },
+    {
+      "path": "saek-course-20.html",
+      "size": 83474,
+      "sha256": "7e883a918ef1e7941244871d21c287a55273fd52b36dee77768b787e9930e223"
+    },
+    {
+      "path": "saek-course-series.css",
+      "size": 3556,
+      "sha256": "c38a1050aca26203a91287ea3f10cb09e62ac1324591f219b039128c8ee33383"
+    },
+    {
+      "path": "saek-course-series.js",
+      "size": 8403,
+      "sha256": "87581e83b101734ad25ddeba71a42168d8f46cce35cf5f3db819801a703b0c91"
+    },
+    {
+      "path": "saek-exam-engine.js",
+      "size": 2709,
+      "sha256": "f80f37c6fdde7555d2a25d0128348af19908fb62d0f8dec725e087d14046c3d0"
+    },
+    {
+      "path": "saek-exams-bank.json",
+      "size": 137051,
+      "sha256": "a44a93cdfc45eb51a654c2e69466b265138ff3b634704ac8fb71224c2f8475e7"
+    },
+    {
+      "path": "saek-exams.css",
+      "size": 4691,
+      "sha256": "9acc0c758739dfa8f9488dc3d64c8e6da356f222a73b376142f032017f1ca9e4"
+    },
+    {
+      "path": "saek-exams.html",
+      "size": 9065,
+      "sha256": "966dcb9cb5dde78be74ac2bc71e45222940599ae4c71f3f8253d9b061a281757"
+    },
+    {
+      "path": "saek-exams.js",
+      "size": 14128,
+      "sha256": "120f0b08f3a50c6e6bebb0f54514947f573d017eb1c25f28f151cc8d47238a86"
+    },
+    {
+      "path": "saek-hub.css",
+      "size": 9734,
+      "sha256": "b5a70a114d8afbd34633e1c322856d37cfc50bc567e2450d5c925d196c9a1350"
+    },
+    {
+      "path": "saek-hub.js",
+      "size": 4901,
+      "sha256": "6aa4797045da0673263a400b75e31a17ff2a1e84d7f641aa32ef0fec86562e47"
+    },
+    {
+      "path": "saek-image-audit-2026.json",
+      "size": 42527,
+      "sha256": "53601021fad2a32c109efba9e6cab07c1f93fa36413395ae0a93d6bd1d122024"
+    },
+    {
+      "path": "saek-learning-maps.js",
+      "size": 44448,
+      "sha256": "eee1111f018afcb7b7192d6151a4003385ef33ee7eaaadcf331c29058a88fb0c"
+    },
+    {
+      "path": "saek-organs.svg",
+      "size": 3919,
+      "sha256": "d9453b53815e76bd56506b755cb3cb9765112d03b63bed70014078dd85e3a9e3"
+    },
+    {
+      "path": "saek-physiology-maps.js",
+      "size": 53333,
+      "sha256": "192b67ab63cdc79a95af18bb099fedb719634c31fcc40e536ca4d15b21c67b10"
+    },
+    {
+      "path": "saek-reader-safe.js",
+      "size": 4073,
+      "sha256": "d7009fb8dbd432b1e6708a4bfa1f0cef827fdc3d05030946539cea6e6ab925fb"
+    },
+    {
+      "path": "saek-reviewed-image-ui.js",
+      "size": 8099,
+      "sha256": "36f9ef0d7814cf5a56095b62ec1104619a4eb0b9c84bd503224011d32299b26d"
+    },
+    {
+      "path": "saek-search-A.json",
+      "size": 274172,
+      "sha256": "28f531d28dc030958b6f0a88a0227a659c1aab59dfb8d671f6923b49679629d5"
+    },
+    {
+      "path": "saek-search-B.json",
+      "size": 335767,
+      "sha256": "2a2968bb9b9d2f68023ff9e4a7581ff7ace1538515d0b3504df467a90898e538"
+    },
+    {
+      "path": "saek-search-C.json",
+      "size": 244906,
+      "sha256": "a3eaf1102067b9cc3d4dfb289a15304894f7d1c062dcf56ef78cce7d7537f4df"
+    },
+    {
+      "path": "saek-search-D.json",
+      "size": 248322,
+      "sha256": "6b1eafc2a5abc8520309520b9a00f34cbc34b6fac953c94dd827582bd1e4738b"
+    },
+    {
+      "path": "saek-skeleton.svg",
+      "size": 1741,
+      "sha256": "dc18571cb1848d32e84be2f62ca0d0fbc9f923c2f20d31d085f1975a01930c6e"
+    },
+    {
+      "path": "saek-video-player.js",
+      "size": 1704,
+      "sha256": "b43cc32773b33443a0ad5ec6634d5dfeccff00f157ec7bbfcc2ae082e168cc6f"
+    },
+    {
+      "path": "saek-videos.js",
+      "size": 10038,
+      "sha256": "68da21c7684972550ad567e03f0cc429a33e69eee4efe19a738b90d6fb7b9a6e"
+    },
+    {
+      "path": "saek-visual-ui.css",
+      "size": 14986,
+      "sha256": "4da6ae068b7e9ec01670190013d49f507ed66018a5f87f8ff78b98ce2136a025"
+    },
+    {
+      "path": "saek-visual-ui.js",
+      "size": 4273,
+      "sha256": "22942636764c4c9614b9587b70cf2f7aebd8a5aacc6121656d52715cd6a7240f"
+    },
+    {
+      "path": "saek.html",
+      "size": 18522,
+      "sha256": "4f7021e621dd725f3414e951e64e309cbe80403a9d18ce15ef0c244952a690bf"
+    },
+    {
+      "path": "scripts/capture-scrimba-anatomy10.mjs",
+      "size": 3351,
+      "sha256": "791e3e9a316d92a8e089eea7ca90286d1a0e70e9fb6fd4b6ee33c8f316c52fea"
+    },
+    {
+      "path": "scripts/check-saek-images.mjs",
+      "size": 5326,
+      "sha256": "806f17587a9d88767d99e3b82b483cde3675f33765f659a66dd00b6951be92c5"
+    },
+    {
+      "path": "scripts/clinical_review_gate.py",
+      "size": 1463,
+      "sha256": "a15712e3283774125af2140468c00768afae9e139783a390d8e7de8fbdae6d59"
+    },
+    {
+      "path": "scripts/generate-pharma-review-note.py",
+      "size": 14511,
+      "sha256": "822fdd1c361b7812678b1cdc360e6009c4e6ea2eb63507d4de56f5411413cbdd"
+    },
+    {
+      "path": "scripts/generate-saek-explain.mjs",
+      "size": 10829,
+      "sha256": "6fbaefc40fef17d5d38e5f47cc3e0017ceae0d7ab99d1ba7bdd26453a59d9987"
+    },
+    {
+      "path": "scripts/media_gate.py",
+      "size": 3606,
+      "sha256": "8c7bdda945ec6f75826bd19fe02cb1f0b4e8fec64821045d433b70311b568435"
+    },
+    {
+      "path": "scripts/release_smoke.py",
+      "size": 2024,
+      "sha256": "3c39a1ad2c71d57df4665623bb469e8c28d5d5b536c6221d01acc40c1251cf8d"
+    },
+    {
+      "path": "scripts/test-mentor-source-index.mjs",
+      "size": 3679,
+      "sha256": "6791b35705b5cefcf272660433eaba4e36e49a801b16d7d485f430f33597c7a6"
+    },
+    {
+      "path": "scripts/test-seminar-sync.cjs",
+      "size": 4593,
+      "sha256": "ed1d3b28098e16392ea82868be611d0d9fb1bb3b0be5568017d1d7096baf5649"
+    },
+    {
+      "path": "scripts/verify-account.mjs",
+      "size": 4505,
+      "sha256": "8071e042ca0a00c62324d6fdb8049d0a656045c9bf8aa08552efc02fd7cf499b"
+    },
+    {
+      "path": "scripts/verify-ai-feedback.mjs",
+      "size": 2357,
+      "sha256": "1040083133df69d56233f02a3dfafe22d25a20e7b87477070546e9f787b45803"
+    },
+    {
+      "path": "scripts/verify-anatomy-browser.mjs",
+      "size": 7291,
+      "sha256": "69f61920467363ba0e7b4f043d1b098879040e465a853963879cecd5d3bb5d7a"
+    },
+    {
+      "path": "scripts/verify-appwrite.mjs",
+      "size": 3931,
+      "sha256": "b093543235d18dc56a03164c1fa4a51c156500fbf3af147bafc327426f134ba3"
+    },
+    {
+      "path": "scripts/verify-education.mjs",
+      "size": 7982,
+      "sha256": "d955bb02aca045027ec2a615dd5ff9318351fa4ac979f8110ebed3c6703eb72a"
+    },
+    {
+      "path": "scripts/verify-eoppep-read-progress.mjs",
+      "size": 2360,
+      "sha256": "f625b6e8433a108e5145f8894a2fb3e9a5d90494c987c1e8a330ee88cd38e73d"
+    },
+    {
+      "path": "scripts/verify-eoppep.mjs",
+      "size": 3869,
+      "sha256": "80b633d5e01da270a822d281449da0ff6dc5b52974fc965ef2d24ac26b4c5cd9"
+    },
+    {
+      "path": "scripts/verify-home-mentor-aed.mjs",
+      "size": 3705,
+      "sha256": "4e84c75b8890892ba7835a9a25f0e035ae6326c426db162d7b2bfd386f3cce5c"
+    },
+    {
+      "path": "scripts/verify-mentor-browser.mjs",
+      "size": 26547,
+      "sha256": "e5d8646006ca3d79bce6c069cd34bc34a33dd18c9ab08f6faaa47197c7de480c"
+    },
+    {
+      "path": "scripts/verify-mentor-roadmap.test.mjs",
+      "size": 1457,
+      "sha256": "6f6c3a86db4ec2d8f44e4b29a759001ea3b5b6c2107f5c66434726d6491fb72c"
+    },
+    {
+      "path": "scripts/verify-notes-panel.mjs",
+      "size": 10125,
+      "sha256": "340ec6c096c252fb8ba3cf06f6c0d9a7d12464e783688ff9985770e04b51105b"
+    },
+    {
+      "path": "scripts/verify-notes-position.mjs",
+      "size": 5624,
+      "sha256": "ca37114fd3dea4b9e346c836d5d9aba0d3422ef8ff0dfe9638234006ca891d4a"
+    },
+    {
+      "path": "scripts/verify-pharmacology.mjs",
+      "size": 7875,
+      "sha256": "253f54e56cf872c7917983ec3b97972f53a01f8e8ad02fdf30acf254bbdf907f"
+    },
+    {
+      "path": "scripts/verify-profession-acts.mjs",
+      "size": 6580,
+      "sha256": "b8ad5da00374e94d7633d15f2c1653558800c7ef96a28913133f24c729259a4a"
+    },
+    {
+      "path": "scripts/verify-progress-panel.cjs",
+      "size": 5915,
+      "sha256": "9d731cecad168cc97ed5cc91663eba7f775ca891b60a0988e4b3cc13b60cf758"
+    },
+    {
+      "path": "scripts/verify-reader-search.mjs",
+      "size": 5138,
+      "sha256": "9b4791feb6659607c76cb457331536386ea48b3fd8d0f9f2ed110b970faf776f"
+    },
+    {
+      "path": "scripts/verify-saek-reader-safety.cjs",
+      "size": 4235,
+      "sha256": "5efd3e611b857c0333a05891fcdcf2a0537dec821f659f4346acbefdda5b5722"
+    },
+    {
+      "path": "scripts/verify-saek.mjs",
+      "size": 3945,
+      "sha256": "0e6fd8c5b7b65f9209e47d46152e62f22766cf8e002a6fdaac6dab755068dc26"
+    },
+    {
+      "path": "scripts/verify-study-scheduler.mjs",
+      "size": 2528,
+      "sha256": "0e1cd6d57d9872cbad131a79c756ee0309259fd25805b808d2c3c35d8eab09dc"
+    },
+    {
+      "path": "scripts/verify-sync-codec.mjs",
+      "size": 3232,
+      "sha256": "f5083c36168c51d127ec70c69830f5b616c3327a925a1f524f367c0c7c1d53ec"
+    },
+    {
+      "path": "scripts/verify-sync.mjs",
+      "size": 3450,
+      "sha256": "257e2b475a8f715633db633299df5a64d9a19b777eb23ed38de23e4707c3ee54"
+    },
+    {
+      "path": "scripts/video-second-ai-review.mjs",
+      "size": 8284,
+      "sha256": "3a8f24660efb2c00d3d267fc14ba83093cadeac41c61838cde5f5b146ae38423"
+    },
+    {
+      "path": "search.html",
+      "size": 4485,
+      "sha256": "f1b91e41f839739b34d0b78d66d1f4ebbfde40b6fb824f739dfac78188615651"
+    },
+    {
+      "path": "seminar-prep.css",
+      "size": 13975,
+      "sha256": "78a68505f325d2f418f29fff58d6fdcf22c2320a3f3144785b7a9431726b6eb5"
+    },
+    {
+      "path": "seminar-prep.html",
+      "size": 14266,
+      "sha256": "c750a7cba7fcb03ee4213045ede776b67e209661fb0d1ff55e4d00a3b3e0d9bb"
+    },
+    {
+      "path": "seminar-prep.js",
+      "size": 37167,
+      "sha256": "a410718bfae4c1114882983540252fabf87eb02b8598a1a3fec499de782a9100"
+    },
+    {
+      "path": "seminar-sync.js",
+      "size": 5922,
+      "sha256": "ca558637f6ecfb3a8d15a44abee8f3c850572a8798575764be2c7fd7fb7a1206"
+    },
+    {
+      "path": "seminar-tracks.js",
+      "size": 70527,
+      "sha256": "8d09043d9fb716b8c1417a9ddb5457de474c62427c0d72cf77c84a44485562ca"
+    },
+    {
+      "path": "sources-ui.css",
+      "size": 2659,
+      "sha256": "99dac0456c5f0092c65025ed1003525c244820f18c56871982c132a621adddb4"
+    },
+    {
+      "path": "sources-ui.js",
+      "size": 2649,
+      "sha256": "f042f33f659d393ea0c29e8ef067d197175573c442762e837be55ebc0d91a536"
+    },
+    {
+      "path": "study-resume.js",
+      "size": 5683,
+      "sha256": "ff3c2531657be6c5756a3122cb94ff9d067ca908f99dbddde98df758b5e3095f"
+    },
+    {
+      "path": "study-scheduler.js",
+      "size": 3591,
+      "sha256": "6d71fe1bc39e05132a521c6fb337160f1d084c0d6cf5dc23c08451ef06f964c4"
+    },
+    {
+      "path": "study_map.html",
+      "size": 17477,
+      "sha256": "637e41d6f3b88b36c216655662cf22d37ed643a0fbd4b087deb39a7d3d8df2a2"
+    },
+    {
+      "path": "styles.css",
+      "size": 46114,
+      "sha256": "f917fadeae272fda3a5fcc2025609b1e36b5467704dd11665f4df371d7b050dd"
+    },
+    {
+      "path": "supplementary_exercises.json",
+      "size": 160145,
+      "sha256": "c962614a29b6353f357abe301989a526096ea995479a1b2b5abd0eb969523b74"
+    },
+    {
+      "path": "supplementary_practice.html",
+      "size": 29867,
+      "sha256": "46063a85b7fb61531b9dad36e107c6fffa4945a68423867c71e3a51a46e53abc"
+    },
+    {
+      "path": "sw.js",
+      "size": 4788,
+      "sha256": "cd836e770361d056a8fb0f05dd59ff426311eab24f71584a9b829b886dd6307a"
+    },
+    {
+      "path": "theme-init.js",
+      "size": 1057,
+      "sha256": "ef1140ca3ca3230447d8cbe43c6cf5e8b691cae8c2b653bceaf8da14e281468f"
+    },
+    {
+      "path": "theory.html",
+      "size": 18872,
+      "sha256": "3dd98448dd22640fac2f5e28f170319a83ec73e933bb562e24c14ad81d627e65"
+    },
+    {
+      "path": "ui-guide.js",
+      "size": 5778,
+      "sha256": "29519bd13e375fa907528467d9d5a574929bfbc5499ff124e359013d6e67db09"
+    },
+    {
+      "path": "ui-tools/anatomy-3d/README.md",
+      "size": 8239,
+      "sha256": "49026627031f7694379f051e5bbb3c8a536b41479e5ad71841fbdb6231a87313"
+    },
+    {
+      "path": "ui-tools/anatomy-3d/REAL-MODEL-REQUIREMENTS.md",
+      "size": 9156,
+      "sha256": "f1de466ebd9eaa0616981a823866e27fdbf06acf0c8899287b678b1fe373299d"
+    },
+    {
+      "path": "ui-tools/anatomy-3d/anatomy-responsive.css",
+      "size": 6873,
+      "sha256": "edeb810834be8f9cf1343fae75dfb5ae1e64dab5222b17ab3249138fb3e3ebfa"
+    },
+    {
+      "path": "ui-tools/anatomy-3d/anatomy.css",
+      "size": 17269,
+      "sha256": "677819aeaa5435f878ff9c02504138167ecbabe6bbbd44666990f5501dc5dcaf"
+    },
+    {
+      "path": "ui-tools/anatomy-3d/anatomy.js",
+      "size": 29728,
+      "sha256": "f75be90e258afefe892acb277e9cbc2a9d4bbba77764620f8bd2aab6947b1988"
+    },
+    {
+      "path": "ui-tools/anatomy-3d/greek-names.js",
+      "size": 9432,
+      "sha256": "e3b503e8fa5605283525f249576774c44b628749c265c179f7808cba0bde54a5"
+    },
+    {
+      "path": "ui-tools/anatomy-3d/hires-anatomy.js",
+      "size": 35125,
+      "sha256": "ad45487dfb1f0a1cf7c4893ebd3f4eaedbfa0644505b73085ebb9e17c3658d97"
+    },
+    {
+      "path": "ui-tools/anatomy-3d/index.html",
+      "size": 14520,
+      "sha256": "74969e11a3e5a64427282609a7edabe43d943154134223c241e2a41406e4cef0"
+    },
+    {
+      "path": "ui-tools/anatomy-3d/saek-jumps.css",
+      "size": 1586,
+      "sha256": "3778c2b30dc0841078cdbc2fc3a2427a989288516d2162ce115160ab389c5314"
+    },
+    {
+      "path": "ui-tools/anatomy-3d/saek-jumps.js",
+      "size": 7146,
+      "sha256": "e3b8f5a0223dba6534699c8bace45108fcfc01d1f07379939bb4b1a4a423b799"
+    },
+    {
+      "path": "ui-tools/anatomy-3d/test-greek-names.mjs",
+      "size": 2236,
+      "sha256": "46423513480e503026e83b3586942a6a311d9722c90643aa77f1166cf0c38f92"
+    },
+    {
+      "path": "ui-tools/anatomy-3d/validate_remote_assets.py",
+      "size": 2528,
+      "sha256": "56a87ce4e2ad024220ee6d19cfed0d39703bdd34632e6047f342e52d866363da"
+    },
+    {
+      "path": "ui-tools/mentor-roadmap.html",
+      "size": 8270,
+      "sha256": "dfe945144b434077a01822a843832c1e7dd9c59b16ee3e868e8524ad9a091c76"
+    },
+    {
+      "path": "ui-tools/mentor-roadmap.js",
+      "size": 16930,
+      "sha256": "9068faf3a5f5d73c1bd31b57bff0fad59d6249edcb197afb5b859a0a435794bd"
+    },
+    {
+      "path": "updates.js",
+      "size": 10837,
+      "sha256": "149487b78109126d6e8af92ec69f341a13a05f4561f1840af992a8c8623dcc01"
+    },
+    {
+      "path": "version.json",
+      "size": 7715,
+      "sha256": "8ee97b3fc44664b20324233ef72612023bd0fcd1de6032968560b466e53f7d93"
+    },
+    {
+      "path": "video-reviews/references/README.md",
+      "size": 1267,
+      "sha256": "935553ce45880b8a948d36aae5a5944cb5918b8b6bbcdd57d2b96270e9db62e9"
+    },
+    {
+      "path": "written_exam.html",
+      "size": 5486,
+      "sha256": "b9bb68487a7c98a70f5fad7e5e9da5ac907d85a4e6f41768f6eb0a162f59fdd8"
+    }
+  ],
+  "excluded": [
+    {
+      "path": ".github/pull_request_template.md",
+      "reason": "backend/workflow/vendor isolated from V2"
+    },
+    {
+      "path": ".github/workflows/ai-feedback-tests.yml",
+      "reason": "backend/workflow/vendor isolated from V2"
+    },
+    {
+      "path": ".github/workflows/anatomy-3d-check.yml",
+      "reason": "backend/workflow/vendor isolated from V2"
+    },
+    {
+      "path": ".github/workflows/audit-scrimba-anatomy10.yml",
+      "reason": "backend/workflow/vendor isolated from V2"
+    },
+    {
+      "path": ".github/workflows/clinical-review.yml",
+      "reason": "backend/workflow/vendor isolated from V2"
+    },
+    {
+      "path": ".github/workflows/contacts-aed-check.yml",
+      "reason": "backend/workflow/vendor isolated from V2"
+    },
+    {
+      "path": ".github/workflows/home-mentor-aed.yml",
+      "reason": "backend/workflow/vendor isolated from V2"
+    },
+    {
+      "path": ".github/workflows/media-gate.yml",
+      "reason": "backend/workflow/vendor isolated from V2"
+    },
+    {
+      "path": ".github/workflows/mentor-bibliography.yml",
+      "reason": "backend/workflow/vendor isolated from V2"
+    },
+    {
+      "path": ".github/workflows/mentor-browser-smoke.yml",
+      "reason": "backend/workflow/vendor isolated from V2"
+    },
+    {
+      "path": ".github/workflows/mentor-foundation-verify.yml",
+      "reason": "backend/workflow/vendor isolated from V2"
+    },
+    {
+      "path": ".github/workflows/pharmacology-verify.yml",
+      "reason": "backend/workflow/vendor isolated from V2"
+    },
+    {
+      "path": ".github/workflows/publish-pharma-review-pdf.yml",
+      "reason": "backend/workflow/vendor isolated from V2"
+    },
+    {
+      "path": ".github/workflows/real-browser-quality.yml",
+      "reason": "backend/workflow/vendor isolated from V2"
+    },
+    {
+      "path": ".github/workflows/release-smoke.yml",
+      "reason": "backend/workflow/vendor isolated from V2"
+    },
+    {
+      "path": ".github/workflows/saek-image-review.yml",
+      "reason": "backend/workflow/vendor isolated from V2"
+    },
+    {
+      "path": ".github/workflows/saek-verify.yml",
+      "reason": "backend/workflow/vendor isolated from V2"
+    },
+    {
+      "path": ".github/workflows/saek-video-second-ai.yml",
+      "reason": "backend/workflow/vendor isolated from V2"
+    },
+    {
+      "path": ".github/workflows/sync-verify.yml",
+      "reason": "backend/workflow/vendor isolated from V2"
+    },
+    {
+      "path": ".github/workflows/ui-fastlane.yml",
+      "reason": "backend/workflow/vendor isolated from V2"
+    },
+    {
+      "path": ".github/workflows/validate-and-sync-readme.yml",
+      "reason": "backend/workflow/vendor isolated from V2"
+    },
+    {
+      "path": "AGENTS.md",
+      "reason": "credentials, authentication, cloud sync, or unneeded placeholder"
+    },
+    {
+      "path": "account-ui.js",
+      "reason": "credentials, authentication, cloud sync, or unneeded placeholder"
+    },
+    {
+      "path": "ai-grading-client.js",
+      "reason": "credentials, authentication, cloud sync, or unneeded placeholder"
+    },
+    {
+      "path": "ai-grading-config.js",
+      "reason": "credentials, authentication, cloud sync, or unneeded placeholder"
+    },
+    {
+      "path": "appwrite-client.js",
+      "reason": "credentials, authentication, cloud sync, or unneeded placeholder"
+    },
+    {
+      "path": "auth-callback.js",
+      "reason": "credentials, authentication, cloud sync, or unneeded placeholder"
+    },
+    {
+      "path": "cloud-sync.js",
+      "reason": "credentials, authentication, cloud sync, or unneeded placeholder"
+    },
+    {
+      "path": "docs/AI-GRADING.md",
+      "reason": "credentials, authentication, cloud sync, or unneeded placeholder"
+    },
+    {
+      "path": "docs/APPWRITE.md",
+      "reason": "credentials, authentication, cloud sync, or unneeded placeholder"
+    },
+    {
+      "path": "ekab-spoudi-safe-updates-v22.zip",
+      "reason": "credentials, authentication, cloud sync, or unneeded placeholder"
+    },
+    {
+      "path": "eoppep-page-17.webp",
+      "reason": "image scan requires source-rights review"
+    },
+    {
+      "path": "eoppep-page-18.webp",
+      "reason": "image scan requires source-rights review"
+    },
+    {
+      "path": "eoppep-source.pdf",
+      "reason": "credentials, authentication, cloud sync, or unneeded placeholder"
+    },
+    {
+      "path": "functions/answer-grader/FREE-SETUP.md",
+      "reason": "backend/workflow/vendor isolated from V2"
+    },
+    {
+      "path": "functions/answer-grader/eoppep-rubrics.json",
+      "reason": "backend/workflow/vendor isolated from V2"
+    },
+    {
+      "path": "functions/answer-grader/free-providers.js",
+      "reason": "backend/workflow/vendor isolated from V2"
+    },
+    {
+      "path": "functions/answer-grader/main.js",
+      "reason": "backend/workflow/vendor isolated from V2"
+    },
+    {
+      "path": "functions/answer-grader/package.json",
+      "reason": "backend/workflow/vendor isolated from V2"
+    },
+    {
+      "path": "functions/answer-grader/saek-exam-rubrics.json",
+      "reason": "backend/workflow/vendor isolated from V2"
+    },
+    {
+      "path": "functions/answer-grader/seminar-rubrics.json",
+      "reason": "backend/workflow/vendor isolated from V2"
+    },
+    {
+      "path": "functions/answer-grader/test.mjs",
+      "reason": "backend/workflow/vendor isolated from V2"
+    },
+    {
+      "path": "oauth-callback.html",
+      "reason": "credentials, authentication, cloud sync, or unneeded placeholder"
+    },
+    {
+      "path": "oauth-return.js",
+      "reason": "credentials, authentication, cloud sync, or unneeded placeholder"
+    },
+    {
+      "path": "original.pdf",
+      "reason": "credentials, authentication, cloud sync, or unneeded placeholder"
+    },
+    {
+      "path": "questions.json",
+      "reason": "credentials, authentication, cloud sync, or unneeded placeholder"
+    },
+    {
+      "path": "selida-008.png",
+      "reason": "image scan requires source-rights review"
+    },
+    {
+      "path": "selida-011.png",
+      "reason": "image scan requires source-rights review"
+    },
+    {
+      "path": "selida-012.png",
+      "reason": "image scan requires source-rights review"
+    },
+    {
+      "path": "selida-027.png",
+      "reason": "image scan requires source-rights review"
+    },
+    {
+      "path": "selida-030.png",
+      "reason": "image scan requires source-rights review"
+    },
+    {
+      "path": "selida-031.png",
+      "reason": "image scan requires source-rights review"
+    },
+    {
+      "path": "selida-034.png",
+      "reason": "image scan requires source-rights review"
+    },
+    {
+      "path": "selida-039.png",
+      "reason": "image scan requires source-rights review"
+    },
+    {
+      "path": "selida-047.png",
+      "reason": "image scan requires source-rights review"
+    },
+    {
+      "path": "selida-058.png",
+      "reason": "image scan requires source-rights review"
+    },
+    {
+      "path": "selida-087.png",
+      "reason": "image scan requires source-rights review"
+    },
+    {
+      "path": "sync-codec.js",
+      "reason": "credentials, authentication, cloud sync, or unneeded placeholder"
+    },
+    {
+      "path": "sync-local.js",
+      "reason": "credentials, authentication, cloud sync, or unneeded placeholder"
+    },
+    {
+      "path": "sync-model.js",
+      "reason": "credentials, authentication, cloud sync, or unneeded placeholder"
+    },
+    {
+      "path": "vendor/appwrite-29.1.0/LICENSE",
+      "reason": "backend/workflow/vendor isolated from V2"
+    },
+    {
+      "path": "vendor/appwrite-29.1.0/README.md",
+      "reason": "backend/workflow/vendor isolated from V2"
+    },
+    {
+      "path": "vendor/appwrite-29.1.0/account.js",
+      "reason": "backend/workflow/vendor isolated from V2"
+    },
+    {
+      "path": "vendor/appwrite-29.1.0/chunks/query-CfsOKCEq.js",
+      "reason": "backend/workflow/vendor isolated from V2"
+    },
+    {
+      "path": "vendor/appwrite-29.1.0/client.js",
+      "reason": "backend/workflow/vendor isolated from V2"
+    },
+    {
+      "path": "vendor/appwrite-29.1.0/id.js",
+      "reason": "backend/workflow/vendor isolated from V2"
+    },
+    {
+      "path": "vendor/appwrite-29.1.0/storage.js",
+      "reason": "backend/workflow/vendor isolated from V2"
+    },
+    {
+      "path": "workers/answer-grader/src/index.js",
+      "reason": "backend/workflow/vendor isolated from V2"
+    },
+    {
+      "path": "workers/answer-grader/wrangler.jsonc",
+      "reason": "backend/workflow/vendor isolated from V2"
+    }
+  ],
+  "not_available_from_public_git": [
+    "personal study progress and notes saved on devices",
+    "private account records, cloud data and passwords",
+    "API keys and signing certificates",
+    "external live services, third-party media rights and deployed backends"
+  ]
+}
