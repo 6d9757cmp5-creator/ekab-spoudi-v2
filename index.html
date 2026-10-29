@@ -3,10 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#0E1A22">
+<meta name="theme-color" content="#11304a">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="ΕΚΑΒ Σπουδή V2">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="format-detection" content="telephone=no">
 <meta name="description" content="ΕΚΑΒ Σπουδή V2 — ανεξάρτητη δοκιμαστική web έκδοση για ΣΑΕΚ, ΕΟΠΠΕΠ και MENTOR OS.">
 <link rel="icon" href="assets/ic_launcher_ekab.jpg" type="image/jpeg">
-<link rel="apple-touch-icon" href="assets/ic_launcher_ekab.jpg">
+<link rel="apple-touch-icon" href="assets/icon-192.png" sizes="192x192">
 <link rel="manifest" href="manifest.webmanifest">
 <title>ΕΚΑΒ Σπουδή V2 — Δοκιμή</title>
 <style>
@@ -88,6 +92,8 @@ main{padding:13px 13px 100px}.contentwidth{max-width:750px}.native-hero{backgrou
 .nav button.on strong{color:#c4ecff}
 @media(max-width:500px){main{padding:11px 11px 94px}.native-stats{gap:5px}.native-stat b{font-size:14px}.native-stat span{font-size:9px}.native-module{min-height:87px;padding:11px}.native-icon{flex-basis:42px;height:42px}.native-module-title{font-size:13px}.native-module-copy small{font-size:10.8px}.native-module-badge{font-size:9.5px}.sectiontitle{font-size:16px}header .shell .header-actions button{padding:4px}}
 
+/* Safe-area padding when installed as a standalone iPhone web app. */
+@media (display-mode: standalone) { header { padding-top:env(safe-area-inset-top); } }
 </style>
 </head>
 <body>
