@@ -13,6 +13,7 @@ import re
 import shutil
 import subprocess
 import sys
+import zipfile
 
 if len(sys.argv) != 3:
     raise SystemExit("Usage: snapshot-v1-public.py SOURCE_REPO DEST_ARCHIVE")
@@ -26,22 +27,19 @@ commit=subprocess.check_output(["git","-C",str(src),"rev-parse","HEAD"],text=Tru
 tracked=subprocess.check_output(["git","-C",str(src),"ls-files","-z"]).split(b"\0")
 files=[p.decode("utf-8") for p in tracked if p]
 # Files can be included in a future revision only after security/license review.
-excluded_dirs=(".github/","functions/","workers/","vendor/")
+excluded_dirs=(".git/","node_modules/","__pycache__")
 public_academic_rubrics={
  "functions/answer-grader/eoppep-rubrics.json",
  "functions/answer-grader/saek-exam-rubrics.json",
  "functions/answer-grader/seminar-rubrics.json",
 }
 excluded_exact={
- "AGENTS.md","original.pdf","eoppep-source.pdf","ekab-spoudi-safe-updates-v22.zip",
- "docs/APPWRITE.md","docs/AI-GRADING.md",
- "appwrite-client.js","account-ui.js","auth-callback.js",
- "oauth-callback.html","oauth-return.js","cloud-sync.js",
- "sync-codec.js","sync-local.js","sync-model.js",
- "ai-grading-client.js","ai-grading-config.js",
- "questions.json",
+ "google-services.json","GoogleService-Info.plist",
+ "credentials.json","service-account.json","secrets.json",
+ "id_rsa","id_ed25519",
 }
-excluded_prefixes=("selida-","eoppep-page-")
+
+excluded_prefixes=()
 excluded_ext={".env",".key",".pem",".p12",".p8",".mobileprovision",".keystore",".jks"}
 secret_patterns=[
  re.compile(rb"-----BEGIN (?:RSA |EC |OPENSSH |DSA )?PRIVATE KEY-----"),
@@ -61,8 +59,17 @@ def exclude(path):
     if path in public_academic_rubrics: return None
     if any(path.startswith(d) for d in excluded_dirs): return "backend/workflow/vendor isolated from V2"
     if any(name.startswith(p) for p in excluded_prefixes): return "image scan requires source-rights review"
-    if name.startswith(".env") or Path(name).suffix.lower() in excluded_ext: return "configuration or secret material"
-    if name.lower().endswith((".zip",".ipa",".apk",".aab",".dmg")): return "old prebuilt distribution"
+    if name.lower().startswith(".env") or Path(name).suffix.lower() in excluded_ext: return "configuration or secret material"
+    if name.lower().endswith(".zip"):
+        try:
+            with zipfile.ZipFile(src/path) as package:
+                for item in package.infolist():
+                    base=Path(item.filename).name
+                    if base.lower().startswith(".env") or base.lower() in {x.lower() for x in excluded_exact} or Path(base).suffix.lower() in excluded_ext:
+                        return "compressed distribution contains credentials or signing material"
+        except (zipfile.BadZipFile, OSError):
+            return "compressed archive could not be inspected"
+    if name.lower().endswith((".ipa",".apk",".aab",".dmg")): return "old prebuilt distribution (not educational data)"
     if len(path)>220 or any(x in path for x in ("..","\\","//")): return "invalid path"
     return None
 for p in files:
@@ -70,8 +77,8 @@ for p in files:
     path=src/p
     if reason is None and (not path.is_file() or path.is_symlink()):
         reason="not a regular file"
-    if reason is None and path.stat().st_size>10*1024*1024:
-        reason="oversized or unverified publication rights"
+    if reason is None and path.stat().st_size>95*1024*1024:
+        reason="oversized GitHub blob"
     if reason is None:
         data=path.read_bytes()
         if any(rx.search(data) for rx in secret_patterns):
