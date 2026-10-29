@@ -1,6 +1,6 @@
 // Independent ΕΚΑΒ Σπουδή V2 service worker: network-first for boot scripts.
-const CACHE='ekab-spoudi-v2-offline-v4-boot-fix';
-const ASSETS=['./','./index.html','./main.js','./data.js','./extra-data.js','./manifest.webmanifest','./assets/icon-192.png','./assets/icon-512.png','./assets/ic_launcher_ekab.jpg','./assets/ekab_hero_banner.jpg'];
+const CACHE='ekab-spoudi-v2-offline-v5-auto-content';
+const ASSETS=['./','./index.html','./main.js','./data.js','./extra-data.js','./auto-update.js','./v1-content/v1-bridge.js','./v1-content/build-version.json','./manifest.webmanifest','./assets/icon-192.png','./assets/icon-512.png','./assets/ic_launcher_ekab.jpg','./assets/ekab_hero_banner.jpg'];
 self.addEventListener('install',event=>{
   event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(ASSETS)).then(()=>self.skipWaiting()));
 });
@@ -11,7 +11,7 @@ self.addEventListener('fetch',event=>{
   const request=event.request;
   if(request.method!=='GET'||new URL(request.url).origin!==self.location.origin)return;
   const url=new URL(request.url);
-  if(request.mode==='navigate'||request.destination==='script'||url.pathname.endsWith('.js')){
+  if(request.mode==='navigate'||request.destination==='script'||url.pathname.endsWith('.js')||url.pathname.endsWith('/build-version.json')){
     event.respondWith(fetch(request).then(response=>{
       if(response.ok){const copy=response.clone();event.waitUntil(caches.open(CACHE).then(cache=>cache.put(request,copy)));}
       return response;
