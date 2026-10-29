@@ -1,0 +1,74 @@
+name: Build EKAB Spoudi V2 iOS IPA (unsigned)
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'ios/**'
+      - 'project.yml'
+      - '.github/workflows/ios-ipa.yml'
+      - 'index.html'
+      - 'main.js'
+      - 'data.js'
+      - 'extra-data.js'
+      - 'assets/**'
+permissions:
+  contents: read
+jobs:
+  unsigned-ipa:
+    runs-on: macos-15
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - name: Show Xcode and install XcodeGen
+        shell: bash
+        run: |
+          set -euo pipefail
+          xcodebuild -version
+          if ! command -v xcodegen >/dev/null 2>&1; then brew install xcodegen; fi
+      - name: Bundle independent V2 Safari files for offline fallback
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p ios/WebAssets/assets ios/Assets.xcassets/AppIcon.appiconset
+          cp index.html main.js data.js manifest.webmanifest sw.js ios/WebAssets/
+          if test -f extra-data.js; then cp extra-data.js ios/WebAssets/; fi
+          cp -R assets/. ios/WebAssets/assets/
+          sips -z 1024 1024 assets/icon-512.png --out ios/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png >/dev/null
+          cat > ios/Assets.xcassets/AppIcon.appiconset/Contents.json <<'JSON'
+          {"images":[{"filename":"AppIcon-1024.png","idiom":"universal","platform":"ios","size":"1024x1024"}],"info":{"author":"xcode","version":1}}
+          JSON
+          test -s ios/WebAssets/index.html
+      - name: Generate standalone iOS project
+        run: xcodegen generate --spec project.yml
+      - name: Compile iPhone application without Apple signing
+        shell: bash
+        run: |
+          set -euo pipefail
+          xcodebuild -project EKABSpoudiV2.xcodeproj \
+            -scheme EKABSpoudiV2 \
+            -configuration Release \
+            -sdk iphoneos \
+            -destination 'generic/platform=iOS' \
+            -derivedDataPath "$RUNNER_TEMP/ekab-v2-build" \
+            CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO \
+            build
+      - name: Package actual .app into unsigned .ipa
+        shell: bash
+        run: |
+          set -euo pipefail
+          APP="$RUNNER_TEMP/ekab-v2-build/Build/Products/Release-iphoneos/EKABSpoudiV2.app"
+          test -d "$APP" && test -f "$APP/EKABSpoudiV2" || (echo 'Compiled iPhone .app missing' && exit 1)
+          test -f "$APP/WebAssets/index.html" || (echo 'Bundled Safari HTML missing' && exit 1)
+          mkdir -p out/Payload
+          ditto "$APP" out/Payload/EKABSpoudiV2.app
+          (cd out && /usr/bin/zip -qry ../EKAB-Spoudi-V2-unsigned.ipa Payload)
+          unzip -t EKAB-Spoudi-V2-unsigned.ipa | tail -1
+          ls -lh EKAB-Spoudi-V2-unsigned.ipa
+      - name: Upload unsigned IPA
+        uses: actions/upload-artifact@v4
+        with:
+          name: EKAB-Spoudi-V2-unsigned-IPA
+          path: EKAB-Spoudi-V2-unsigned.ipa
+          if-no-files-found: error
+          retention-days: 30
