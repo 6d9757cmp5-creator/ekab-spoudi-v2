@@ -1,0 +1,25 @@
+name: MENTOR unified tutor verification
+on:
+  push:
+    branches: [feature/mentor-one-adaptive-tutor]
+  pull_request:
+    paths: [main.js, index.html, mentor-adaptive.js, sw.js, scripts/**, .github/workflows/**]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check syntax
+        run: |
+          node --check main.js
+          node --check mentor-adaptive.js
+          node --check scripts/test-mentor-adaptive.cjs
+      - name: Verify personalized routing and isolation
+        run: node scripts/test-mentor-adaptive.cjs
+      - name: Verify V2 boot and one-MENTOR screen
+        run: node scripts/smoke-v2-web.cjs .
