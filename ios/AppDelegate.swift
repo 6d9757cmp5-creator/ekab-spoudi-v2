@@ -19,7 +19,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
 /// The same V2 site runs in Safari and in the iPhone app; this does NOT use the
 /// other EKAB Spoudi app, its Firebase account, or its stored progress.
 final class V2BrowserViewController: UIViewController, WKNavigationDelegate {
-    private let siteURL = URL(string: "https://6d9757cmp5-creator.github.io/ekab-spoudi-v2/")!
+    private let siteURL = URL(string: "https://6d9757cmp5-creator.github.io/ekab-spoudi-v2/?v=20261029-ios-startup-fix2")!
     private let webView = WKWebView(frame: .zero, configuration: WKWebViewConfiguration())
     private var offlineMode = false
 
@@ -35,7 +35,7 @@ final class V2BrowserViewController: UIViewController, WKNavigationDelegate {
         webView.scrollView.backgroundColor = webView.backgroundColor
         webView.scrollView.contentInsetAdjustmentBehavior = .automatic
         webView.allowsBackForwardNavigationGestures = true
-        webView.load(URLRequest(url: siteURL, cachePolicy: .returnCacheDataElseLoad, timeoutInterval: 20))
+        webView.load(URLRequest(url: siteURL, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 25))
     }
 
     override var preferredStatusBarStyle: UIStatusBarStyle { .lightContent }
