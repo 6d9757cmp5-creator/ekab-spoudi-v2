@@ -173,6 +173,9 @@ for rel in subprocess.check_output(["git","-C",str(source),"ls-files","-z"]).dec
 report["counts"]["v1_archived_index"]=len(file_index)
 source_links=sum(bool(x.get("sourceUrl")) for x in (sos.get("items",[]) if isinstance(sos,dict) else []))
 source_links+=sum(bool(x.get("source")) for x in (terms.get("items",[]) if isinstance(terms,dict) else []))
+report["counts"]["supplementary_exercises"]=len(saved.get("supplementary_exercises.json") or [])
+report["counts"]["old_written_questions"]=len(saved.get("old_type_written.json") or [])
+report["counts"]["mentor_bibliography"]=len((saved.get("mentor/library/source-index.json") or {}).get("sources",[]))
 report["counts"]["explicit_source_links"]=source_links
 report["counts"]["unsourced_sos_terms"]=report["counts"]["sos_questions"]+report["counts"]["medical_terms"]-source_links
 
@@ -182,6 +185,9 @@ payload={"chapters":chapters,
          "sos":sos.get("items",[]) if isinstance(sos,dict) else [],
          "medical_terms":terms.get("items",[]) if isinstance(terms,dict) else [],
          "saek_checks":checks.get("items",[]) if isinstance(checks,dict) else [],
+         "supplementary_exercises":saved.get("supplementary_exercises.json") or [],
+         "written_questions":saved.get("old_type_written.json") or [],
+         "mentor_sources":(saved.get("mentor/library/source-index.json") or {}).get("sources",[]),
          "file_index":file_index,
          "qa":{"sourceLinks":source_links,"withoutSource":report["counts"]["unsourced_sos_terms"],
                "clinicalReview":"not_independently_validated"},
@@ -223,6 +229,8 @@ for(const med of imported.medicines){
 window.EKAB_V2_LIBRARY=Object.freeze({
   sourceCommit:imported.origin_commit,sos:imported.sos,
   terms:imported.medical_terms,checks:imported.saek_checks,
+  exercises:imported.supplementary_exercises,written:imported.written_questions,
+  bibliography:imported.mentor_sources,
   files:imported.file_index,qa:imported.qa
 });
 window.EKAB_V2_V1_IMPORT=Object.freeze({sourceCommit:imported.origin_commit,
