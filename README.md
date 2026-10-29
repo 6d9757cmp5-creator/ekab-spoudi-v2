@@ -38,3 +38,11 @@
 **Σημείωση:** Αν η ρύθμιση Pages δεν ενεργοποιηθεί, ο παραπάνω σύνδεσμος δεν είναι ακόμη ενεργός. Δεν έχει γίνει παραγωγή native APK ή IPA.
 
 Μην συγχωνεύετε με το αρχικό GitHub. Μην μεταφέρετε το αρχικό `google-services.json`, `.env` ή προσωπικά στοιχεία.
+
+
+## Πιστότητα με το πρωτότυπο (29/10/2026)
+
+- Ο [αυθεντικός Android κώδικας](native-android/EKAB-Spoudi-V2-Exact-Android-Source.zip) περιέχει 86 αρχεία byte-for-byte με αναλυτικό αρχείο SHA256· εξαιρέθηκαν μόνον 2 αρχεία του παλιού Firebase και ένα προσωρινό εργαλείο.
+- Το [native Android APK workflow](.github/workflows/native-android-apk.yml) δημιουργεί δοκιμαστικό APK από το πρωτότυπο Kotlin/Jetpack Compose.
+- Η web έκδοση ανασχεδιάστηκε βάσει των πρωτότυπων `HomeScreen.kt`, `MentorHubScreen.kt` και `EkabNavigation.kt` με 6 καρτέλες, αλλά **δεν είναι πιστή 1:1 μεταφορά** όλων των λειτουργιών και απαιτείται περαιτέρω εργασία.
+- Το αρχικό `ekab-spoudi` παραμένει εντελώς ανεπηρέαστο.

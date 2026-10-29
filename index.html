@@ -63,6 +63,31 @@ header small{color:#b9cad6}
 .ecg svg{background:#071410;border:1px solid #1B643F}.ecg line{stroke:#0F3B25}.ecg polyline{stroke:#00E676}
 .profile{background:#1B3140}.empty{color:#C3C7CF}
 @media(max-width:500px){main{padding:13px 12px 105px}.hero{min-height:215px;padding:24px 19px}.grid{gap:10px}.card{padding:15px}.stat{padding:14px 4px}.card h3{font-size:15px}}
+
+/* Source-matched layout: Kotlin HomeScreen.kt / MentorHubScreen.kt / EkabNavigation.kt. */
+header{background:#11304a;position:sticky;top:0}header .shell{max-width:850px;padding:7px 13px;gap:9px;min-height:61px}
+header .shell>img,header .v2{display:none}header .shell .top-icon{background:#245778;color:#f2faff;border:0;border-radius:50%;width:37px;height:37px;font-size:19px;font-weight:750;flex-shrink:0}
+header .header-title{flex:1;min-width:0}header .header-title strong{color:#f2faff;font-size:18px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}header .header-title small{color:#bcd6e9;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:block}
+header .header-actions{display:flex;gap:0;flex:none}header .header-actions button{border:0;background:transparent;color:#64B5F6;padding:4px 5px;font-size:17px}
+main{padding:13px 13px 100px}.contentwidth{max-width:750px}.native-hero{background:#113d60;border-radius:19px;overflow:hidden;border:1px solid #246e9b}
+.native-hero-cover{background:linear-gradient(to top,rgba(0,42,79,.85),rgba(3,86,149,.2)),url('assets/ekab_hero_banner.jpg') center/cover;min-height:160px;padding:73px 17px 13px;color:#fff;display:flex;flex-direction:column;justify-content:flex-end}
+.native-hero-overline{font-weight:700;letter-spacing:.06em;color:#b8eaff;font-size:11px}.native-hero h1{margin:4px 0;font-size:24px;font-weight:800;color:#fff}.native-hero p{margin:1px 0 0;font-size:12px;color:#d1efff}
+.native-hero-progress{padding:13px 17px 12px;background:#0c3b61}.native-hero-progress strong{font-size:13px;color:#e2f7ff}.native-hero-progress .progress{height:8px;margin:8px 0 0;background:#13456e}.native-hero-progress .progress>div{background:#38b6ff}
+.native-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px;margin:16px 0}.native-stat{padding:11px 3px;background:#13476e;border:1px solid #27648d;border-radius:12px;text-align:center;min-width:0}.native-stat b{display:block;font-size:17px;color:#7ddaff;line-height:1.2}.native-stat span{font-size:10px;color:#d5e9fa;display:block;margin-top:5px}
+.sectiontitle{font-size:17px;color:#f4f9fc;margin:17px 0 10px}
+.native-modules{display:grid;gap:11px}.native-module{display:flex;align-items:center;text-align:left;gap:12px;padding:14px 12px;background:#104466;border:1px solid #245f85;border-radius:14px;width:100%;color:#f6fbff;min-height:92px;box-shadow:0 2px 8px rgba(0,0,0,.13)}
+.native-module.mentor-priority{background:linear-gradient(120deg,#07588f,#0875af);border:1px solid #43baff;box-shadow:0 0 0 1px rgba(33,155,243,.2)}
+.native-icon{display:grid;place-items:center;flex:0 0 47px;height:47px;border-radius:11px;background:var(--module-color);color:#fff;font-size:22px;font-weight:bold}
+.native-module-copy{min-width:0;flex:1}.native-module-title{font-size:15px;font-weight:800;line-height:1.3}.native-module-copy small{font-size:11.5px;color:#bed2df;display:block;line-height:1.35;margin:3px 0 5px}
+.native-module-badge{display:inline-block;padding:3px 7px;font-size:10.5px;border-radius:5px;background:#174c70;color:#90d6ff;font-weight:700}
+.mentor-priority .native-module-badge{background:#1674a9;color:#cbecff}.native-tag{color:white;font-size:8px;font-weight:800;border-radius:4px;padding:3px 5px;background:#dc383a;vertical-align:middle;white-space:nowrap}
+.native-chevron{font-size:25px;color:#8ccaf0;line-height:1}.native-quick{display:grid;grid-template-columns:1fr 1fr;gap:10px}.native-quick-tile{background:#104466;border:1px solid #245f85;border-radius:12px;display:flex;align-items:center;gap:9px;padding:13px;color:#e9f6ff;font-size:12px;text-align:left}.native-quick-tile b{font-size:22px;color:#6fc1fd}
+.mentor-hero{background:#142430;border:1px solid #36566d;border-radius:18px;padding:16px;color:#e6f5ff}.native-mentor-intro{display:flex;align-items:center;gap:12px}.native-mentor-intro h2{margin:0;font-size:22px}.native-mentor-intro p{font-size:11px;color:#78ccff;margin:4px 0}.mentor-hero>p{color:#b7c9d4;font-size:12px;margin:12px 0 0;line-height:1.6}.clinical-badge{background:#ffedc0;color:#744306;padding:3px 6px;border-radius:5px;font-size:9px;vertical-align:middle}
+.flashcard-native{text-align:center;padding:26px 20px}.flashcard-native h2{font-size:18px;margin:20px 0}.flashcard-native .answer{text-align:left}
+.nav{background:#0f5588;border-top:1px solid #276d96}.nav>div{max-width:750px}.nav button{color:#c2def3;padding:9px 1px 8px;font-size:10px}.nav button strong{font-size:19px}.nav button.on{border-top-color:#64b5f6;color:#fff;background:#0d659d}
+.nav button.on strong{color:#c4ecff}
+@media(max-width:500px){main{padding:11px 11px 94px}.native-stats{gap:5px}.native-stat b{font-size:14px}.native-stat span{font-size:9px}.native-module{min-height:87px;padding:11px}.native-icon{flex-basis:42px;height:42px}.native-module-title{font-size:13px}.native-module-copy small{font-size:10.8px}.native-module-badge{font-size:9.5px}.sectiontitle{font-size:16px}header .shell .header-actions button{padding:4px}}
+
 </style>
 </head>
 <body>
