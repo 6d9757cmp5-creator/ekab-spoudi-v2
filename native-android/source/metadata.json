@@ -1,0 +1,6 @@
+{
+  "name": "ΕΚΑΒ Σπουδή",
+  "description": "Εκπαιδευτικό βοήθημα για διασώστες και πληρώματα ασθενοφόρου ΕΚΑΒ. Μελέτη ΣΑΕΚ, πιστοποίηση ΕΟΠΠΕΠ, φαρμακολογία, σεμινάρια BLS/ALS & νομοθεσία.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
