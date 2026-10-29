@@ -205,7 +205,7 @@ window.EKAB_V2_V1_IMPORT=Object.freeze({sourceCommit:imported.origin_commit,
     bridge.replace("__PAYLOAD__",json.dumps(payload,ensure_ascii=False,separators=(",",":"))),
     encoding="utf-8")
 (site/"v1-content"/"migration-report.json").write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding="utf-8")
-(site/"v1-content"/"build-version.json").write_text(json.dumps({"v2":"web-v2","sourceCommit":report["source_commit"],"builtAt":report["generated_utc"]}),encoding="utf-8")
+(site/"v1-content"/"build-version.json").write_text(json.dumps({"v2":"web-v2","v2Commit":os.environ.get("GITHUB_SHA","local"),"sourceCommit":report["source_commit"],"builtAt":report["generated_utc"]}),encoding="utf-8")
 if report["counts"]["saek_chapters"]!=247 or report["counts"]["sos_questions"]!=314 or report["counts"]["medical_terms"]!=203 or report["counts"]["medicines_catalog"]!=76:
     raise RuntimeError("V1 inventory unexpected: "+str(report["counts"]))
 print("V1 migration summary",json.dumps(report["counts"],ensure_ascii=False))
