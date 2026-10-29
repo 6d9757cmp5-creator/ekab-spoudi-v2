@@ -19,7 +19,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
 /// The same V2 site runs in Safari and in the iPhone app; this does NOT use the
 /// other EKAB Spoudi app, its Firebase account, or its stored progress.
 final class V2BrowserViewController: UIViewController, WKNavigationDelegate {
-    private let siteURL = URL(string: "https://6d9757cmp5-creator.github.io/ekab-spoudi-v2/?v=20261029-ios-startup-fix2")!
+    private let siteURL = URL(string: "https://6d9757cmp5-creator.github.io/ekab-spoudi-v2/?app=ios-v1.0.2")!
     private let webView = WKWebView(frame: .zero, configuration: WKWebViewConfiguration())
     private var offlineMode = false
 
@@ -33,12 +33,27 @@ final class V2BrowserViewController: UIViewController, WKNavigationDelegate {
         webView.isOpaque = false
         webView.backgroundColor = UIColor(red: 14/255, green: 26/255, blue: 34/255, alpha: 1)
         webView.scrollView.backgroundColor = webView.backgroundColor
-        webView.scrollView.contentInsetAdjustmentBehavior = .automatic
+        // The website already uses viewport-fit=cover and CSS safe-area-inset-*.
+        // UIKit's automatic scroll insets stacked another notch/home-indicator
+        // offset on top of the web CSS, causing oversized blank bars.
+        webView.scrollView.contentInsetAdjustmentBehavior = .never
+        webView.scrollView.contentInset = .zero
+        webView.scrollView.scrollIndicatorInsets = .zero
+        webView.scrollView.automaticallyAdjustsScrollIndicatorInsets = false
+        webView.scrollView.keyboardDismissMode = .interactive
         webView.allowsBackForwardNavigationGestures = true
         webView.load(URLRequest(url: siteURL, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 25))
     }
 
     override var preferredStatusBarStyle: UIStatusBarStyle { .lightContent }
+
+    // Every foreground return checks the deployed web version. Installed
+    // binaries cannot update themselves; content is loaded from the live site.
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        webView.evaluateJavaScript("window.dispatchEvent(new Event('focus'))", completionHandler: nil)
+    }
+
 
     private func loadBundledPreview() {
         guard !offlineMode else { return }
@@ -53,10 +68,13 @@ final class V2BrowserViewController: UIViewController, WKNavigationDelegate {
     }
 
     func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
+        // A user-initiated navigation may cancel an older request (-999).
+        if (error as NSError).code == NSURLErrorCancelled { return }
         loadBundledPreview()
     }
 
     func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
+        if (error as NSError).code == NSURLErrorCancelled { return }
         loadBundledPreview()
     }
 
