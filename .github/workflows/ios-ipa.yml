@@ -3,15 +3,9 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths:
-      - 'ios/**'
-      - 'project.yml'
-      - '.github/workflows/ios-ipa.yml'
-      - 'index.html'
-      - 'main.js'
-      - 'data.js'
-      - 'extra-data.js'
-      - 'assets/**'
+concurrency:
+  group: ekab-v2-ipa-latest
+  cancel-in-progress: true
 permissions:
   contents: write
 jobs:
@@ -26,19 +20,28 @@ jobs:
           set -euo pipefail
           xcodebuild -version
           if ! command -v xcodegen >/dev/null 2>&1; then brew install xcodegen; fi
-      - name: Bundle independent V2 Safari files for offline fallback
+      - name: Bundle complete V2 website and V1 read-only library for offline fallback
         shell: bash
         run: |
           set -euo pipefail
           mkdir -p ios/WebAssets/assets ios/Assets.xcassets/AppIcon.appiconset
-          cp index.html main.js data.js manifest.webmanifest sw.js ios/WebAssets/
-          if test -f extra-data.js; then cp extra-data.js ios/WebAssets/; fi
+          cp index.html main.js data.js extra-data.js mentor-adaptive.js v1-study-library.js auto-update.js manifest.webmanifest sw.js ios/WebAssets/
           cp -R assets/. ios/WebAssets/assets/
+          git clone --quiet --depth 1 --branch main https://github.com/6d9757cmp5-creator/ekab-spoudi.git "$RUNNER_TEMP/ekab-v1-public"
+          python3 scripts/import-v1-data.py "$RUNNER_TEMP/ekab-v1-public" ios/WebAssets
+          node --check ios/WebAssets/main.js
+          node --check ios/WebAssets/mentor-adaptive.js
+          node --check ios/WebAssets/auto-update.js
+          node --check ios/WebAssets/v1-content/v1-bridge.js
+          node scripts/test-mentor-adaptive.cjs
+          node scripts/smoke-v2-web.cjs ios/WebAssets
+          node scripts/test-ipa-layout.cjs
           sips -z 1024 1024 assets/icon-512.png --out ios/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png >/dev/null
           cat > ios/Assets.xcassets/AppIcon.appiconset/Contents.json <<'JSON'
           {"images":[{"filename":"AppIcon-1024.png","idiom":"universal","platform":"ios","size":"1024x1024"}],"info":{"author":"xcode","version":1}}
           JSON
           test -s ios/WebAssets/index.html
+          test -s ios/WebAssets/v1-content/v1-bridge.js
       - name: Generate standalone iOS project
         run: xcodegen generate --spec project.yml
       - name: Compile iPhone application without Apple signing
@@ -78,14 +81,15 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
-          tag="v1.0.1-ios-unsigned"
-          asset="EKAB-Spoudi-V2-1.0.1-unsigned.ipa"
+          tag="v1.0.2-ios-unsigned"
+          asset="EKAB-Spoudi-V2-1.0.2-unsigned.ipa"
           cp EKAB-Spoudi-V2-unsigned.ipa "$asset"
           if gh release view "$tag" >/dev/null 2>&1; then
             gh release upload "$tag" "$asset" --clobber
+            gh release edit "$tag" --latest
           else
             gh release create "$tag" "$asset" \
               --target "${GITHUB_SHA}" \
-              --title "ΕΚΑΒ Σπουδή V2 iOS 1.0.1 (unsigned)" \
+              --title "ΕΚΑΒ Σπουδή V2 iOS 1.0.2 (unsigned)" \
               --notes "Unsigned iOS build for the independent EKAB Spoudi V2 web container. Download for manual signing using an appropriate iOS signing tool. Not installable directly on iPhone; not a native Kotlin port."
           fi
