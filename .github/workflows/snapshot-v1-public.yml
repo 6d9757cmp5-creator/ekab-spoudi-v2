@@ -27,10 +27,11 @@ jobs:
           import json, pathlib
           report=json.loads(pathlib.Path('v1-archive/MIGRATION_MANIFEST.json').read_text())
           assert report['copied_files']>=260, report['copied_files']
-          assert report['excluded_files']>0
+          assert report['copied_files'] + report['excluded_files'] == report['total_source_files']
+          assert report['copied_files'] >= 360, report['copied_files']
           for path in ['index.html','main.js','data.js','extra-data.js']:
               assert pathlib.Path(path).is_file(), path
-          print('Archive:',report['copied_files'],'safe files;',report['excluded_files'],'excluded; V2 UI untouched')
+          print('Archive:',report['copied_files'],'archived files;',report['excluded_files'],'excluded; V2 UI untouched')
           PY
       - name: Commit archive only if contents changed
         shell: bash
