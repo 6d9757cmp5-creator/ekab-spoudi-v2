@@ -1,13 +1,123 @@
 {
   "source": "public GitHub 6d9757cmp5-creator/ekab-spoudi",
   "source_commit": "859f7d0bf2b432b2ec1818cea15ace38712beb72",
-  "generated_utc": "2026-10-29T01:55:00.332200+00:00",
+  "generated_utc": "2026-10-29T01:56:40.413342+00:00",
   "note": "Archived for V2 migration; not loaded automatically, never overwrites V2 UI.",
   "total_source_files": 368,
-  "copied_files": 302,
-  "copied_bytes": 10768686,
-  "excluded_files": 66,
+  "copied_files": 368,
+  "copied_bytes": 36729295,
+  "excluded_files": 0,
   "files": [
+    {
+      "path": ".github/pull_request_template.md",
+      "size": 1325,
+      "sha256": "e1e5185b492be167974043730e8b87db5d54abe1b531fcaa49a7ca265394a4a1"
+    },
+    {
+      "path": ".github/workflows/ai-feedback-tests.yml",
+      "size": 1061,
+      "sha256": "fb95f3956c8f94b55dec039684c8759b19991b0a84f641bf926ac2bd0443b17e"
+    },
+    {
+      "path": ".github/workflows/anatomy-3d-check.yml",
+      "size": 5789,
+      "sha256": "e9f111842b96246f270c402285aaa537ec2d1602caceed40aa5547f48fff088b"
+    },
+    {
+      "path": ".github/workflows/audit-scrimba-anatomy10.yml",
+      "size": 1019,
+      "sha256": "705b2f805468479893d3672862dc54542f3b6733a61a0a96dbd8f545c143cfbb"
+    },
+    {
+      "path": ".github/workflows/clinical-review.yml",
+      "size": 262,
+      "sha256": "32f1018cfb46e04c3b45a763beb2176cd6324689584a0ee0a1308696315b8a64"
+    },
+    {
+      "path": ".github/workflows/contacts-aed-check.yml",
+      "size": 2278,
+      "sha256": "45d84b1a60896ea5b2a82bbc2d407e83ecfd5b8f771a436603316befc6165287"
+    },
+    {
+      "path": ".github/workflows/home-mentor-aed.yml",
+      "size": 632,
+      "sha256": "0f5623e48db48742d0aea05553b748560a859e233fa49eefa34d3b4e5f2bbad9"
+    },
+    {
+      "path": ".github/workflows/media-gate.yml",
+      "size": 815,
+      "sha256": "732d47395981ccb977ddce095a8a48b50da4fbdacf6d89cd53ad289eab6eab3b"
+    },
+    {
+      "path": ".github/workflows/mentor-bibliography.yml",
+      "size": 690,
+      "sha256": "dc750e8b06df5156bfc2ee7c309e6cf297739462baf751717cf358e4fe74a9e3"
+    },
+    {
+      "path": ".github/workflows/mentor-browser-smoke.yml",
+      "size": 1859,
+      "sha256": "56b38302cd8b654248847330a40c05d92bf930065568af53f53b6df8bc3bcf5f"
+    },
+    {
+      "path": ".github/workflows/mentor-foundation-verify.yml",
+      "size": 1889,
+      "sha256": "85e18b05a78049e01cd1f6ae3f91685d0d43864afa89645b620caabffeda07bd"
+    },
+    {
+      "path": ".github/workflows/pharmacology-verify.yml",
+      "size": 967,
+      "sha256": "55afadcea7b147f5de64d9d1c381eaf67984297f1b95df9586c44b93abf363a9"
+    },
+    {
+      "path": ".github/workflows/publish-pharma-review-pdf.yml",
+      "size": 2871,
+      "sha256": "41f3508f157cd4cb961e68ccc18be2791048cb7bfb2ca3cbcd68c5387505a2d4"
+    },
+    {
+      "path": ".github/workflows/real-browser-quality.yml",
+      "size": 1179,
+      "sha256": "0ea48095765aa9c2496cef416416430465af852d30762c2729754a36275b26da"
+    },
+    {
+      "path": ".github/workflows/release-smoke.yml",
+      "size": 1617,
+      "sha256": "495dc15309cd72faf75676bc8a7198f0a1095bc9685112306657a606eb56319e"
+    },
+    {
+      "path": ".github/workflows/saek-image-review.yml",
+      "size": 1042,
+      "sha256": "15c17548ba0f3974ae24cd804bc6f0068208fd2a4a0e33e93fbad1e4f508687a"
+    },
+    {
+      "path": ".github/workflows/saek-verify.yml",
+      "size": 1596,
+      "sha256": "af4b4691f41f26d29e381804cf2992b298883c174fe6af121f5ac0266618c026"
+    },
+    {
+      "path": ".github/workflows/saek-video-second-ai.yml",
+      "size": 2669,
+      "sha256": "39961881afcb16bc4bb46d2d7a1596e645cb54aca5bbcdadde386b7f9a146372"
+    },
+    {
+      "path": ".github/workflows/sync-verify.yml",
+      "size": 573,
+      "sha256": "ebe251e9fe287897195c5ce8108f18912290aba3dd4b4949ffbbf31392c53b92"
+    },
+    {
+      "path": ".github/workflows/ui-fastlane.yml",
+      "size": 6478,
+      "sha256": "2438a3993e7be688fbd0577d34b8f0e93b398533e8f0382c04ae9b4e339e43b4"
+    },
+    {
+      "path": ".github/workflows/validate-and-sync-readme.yml",
+      "size": 9012,
+      "sha256": "8e9cd862a876037cd5062b7edd17b600e0dbe066dab1c04afca19316e6f9e2fa"
+    },
+    {
+      "path": "AGENTS.md",
+      "size": 10519,
+      "sha256": "a78c99b598dc322d5313dc3bac2590a6633fef60ea3ef6d55dbce51cb0708be7"
+    },
     {
       "path": "AUDIT_CHAPTER_B_07_01.md",
       "size": 3285,
@@ -189,6 +299,11 @@
       "sha256": "3eaf2e4d3776e7309962f0a658e8b976f0edcde0f11cc0b6cb81799013a03531"
     },
     {
+      "path": "account-ui.js",
+      "size": 16021,
+      "sha256": "92f89d1a320968c48bb3ddfb5d6b1a820246fe24fc5d0d9e105fd91812525933"
+    },
+    {
       "path": "activity-time.js",
       "size": 3169,
       "sha256": "bfd843d8fc2339e6d556bae42dc0eaaec8fb8358abaae3ba7696cd2ac7fd18b6"
@@ -197,6 +312,16 @@
       "path": "agglika.html",
       "size": 38028,
       "sha256": "ab901bd9001a65ed9d0fde49123102be6dbcce09377a5e8661e95019e0321b8b"
+    },
+    {
+      "path": "ai-grading-client.js",
+      "size": 8993,
+      "sha256": "345754c69027987e4499da6992c5a5ff24f0fae37133e1b8c192000c2c82e2eb"
+    },
+    {
+      "path": "ai-grading-config.js",
+      "size": 313,
+      "sha256": "ac80bd2cc428451ce2985a64dd9344b312ce473a8248444bd4f78273569e1775"
     },
     {
       "path": "ai-grading.css",
@@ -234,6 +359,16 @@
       "sha256": "9e1db38b2f2446299c0437290f2f6ac2b791ffc3ede29197d72489c86b57644a"
     },
     {
+      "path": "appwrite-client.js",
+      "size": 1960,
+      "sha256": "c91fbce8d4f8d48212701768a0be4a330050c4a72eb68dae86542903a4db6170"
+    },
+    {
+      "path": "auth-callback.js",
+      "size": 779,
+      "sha256": "4d73caef4183baaa6a8cfc60bf175156c86b04d5b60e586cd523dcc1e8c894cb"
+    },
+    {
       "path": "build_audit.json",
       "size": 1832,
       "sha256": "a283fa101f052dcdfc87977784b63b4012b5017f9e031486700244655b7b1c58"
@@ -247,6 +382,11 @@
       "path": "clinical-review.json",
       "size": 40,
       "sha256": "288fe394163c569c697bdcdf7350a33fd5e7c540144bcac31f6e0307e612c43d"
+    },
+    {
+      "path": "cloud-sync.js",
+      "size": 14829,
+      "sha256": "bdf161d58ff80ada98ac1ea2e712ca9fb2b523bf4c93813ed449cff963035ab5"
     },
     {
       "path": "contacts-aed.css",
@@ -272,6 +412,16 @@
       "path": "dimosia_ygeia.html",
       "size": 115652,
       "sha256": "98b19d30b3bdc11bd89e0a4a8e99e7d68a88526e5f7b60b8eccc760d29d3d382"
+    },
+    {
+      "path": "docs/AI-GRADING.md",
+      "size": 8699,
+      "sha256": "0fae5d998a32bf301c55a215bf1ed913b2a89313bf5afcfb688ddf3f299a984a"
+    },
+    {
+      "path": "docs/APPWRITE.md",
+      "size": 8793,
+      "sha256": "d160b1fe397f8f996976fdb6fdfc37007fb4d0892d5d659fc8c95ba466498044"
     },
     {
       "path": "docs/EOPPEP-44-FOLLOWUP-2026-10-26.json",
@@ -454,6 +604,11 @@
       "sha256": "9860b46b61206c0062a269aee7174000147696d8d14b2cb1194cc8f39b875939"
     },
     {
+      "path": "ekab-spoudi-safe-updates-v22.zip",
+      "size": 1580506,
+      "sha256": "28cc2d34ee6bc8017aa190e33ccaf06ed35c91f07e39c3fa4a4d10d8b7729c97"
+    },
+    {
       "path": "ektimisi.html",
       "size": 75750,
       "sha256": "3ea50d5062e758e98dfbca3909b3bf92cc93a41b5e61391bc5220c31aa0aa02a"
@@ -469,9 +624,24 @@
       "sha256": "2d0d16b04e69c8408a7f27fa46fc82963122041f010314c169063045f82014d1"
     },
     {
+      "path": "eoppep-page-17.webp",
+      "size": 245384,
+      "sha256": "2d965743c595f2d495412d6be4ff7d1ed0f55d520df2a2e7d7ed2a3d088f8a0d"
+    },
+    {
+      "path": "eoppep-page-18.webp",
+      "size": 136086,
+      "sha256": "bc3c9df5cd9a76d9e10de82c65e94d6ab4d1ac7e647b66619e12a5e2a51be2ce"
+    },
+    {
       "path": "eoppep-sos.json",
       "size": 255484,
       "sha256": "f0e5cd4737fba3d48425ca7cadf22d2cb04e0abf9a014ca77ffe722b913ce41e"
+    },
+    {
+      "path": "eoppep-source.pdf",
+      "size": 980370,
+      "sha256": "fd8686af7cab2bc822ee86768036a3969e5ea3bc29dbf11b3b0964f0727d858b"
     },
     {
       "path": "eoppep.html",
@@ -519,9 +689,29 @@
       "sha256": "11e154ec0c1c6664e275ae5a629e2ff7544e4c123ac16fe0b52226be07763a28"
     },
     {
+      "path": "functions/answer-grader/FREE-SETUP.md",
+      "size": 5927,
+      "sha256": "7674b2dd71bac39c17bbe83e730e0a5b17269df28be998a36d7691c26641744d"
+    },
+    {
       "path": "functions/answer-grader/eoppep-rubrics.json",
       "size": 230784,
       "sha256": "e34d6dafc3a4c3ad92e2f71845027033966dbc0a24fe9dbc87bdef27473c4c14"
+    },
+    {
+      "path": "functions/answer-grader/free-providers.js",
+      "size": 4296,
+      "sha256": "7f3f42378b54426f07cbe9dbaee2d3337ca9f747e2c0817192c9b4bae96c456a"
+    },
+    {
+      "path": "functions/answer-grader/main.js",
+      "size": 23333,
+      "sha256": "f82d47a90af06ad13b046a50e617e3e534f47c7a6efdacd657fd66008aab95af"
+    },
+    {
+      "path": "functions/answer-grader/package.json",
+      "size": 276,
+      "sha256": "b25d3ad518d2d0633eed2c9c59f68e7a3cccb64d3c6a5119aad04e37ab7219bc"
     },
     {
       "path": "functions/answer-grader/saek-exam-rubrics.json",
@@ -532,6 +722,11 @@
       "path": "functions/answer-grader/seminar-rubrics.json",
       "size": 29295,
       "sha256": "f70176fbb6e0f3b597c5767dfbe629687c88ae9632290ed23c8e969332f62f12"
+    },
+    {
+      "path": "functions/answer-grader/test.mjs",
+      "size": 12635,
+      "sha256": "7f41547b881c8cae9f927a0badd1011c86975a1b2d97157a21a7e1fbbff8fa22"
     },
     {
       "path": "fysiologia.html",
@@ -874,6 +1069,16 @@
       "sha256": "f69de76473254ebb476f51b0527a07f1064c958015a7f98c0c8ab0155b268fb4"
     },
     {
+      "path": "oauth-callback.html",
+      "size": 1162,
+      "sha256": "dbd4bef2eeb5882db94a4efb8bdd92d5441bb2796e88e6e578db889ba9e7acfa"
+    },
+    {
+      "path": "oauth-return.js",
+      "size": 816,
+      "sha256": "ac3979ef650653454149744b62e7b55210dd7bc5d915d64c2eb3e6fb488750ac"
+    },
+    {
       "path": "official_questions.json",
       "size": 1063173,
       "sha256": "7b881f089fa5c5275741982b756bda8fc5de42dc88336637469681dac2715da7"
@@ -887,6 +1092,11 @@
       "path": "old_type_written.json",
       "size": 16231,
       "sha256": "09bee14357d1a96b553c8eadb60f9500b430067ce020037d568acc3228498db1"
+    },
+    {
+      "path": "original.pdf",
+      "size": 12867949,
+      "sha256": "d687d975abb57f74b4ca56167980c06f16e60a3b12c0dade0580d6217dbd9d94"
     },
     {
       "path": "pdf-library.html",
@@ -932,6 +1142,11 @@
       "path": "progress.js",
       "size": 7616,
       "sha256": "54b26a20e4f46923bbdf5d0a2c83920765a5024760a9762d5eab96982ceb9950"
+    },
+    {
+      "path": "questions.json",
+      "size": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
     },
     {
       "path": "reader.css",
@@ -1344,6 +1559,61 @@
       "sha256": "f1b91e41f839739b34d0b78d66d1f4ebbfde40b6fb824f739dfac78188615651"
     },
     {
+      "path": "selida-008.png",
+      "size": 1528562,
+      "sha256": "cef0962663a9cafbbf151b90bac4e4a4733905d1c490e90b7188f1837456bad6"
+    },
+    {
+      "path": "selida-011.png",
+      "size": 1108894,
+      "sha256": "7f2123adc42bcb866d07ee076b09b3a323bdebcee24fca6d6a4e4841fabc4387"
+    },
+    {
+      "path": "selida-012.png",
+      "size": 1213943,
+      "sha256": "c943d4fe05aa3e3d8ad1bb54eead6eabda0cc3ee20b9e882640b42eaeebbc708"
+    },
+    {
+      "path": "selida-027.png",
+      "size": 1034107,
+      "sha256": "4c50823965764bafc9da9cb75e5d0921b2c0d37c3e0a888ea44d9f00d9e87c85"
+    },
+    {
+      "path": "selida-030.png",
+      "size": 979867,
+      "sha256": "5ba05c66444b8dea7dfaf2b7186b1f84ff1c8489864294c5fd60b06419ce410c"
+    },
+    {
+      "path": "selida-031.png",
+      "size": 1764572,
+      "sha256": "73615d8a88bf4f068d5df5a38f53c64d102c64f9352615709328a3b60aef0147"
+    },
+    {
+      "path": "selida-034.png",
+      "size": 1131454,
+      "sha256": "79e498bf90e59b3938f04929c1a0127f90d1f653299ecf68ed5ec685ade52361"
+    },
+    {
+      "path": "selida-039.png",
+      "size": 857247,
+      "sha256": "0b63f7444982332b4ade4d86aab0f646f59cb84221e25feee08bd2d14fa7852f"
+    },
+    {
+      "path": "selida-047.png",
+      "size": 38637,
+      "sha256": "fd7bf0997ecfcbb2cc604eb4b766cc99db6a0b70339c8443fccfaca936ae88bd"
+    },
+    {
+      "path": "selida-058.png",
+      "size": 128672,
+      "sha256": "05806b4d52f71ee4c2351d35c4061104cbd7db5683be18bbf3daa24804eebcc2"
+    },
+    {
+      "path": "selida-087.png",
+      "size": 45366,
+      "sha256": "724a22703e3b1f7e34c8df892d29c9bf1368ddffeb90a2668d6f1334bedc94af"
+    },
+    {
       "path": "seminar-prep.css",
       "size": 13975,
       "sha256": "78a68505f325d2f418f29fff58d6fdcf22c2320a3f3144785b7a9431726b6eb5"
@@ -1412,6 +1682,21 @@
       "path": "sw.js",
       "size": 4788,
       "sha256": "cd836e770361d056a8fb0f05dd59ff426311eab24f71584a9b829b886dd6307a"
+    },
+    {
+      "path": "sync-codec.js",
+      "size": 2502,
+      "sha256": "b346b9d7b827d9b585400b4fef7fd8f30152ea9ac9ea13d044fa640a631b31c5"
+    },
+    {
+      "path": "sync-local.js",
+      "size": 7759,
+      "sha256": "966b4ba62950fc729d563d74f94461412e7fcec7fac7d515fdcab74949e5c758"
+    },
+    {
+      "path": "sync-model.js",
+      "size": 9498,
+      "sha256": "4843c8cd995cf0364f7fac983c868967fb0b5169c2c22bcc43e70188740b0ae4"
     },
     {
       "path": "theme-init.js",
@@ -1504,6 +1789,41 @@
       "sha256": "149487b78109126d6e8af92ec69f341a13a05f4561f1840af992a8c8623dcc01"
     },
     {
+      "path": "vendor/appwrite-29.1.0/LICENSE",
+      "size": 1540,
+      "sha256": "303c6843e7266554669df90c09cdddb644c71c4dd0cf20489d1ed1ee8107bbed"
+    },
+    {
+      "path": "vendor/appwrite-29.1.0/README.md",
+      "size": 466,
+      "sha256": "f7475e222135136a4d4e73e0685d2699993e23b77ad6d55b71ae6f8e7ce62c01"
+    },
+    {
+      "path": "vendor/appwrite-29.1.0/account.js",
+      "size": 52717,
+      "sha256": "7350d2a57b524c6fa53d19a703c0b431990c5598856aa1e4d950c78581de10d2"
+    },
+    {
+      "path": "vendor/appwrite-29.1.0/chunks/query-CfsOKCEq.js",
+      "size": 34779,
+      "sha256": "a4c4e65928a0f08a285a1ad70a922c9d28c769a28c6570103f8874c0bb2168c7"
+    },
+    {
+      "path": "vendor/appwrite-29.1.0/client.js",
+      "size": 11882,
+      "sha256": "a9e75f7aac71a814ce2ab306f1a26059cf9bf028c4dd119da0370cb14ae95110"
+    },
+    {
+      "path": "vendor/appwrite-29.1.0/id.js",
+      "size": 580,
+      "sha256": "615b012439d67ac98c0369b18abbc29373f23b5f7402976c35c40e8b82bf3041"
+    },
+    {
+      "path": "vendor/appwrite-29.1.0/storage.js",
+      "size": 7296,
+      "sha256": "863c5f60464f1184311bf37e5b459c9d8853de6c549394785e0b5fce53de6815"
+    },
+    {
       "path": "version.json",
       "size": 7715,
       "sha256": "8ee97b3fc44664b20324233ef72612023bd0fcd1de6032968560b466e53f7d93"
@@ -1514,277 +1834,22 @@
       "sha256": "935553ce45880b8a948d36aae5a5944cb5918b8b6bbcdd57d2b96270e9db62e9"
     },
     {
+      "path": "workers/answer-grader/src/index.js",
+      "size": 24669,
+      "sha256": "b30e07ce561d372e486bc2641525ca82f466f1fb74786600733ccdc4b5282b42"
+    },
+    {
+      "path": "workers/answer-grader/wrangler.jsonc",
+      "size": 328,
+      "sha256": "141f4a6ec9ee14a36e013ce5f0328e707c038766ae66cc2428505674e518e831"
+    },
+    {
       "path": "written_exam.html",
       "size": 5486,
       "sha256": "b9bb68487a7c98a70f5fad7e5e9da5ac907d85a4e6f41768f6eb0a162f59fdd8"
     }
   ],
-  "excluded": [
-    {
-      "path": ".github/pull_request_template.md",
-      "reason": "backend/workflow/vendor isolated from V2"
-    },
-    {
-      "path": ".github/workflows/ai-feedback-tests.yml",
-      "reason": "backend/workflow/vendor isolated from V2"
-    },
-    {
-      "path": ".github/workflows/anatomy-3d-check.yml",
-      "reason": "backend/workflow/vendor isolated from V2"
-    },
-    {
-      "path": ".github/workflows/audit-scrimba-anatomy10.yml",
-      "reason": "backend/workflow/vendor isolated from V2"
-    },
-    {
-      "path": ".github/workflows/clinical-review.yml",
-      "reason": "backend/workflow/vendor isolated from V2"
-    },
-    {
-      "path": ".github/workflows/contacts-aed-check.yml",
-      "reason": "backend/workflow/vendor isolated from V2"
-    },
-    {
-      "path": ".github/workflows/home-mentor-aed.yml",
-      "reason": "backend/workflow/vendor isolated from V2"
-    },
-    {
-      "path": ".github/workflows/media-gate.yml",
-      "reason": "backend/workflow/vendor isolated from V2"
-    },
-    {
-      "path": ".github/workflows/mentor-bibliography.yml",
-      "reason": "backend/workflow/vendor isolated from V2"
-    },
-    {
-      "path": ".github/workflows/mentor-browser-smoke.yml",
-      "reason": "backend/workflow/vendor isolated from V2"
-    },
-    {
-      "path": ".github/workflows/mentor-foundation-verify.yml",
-      "reason": "backend/workflow/vendor isolated from V2"
-    },
-    {
-      "path": ".github/workflows/pharmacology-verify.yml",
-      "reason": "backend/workflow/vendor isolated from V2"
-    },
-    {
-      "path": ".github/workflows/publish-pharma-review-pdf.yml",
-      "reason": "backend/workflow/vendor isolated from V2"
-    },
-    {
-      "path": ".github/workflows/real-browser-quality.yml",
-      "reason": "backend/workflow/vendor isolated from V2"
-    },
-    {
-      "path": ".github/workflows/release-smoke.yml",
-      "reason": "backend/workflow/vendor isolated from V2"
-    },
-    {
-      "path": ".github/workflows/saek-image-review.yml",
-      "reason": "backend/workflow/vendor isolated from V2"
-    },
-    {
-      "path": ".github/workflows/saek-verify.yml",
-      "reason": "backend/workflow/vendor isolated from V2"
-    },
-    {
-      "path": ".github/workflows/saek-video-second-ai.yml",
-      "reason": "backend/workflow/vendor isolated from V2"
-    },
-    {
-      "path": ".github/workflows/sync-verify.yml",
-      "reason": "backend/workflow/vendor isolated from V2"
-    },
-    {
-      "path": ".github/workflows/ui-fastlane.yml",
-      "reason": "backend/workflow/vendor isolated from V2"
-    },
-    {
-      "path": ".github/workflows/validate-and-sync-readme.yml",
-      "reason": "backend/workflow/vendor isolated from V2"
-    },
-    {
-      "path": "AGENTS.md",
-      "reason": "credentials, authentication, cloud sync, or unneeded placeholder"
-    },
-    {
-      "path": "account-ui.js",
-      "reason": "credentials, authentication, cloud sync, or unneeded placeholder"
-    },
-    {
-      "path": "ai-grading-client.js",
-      "reason": "credentials, authentication, cloud sync, or unneeded placeholder"
-    },
-    {
-      "path": "ai-grading-config.js",
-      "reason": "credentials, authentication, cloud sync, or unneeded placeholder"
-    },
-    {
-      "path": "appwrite-client.js",
-      "reason": "credentials, authentication, cloud sync, or unneeded placeholder"
-    },
-    {
-      "path": "auth-callback.js",
-      "reason": "credentials, authentication, cloud sync, or unneeded placeholder"
-    },
-    {
-      "path": "cloud-sync.js",
-      "reason": "credentials, authentication, cloud sync, or unneeded placeholder"
-    },
-    {
-      "path": "docs/AI-GRADING.md",
-      "reason": "credentials, authentication, cloud sync, or unneeded placeholder"
-    },
-    {
-      "path": "docs/APPWRITE.md",
-      "reason": "credentials, authentication, cloud sync, or unneeded placeholder"
-    },
-    {
-      "path": "ekab-spoudi-safe-updates-v22.zip",
-      "reason": "credentials, authentication, cloud sync, or unneeded placeholder"
-    },
-    {
-      "path": "eoppep-page-17.webp",
-      "reason": "image scan requires source-rights review"
-    },
-    {
-      "path": "eoppep-page-18.webp",
-      "reason": "image scan requires source-rights review"
-    },
-    {
-      "path": "eoppep-source.pdf",
-      "reason": "credentials, authentication, cloud sync, or unneeded placeholder"
-    },
-    {
-      "path": "functions/answer-grader/FREE-SETUP.md",
-      "reason": "backend/workflow/vendor isolated from V2"
-    },
-    {
-      "path": "functions/answer-grader/free-providers.js",
-      "reason": "backend/workflow/vendor isolated from V2"
-    },
-    {
-      "path": "functions/answer-grader/main.js",
-      "reason": "backend/workflow/vendor isolated from V2"
-    },
-    {
-      "path": "functions/answer-grader/package.json",
-      "reason": "backend/workflow/vendor isolated from V2"
-    },
-    {
-      "path": "functions/answer-grader/test.mjs",
-      "reason": "backend/workflow/vendor isolated from V2"
-    },
-    {
-      "path": "oauth-callback.html",
-      "reason": "credentials, authentication, cloud sync, or unneeded placeholder"
-    },
-    {
-      "path": "oauth-return.js",
-      "reason": "credentials, authentication, cloud sync, or unneeded placeholder"
-    },
-    {
-      "path": "original.pdf",
-      "reason": "credentials, authentication, cloud sync, or unneeded placeholder"
-    },
-    {
-      "path": "questions.json",
-      "reason": "credentials, authentication, cloud sync, or unneeded placeholder"
-    },
-    {
-      "path": "selida-008.png",
-      "reason": "image scan requires source-rights review"
-    },
-    {
-      "path": "selida-011.png",
-      "reason": "image scan requires source-rights review"
-    },
-    {
-      "path": "selida-012.png",
-      "reason": "image scan requires source-rights review"
-    },
-    {
-      "path": "selida-027.png",
-      "reason": "image scan requires source-rights review"
-    },
-    {
-      "path": "selida-030.png",
-      "reason": "image scan requires source-rights review"
-    },
-    {
-      "path": "selida-031.png",
-      "reason": "image scan requires source-rights review"
-    },
-    {
-      "path": "selida-034.png",
-      "reason": "image scan requires source-rights review"
-    },
-    {
-      "path": "selida-039.png",
-      "reason": "image scan requires source-rights review"
-    },
-    {
-      "path": "selida-047.png",
-      "reason": "image scan requires source-rights review"
-    },
-    {
-      "path": "selida-058.png",
-      "reason": "image scan requires source-rights review"
-    },
-    {
-      "path": "selida-087.png",
-      "reason": "image scan requires source-rights review"
-    },
-    {
-      "path": "sync-codec.js",
-      "reason": "credentials, authentication, cloud sync, or unneeded placeholder"
-    },
-    {
-      "path": "sync-local.js",
-      "reason": "credentials, authentication, cloud sync, or unneeded placeholder"
-    },
-    {
-      "path": "sync-model.js",
-      "reason": "credentials, authentication, cloud sync, or unneeded placeholder"
-    },
-    {
-      "path": "vendor/appwrite-29.1.0/LICENSE",
-      "reason": "backend/workflow/vendor isolated from V2"
-    },
-    {
-      "path": "vendor/appwrite-29.1.0/README.md",
-      "reason": "backend/workflow/vendor isolated from V2"
-    },
-    {
-      "path": "vendor/appwrite-29.1.0/account.js",
-      "reason": "backend/workflow/vendor isolated from V2"
-    },
-    {
-      "path": "vendor/appwrite-29.1.0/chunks/query-CfsOKCEq.js",
-      "reason": "backend/workflow/vendor isolated from V2"
-    },
-    {
-      "path": "vendor/appwrite-29.1.0/client.js",
-      "reason": "backend/workflow/vendor isolated from V2"
-    },
-    {
-      "path": "vendor/appwrite-29.1.0/id.js",
-      "reason": "backend/workflow/vendor isolated from V2"
-    },
-    {
-      "path": "vendor/appwrite-29.1.0/storage.js",
-      "reason": "backend/workflow/vendor isolated from V2"
-    },
-    {
-      "path": "workers/answer-grader/src/index.js",
-      "reason": "backend/workflow/vendor isolated from V2"
-    },
-    {
-      "path": "workers/answer-grader/wrangler.jsonc",
-      "reason": "backend/workflow/vendor isolated from V2"
-    }
-  ],
+  "excluded": [],
   "not_available_from_public_git": [
     "personal study progress and notes saved on devices",
     "private account records, cloud data and passwords",
