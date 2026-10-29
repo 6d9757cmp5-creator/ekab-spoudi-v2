@@ -159,7 +159,7 @@ report["not_transferred"] += [
 # Visible read-only library: metadata and approved educational entries only.
 # Source files remain non-executable in the separate V2 repository archive.
 file_index=[]
-for rel in subprocess.check_output(["git","-C",str(source),"ls-files","-z"]).decode("utf-8").split("\\0"):
+for rel in subprocess.check_output(["git","-C",str(source),"ls-files","-z"]).decode("utf-8").split(chr(0)):
     if not rel or rel.startswith(".git/"): continue
     if any(w in rel.lower() for w in (".env", "credentials", "private-key", "password", ".pem", ".p12", ".p8")):continue
     ext=Path(rel).suffix.lower()
