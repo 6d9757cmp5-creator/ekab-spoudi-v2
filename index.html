@@ -9,8 +9,8 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="format-detection" content="telephone=no">
 <meta name="description" content="ΕΚΑΒ Σπουδή V2 — ανεξάρτητη δοκιμαστική web έκδοση για ΣΑΕΚ, ΕΟΠΠΕΠ και MENTOR OS.">
-<link rel="icon" href="assets/ic_launcher_ekab.jpg" type="image/jpeg">
-<link rel="apple-touch-icon" href="assets/icon-192.png" sizes="192x192">
+<link rel="icon" href="assets/icon-192.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/icon-192.png">
 <link rel="manifest" href="manifest.webmanifest">
 <title>ΕΚΑΒ Σπουδή V2 — Δοκιμή</title>
 <style>
@@ -68,6 +68,31 @@ header small{color:#b9cad6}
 .profile{background:#1B3140}.empty{color:#C3C7CF}
 @media(max-width:500px){main{padding:13px 12px 105px}.hero{min-height:215px;padding:24px 19px}.grid{gap:10px}.card{padding:15px}.stat{padding:14px 4px}.card h3{font-size:15px}}
 
+/* Safari: standalone viewport with safe areas; avoid text-size zoom and horizontal overflow. */
+html{-webkit-text-size-adjust:100%;overscroll-behavior-y:contain;}
+body{min-width:280px;overflow-x:hidden;-webkit-tap-highlight-color:transparent}
+main{padding-bottom:calc(100px + env(safe-area-inset-bottom))}
+header .shell{padding-top:max(7px,env(safe-area-inset-top));}
+.nav{padding-bottom:env(safe-area-inset-bottom);}
+button{touch-action:manipulation;}
+button:active{opacity:.86}
+.native-module:focus-visible,.native-quick-tile:focus-visible,.nav button:focus-visible{outline:2px solid #6bc5fb;outline-offset:2px}
+.safari-setup{display:flex;flex-wrap:wrap;gap:12px;align-items:center;background:#0b4269;color:#d9f3ff;border:1px solid #2674a4;border-radius:14px;padding:14px;margin-top:24px}
+.safari-setup strong{font-size:14px}
+.safari-setup p{font-size:12px;margin:2px 0 0;color:#c9e2f3}
+.safari-setup button{background:#1c71a4;color:#fff;border:1px solid #5bbef5;border-radius:10px;padding:8px 11px}
+.native-subtitle{color:#aad1e8;margin:1px 0 17px;font-size:12px}
+.clinical-choices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin-top:14px}
+.clinical-choices button{padding:12px;border:1px solid #316689;border-radius:10px;background:#124365;color:white;text-align:center;font-weight:750}
+.clinical-choices button[aria-pressed="true"]{border-color:#64b5f6;background:#116a9c}
+.training-patient{background:#123a55;border:1px solid #2f6480;border-radius:14px;padding:15px;margin:12px 0}
+.training-patient p{font-size:13px;white-space:pre-line;line-height:1.6}
+.training-feedback{margin-top:12px;background:#0b2b41;border-left:3px solid #64b5f6;padding:12px;font-size:13px}
+.mentor-faculty{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px}
+.mentor-faculty .card{padding:14px}
+.mentor-faculty .card h3{font-size:15px}
+.no-backend{margin:12px 0;background:#3e331d;color:#ffe3a4;border:1px solid #876624;border-radius:10px;padding:13px;font-size:12px}
+@media(max-width:340px){.header-actions button{padding:3px!important}.header-title strong{font-size:15px}.nav button{font-size:9px}}
 /* Source-matched layout: Kotlin HomeScreen.kt / MentorHubScreen.kt / EkabNavigation.kt. */
 header{background:#11304a;position:sticky;top:0}header .shell{max-width:850px;padding:7px 13px;gap:9px;min-height:61px}
 header .shell>img,header .v2{display:none}header .shell .top-icon{background:#245778;color:#f2faff;border:0;border-radius:50%;width:37px;height:37px;font-size:19px;font-weight:750;flex-shrink:0}
@@ -91,14 +116,11 @@ main{padding:13px 13px 100px}.contentwidth{max-width:750px}.native-hero{backgrou
 .nav{background:#0f5588;border-top:1px solid #276d96}.nav>div{max-width:750px}.nav button{color:#c2def3;padding:9px 1px 8px;font-size:10px}.nav button strong{font-size:19px}.nav button.on{border-top-color:#64b5f6;color:#fff;background:#0d659d}
 .nav button.on strong{color:#c4ecff}
 @media(max-width:500px){main{padding:11px 11px 94px}.native-stats{gap:5px}.native-stat b{font-size:14px}.native-stat span{font-size:9px}.native-module{min-height:87px;padding:11px}.native-icon{flex-basis:42px;height:42px}.native-module-title{font-size:13px}.native-module-copy small{font-size:10.8px}.native-module-badge{font-size:9.5px}.sectiontitle{font-size:16px}header .shell .header-actions button{padding:4px}}
-
-/* Safe-area padding when installed as a standalone iPhone web app. */
-@media (display-mode: standalone) { header { padding-top:env(safe-area-inset-top); } }
 </style>
 </head>
 <body>
 <header><div class="shell"><img src="assets/ic_launcher_ekab.jpg" alt="Λογότυπο ΕΚΑΒ Σπουδή V2"><div><strong>ΕΚΑΒ Σπουδή V2</strong><small>Διασώστης — Πλήρωμα Ασθενοφόρου</small></div><span class="v2">V2 · ΔΟΚΙΜΗ</span></div></header>
 <main id="app"><div class="empty">Φόρτωση εφαρμογής…</div></main><nav class="nav" aria-label="Κύρια πλοήγηση" id="nav"></nav>
-<script src="data.js"></script><script src="main.js"></script>
+<script src="data.js"></script><script src="extra-data.js"></script><script src="main.js"></script>
 <script>if("serviceWorker" in navigator && location.protocol.indexOf("http")===0){window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js").catch(()=>{}));}</script>
 </body></html>
