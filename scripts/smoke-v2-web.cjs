@@ -3,7 +3,7 @@
 const fs=require('node:fs'), path=require('node:path'), vm=require('node:vm');
 const site=process.argv[2]||'.';
 const html=fs.readFileSync(path.join(site,'index.html'),'utf8');
-const scripts=[...html.matchAll(/<script\s+src=["']([^"']+)["']/g)].map(m=>m[1]);
+const scripts=[...html.matchAll(/<script\s+src=["']([^"']+)["']/g)].map(m=>m[1].split(/[?#]/)[0]);
 for(const required of ['data.js','extra-data.js','main.js']) if(!scripts.includes(required))throw Error('Missing script tag: '+required);
 for(const file of scripts){
  const target=path.resolve(site,file);
