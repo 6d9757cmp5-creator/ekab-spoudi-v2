@@ -6,7 +6,7 @@
 const escape=x=>String(x==null?'':x).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const norm=x=>String(x||'').toLocaleLowerCase('el').normalize('NFD').replace(/[\u0300-\u036f]/g,'');
 const tabs=Object.freeze([
- ['sos','SOS ΕΟΠΠΕΠ'],['terms','Ιατρικό λεξικό'],['checks','Αυτοέλεγχοι ΣΑΕΚ'],['sources','Όλα τα αρχεία V1'],['audit','Έλεγχος']
+ ['sos','SOS ΕΟΠΠΕΠ'],['terms','Ιατρικό λεξικό'],['checks','Αυτοέλεγχοι ΣΑΕΚ'],['practice','Ασκήσεις ERC'],['written','Γραπτές ερωτήσεις'],['bib','Πηγές MENTOR'],['sources','Όλα τα αρχεία V1'],['audit','Έλεγχος']
 ]);
 const state={tab:'sos',query:'',page:0};
 function records(){
@@ -17,6 +17,19 @@ function records(){
   body:[x.en,x.category,x.definition,(x.aliases||[]).join(', ')].filter(Boolean).join(' — '),source:x.source,status:'Εκπαιδευτικός όρος'}));
  if(state.tab==='checks')return (source.checks||[]).map((x,i)=>({key:x.id||i,heading:x.course+' · '+(x.chapterTitle||''),
   body:[x.question,'Απάντηση: '+x.answer].filter(Boolean).join('\n'),status:'Ενδεικτική απάντηση'}));
+ if(state.tab==='practice')return (source.exercises||[]).map((x,i)=>({key:x.id||i,
+  heading:x.category+' · '+x.question,
+  body:(x.options||[]).map((a,n)=>String(n+1)+'. '+a).join('\\n')+
+    '\\nΕνδεικτική απάντηση: '+((x.options||[])[x.answer]||'')+
+    '\\nΕπεξήγηση: '+(x.explanation||''),source:x.source,status:'Εκπαιδευτική άσκηση, όχι επίσημη εξέταση'}));
+ if(state.tab==='written')return (source.written||[]).map((x,i)=>({key:x.id||i,
+  heading:'Ερώτηση '+(x.number||i+1)+' · '+(x.category||''),
+  body:(x.question||'')+'\\nΕνδεικτική απάντηση: '+(x.modelAnswer||''),
+  source:x.answerUrl,status:'Παλαιού τύπου – εκπαιδευτική απάντηση'}));
+ if(state.tab==='bib')return (source.bibliography||[]).map((x,i)=>({key:x.id||i,
+  heading:x.title||x.id||'Βιβλιογραφία',
+  body:[x.publisher,x.license_summary].filter(Boolean).join(' — '),
+  source:x.source_url,status:'Κατάλογος πηγών · κλινική έγκριση εκκρεμεί'}));
  if(state.tab==='sources')return (source.files||[]).map((x,i)=>({key:i,heading:x.path,
   body:x.kind||x.group||'Αρχείο V1',url:x.url,status:'Αρχειακό — δεν εκτελείται'}));
  return [];
@@ -25,7 +38,7 @@ function stats(){
  const s=root.EKAB_V2_LIBRARY||{};
  return [
   ['ΕΟΠΠΕΠ SOS',s.sos?.length||0],['Ιατρικοί όροι',s.terms?.length||0],
-  ['Αυτοέλεγχοι ΣΑΕΚ',s.checks?.length||0],['Αρχεία V1',s.files?.length||0]
+  ['Αυτοέλεγχοι ΣΑΕΚ',s.checks?.length||0],['Ασκήσεις',s.exercises?.length||0],['Αρχεία V1',s.files?.length||0]
  ];
 }
 function render(){
