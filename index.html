@@ -121,6 +121,24 @@ main{padding:13px 13px 100px}.contentwidth{max-width:750px}.native-hero{backgrou
 <body>
 <header><div class="shell"><img src="assets/ic_launcher_ekab.jpg" alt="Λογότυπο ΕΚΑΒ Σπουδή V2"><div><strong>ΕΚΑΒ Σπουδή V2</strong><small>Διασώστης — Πλήρωμα Ασθενοφόρου</small></div><span class="v2">V2 · ΔΟΚΙΜΗ</span></div></header>
 <main id="app"><div class="empty">Φόρτωση εφαρμογής…</div></main><nav class="nav" aria-label="Κύρια πλοήγηση" id="nav"></nav>
-<script src="data.js"></script><script src="extra-data.js"></script><script src="main.js"></script>
+<script>
+(function(){
+  function showError(message){
+    var app=document.getElementById('app');
+    if(!app || !app.textContent.includes('Φόρτωση εφαρμογής'))return;
+    app.innerHTML='<section style="max-width:540px;margin:48px auto;background:#142430;border:1px solid #46718d;border-radius:16px;padding:24px;color:#ecf7ff"><h2>Δεν ολοκληρώθηκε η φόρτωση της V2</h2><p>'+message+'</p><a style="color:#99d8ff;font-weight:bold" href="./?v=20261029-startup-fix1">Δοκίμασε ξανά με την ενημερωμένη έκδοση</a></section>';
+  }
+  window.ekabV2ScriptError=function(){showError('Δεν φορτώθηκε ένα απαραίτητο αρχείο. Έλεγξε τη σύνδεση και πάτησε επανάληψη.');};
+  window.addEventListener('error',function(ev){
+    if(ev.target && ev.target.tagName==='SCRIPT') showError('Απέτυχε η λήψη ενός αρχείου της εφαρμογής.');
+    else if(ev.message)showError('Παρουσιάστηκε σφάλμα κατά την εκκίνηση της εφαρμογής.');
+  },true);
+  window.addEventListener('load',function(){
+    var app=document.getElementById('app');
+    if(app && app.textContent.includes('Φόρτωση εφαρμογής'))showError('Η εφαρμογή δεν εκκίνησε σωστά.');
+  });
+})();
+</script>
+<script src="data.js?v=20261029-startup-fix1" onerror="ekabV2ScriptError()"></script><script src="extra-data.js?v=20261029-startup-fix1" onerror="ekabV2ScriptError()"></script><script src="main.js?v=20261029-startup-fix1" onerror="ekabV2ScriptError()"></script>
 <script>if("serviceWorker" in navigator && location.protocol.indexOf("http")===0){window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js").catch(()=>{}));}</script>
 </body></html>
