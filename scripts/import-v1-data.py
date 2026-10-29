@@ -11,6 +11,7 @@ import re
 import shutil
 import subprocess
 import sys
+from urllib.parse import quote
 
 if len(sys.argv) != 3:
     raise SystemExit("Usage: import-v1-data.py <v1-checkout> <v2-site-output>")
@@ -155,12 +156,35 @@ report["not_transferred"] += [
     {"category":"media","reason":"External photos/videos/PDFs and licensed educational assets require item-level rights and clinical verification before republication"},
     {"category":"frontend","reason":"V1 UI, CSS and JavaScript screens intentionally not copied: preserve V2 interface"},
 ]
+# Visible read-only library: metadata and approved educational entries only.
+# Source files remain non-executable in the separate V2 repository archive.
+file_index=[]
+for rel in subprocess.check_output(["git","-C",str(source),"ls-files","-z"]).decode("utf-8").split("\\0"):
+    if not rel or rel.startswith(".git/"): continue
+    if any(w in rel.lower() for w in (".env", "credentials", "private-key", "password", ".pem", ".p12", ".p8")):continue
+    ext=Path(rel).suffix.lower()
+    kind=("Εκπαιδευτικό έγγραφο" if ext in (".pdf",".md") else
+          "Εκπαιδευτική εικόνα" if ext in (".png",".jpg",".jpeg",".webp",".svg") else
+          "Δεδομένα" if ext in (".json", ".jsonc") else
+          "Κώδικας αναφοράς" if ext in (".js",".mjs",".cjs",".html",".css",".py") else
+          "Αρχειακό αρχείο")
+    file_index.append({"path":rel,"kind":kind,
+                       "url":"https://github.com/6d9757cmp5-creator/ekab-spoudi-v2/blob/main/v1-archive/"+quote(rel,safe="/")})
+report["counts"]["v1_archived_index"]=len(file_index)
+source_links=sum(bool(x.get("sourceUrl")) for x in (sos.get("items",[]) if isinstance(sos,dict) else []))
+source_links+=sum(bool(x.get("source")) for x in (terms.get("items",[]) if isinstance(terms,dict) else []))
+report["counts"]["explicit_source_links"]=source_links
+report["counts"]["unsourced_sos_terms"]=report["counts"]["sos_questions"]+report["counts"]["medical_terms"]-source_links
+
 payload={"chapters":chapters,
          "question_answers":q_rows,
          "medicines":medications,
          "sos":sos.get("items",[]) if isinstance(sos,dict) else [],
          "medical_terms":terms.get("items",[]) if isinstance(terms,dict) else [],
          "saek_checks":checks.get("items",[]) if isinstance(checks,dict) else [],
+         "file_index":file_index,
+         "qa":{"sourceLinks":source_links,"withoutSource":report["counts"]["unsourced_sos_terms"],
+               "clinicalReview":"not_independently_validated"},
          "origin_commit":report["source_commit"]}
 # V2 DOM/UI unchanged. This runs synchronously after V2's own data.js.
 bridge = r"""/* Auto-generated from READ-ONLY EKAB1 published structured content. No interface modifications. */
@@ -196,6 +220,11 @@ for(const med of imported.medicines){
     names.add(key);
   }
 }
+window.EKAB_V2_LIBRARY=Object.freeze({
+  sourceCommit:imported.origin_commit,sos:imported.sos,
+  terms:imported.medical_terms,checks:imported.saek_checks,
+  files:imported.file_index,qa:imported.qa
+});
 window.EKAB_V2_V1_IMPORT=Object.freeze({sourceCommit:imported.origin_commit,
   chapterCount:Object.values(imported.chapters).reduce((a,v)=>a+v.length,0),
   sosCount:imported.sos.length, termsCount:imported.medical_terms.length,
