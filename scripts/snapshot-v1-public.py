@@ -23,7 +23,7 @@ if not (src/".git").is_dir():
 if dest == src or src in dest.parents:
     raise SystemExit("Destination cannot be nested in source")
 commit=subprocess.check_output(["git","-C",str(src),"rev-parse","HEAD"],text=True).strip()
-tracked=subprocess.check_output(["git","-C",str(src),"ls-files","-z"],stdout=subprocess.PIPE).split(b"\0")
+tracked=subprocess.check_output(["git","-C",str(src),"ls-files","-z"]).split(b"\0")
 files=[p.decode("utf-8") for p in tracked if p]
 # Files can be included in a future revision only after security/license review.
 excluded_dirs=(".github/","functions/","workers/","vendor/")
