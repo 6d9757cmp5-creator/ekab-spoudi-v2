@@ -11,7 +11,7 @@ for(const file of scripts){
 }
 const elements={'#app':{innerHTML:'Φόρτωση εφαρμογής…'},'#nav':{innerHTML:''},'header .shell':{innerHTML:''}};
 const document={title:'',querySelector:s=>elements[s]||null,body:{addEventListener:()=>{}}};
-const sandbox={document,window:{},localStorage:{getItem:()=>null,setItem:()=>{}},history:{pushState:()=>{}},location:{hash:''},scrollTo:()=>{},alert:()=>{}};
+const sandbox={document,window:{addEventListener:()=>{}},localStorage:{getItem:()=>null,setItem:()=>{}},history:{pushState:()=>{}},location:{hash:''},scrollTo:()=>{},alert:()=>{}};
 vm.createContext(sandbox);
 for(const file of scripts)vm.runInContext(fs.readFileSync(path.join(site,file),'utf8'),sandbox,{filename:file,timeout:10000});
 if(elements['#app'].innerHTML.includes('Φόρτωση εφαρμογής')||!elements['#app'].innerHTML.includes('Εκπαιδευτικές Ενότητες'))throw Error('App did not finish booting');
