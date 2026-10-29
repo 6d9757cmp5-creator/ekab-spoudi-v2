@@ -19,7 +19,7 @@ function records(){
   body:[x.question,'Απάντηση: '+x.answer].filter(Boolean).join('\n'),status:'Ενδεικτική απάντηση'}));
  if(state.tab==='practice')return (source.exercises||[]).map((x,i)=>({key:x.id||i,
   heading:x.category+' · '+x.question,
-  body:(x.options||[]).map((a,n)=>String(n+1)+'. '+a).join('\\n')+
+  body:(x.options||[]).map((a,n)=>String(n+1)+'. '+a).join('\n')+
     '\\nΕνδεικτική απάντηση: '+((x.options||[])[x.answer]||'')+
     '\\nΕπεξήγηση: '+(x.explanation||''),source:x.source,status:'Εκπαιδευτική άσκηση, όχι επίσημη εξέταση'}));
  if(state.tab==='written')return (source.written||[]).map((x,i)=>({key:x.id||i,
