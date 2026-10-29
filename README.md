@@ -22,23 +22,23 @@
 - `sw.js` παρέχει βασικό offline cache μόνο στον ανεξάρτητο HTTPS origin όπου φιλοξενείται.
 - Δεν έχει γίνει ιατρική πιστοποίηση των εκπαιδευτικών δεδομένων.
 
-## Δημοσίευση GitHub Pages
+## Δημοσίευση GitHub Pages — επιτυχής
 
-Το repository `6d9757cmp5-creator/ekab-spoudi-v2` έχει ήδη δημιουργηθεί και τα web αρχεία έχουν ανέβει στο `main`.
+Η ανεξάρτητη **web προεπισκόπηση** είναι δημοσιευμένη στο:
+https://6d9757cmp5-creator.github.io/ekab-spoudi-v2/
 
-**Απαιτείται μία ρύθμιση από τον ιδιοκτήτη** (το GitHub Actions token δεν έχει δικαίωμα να ενεργοποιήσει για πρώτη φορά το Pages):
+Το [workflow δημοσίευσης](.github/workflows/deploy-pages.yml) έχει ολοκληρωθεί επιτυχώς. Στο iPhone: Safari → Κοινή χρήση → Προσθήκη στην οθόνη αφετηρίας.
 
-1. Ανοίξτε [Settings → Pages](https://github.com/6d9757cmp5-creator/ekab-spoudi-v2/settings/pages).
-2. Στο **Build and deployment → Source** επιλέξτε **GitHub Actions**.
-3. Μεταβείτε στο [Actions → Deploy EKAB Spoudi V2 Web](https://github.com/6d9757cmp5-creator/ekab-spoudi-v2/actions/workflows/deploy-pages.yml) και πατήστε **Run workflow** (εναλλακτικά μπορεί να επανεκτελεστεί το αποτυχημένο workflow).
-4. Μετά την επιτυχή ανάπτυξη, η διεύθυνση θα είναι: `https://6d9757cmp5-creator.github.io/ekab-spoudi-v2/`.
+## Αυθεντική Android V2 — επιτυχές APK build
 
-Για iPhone: Safari → Κοινή χρήση → Προσθήκη στην οθόνη αφετηρίας. Για Android: Chrome → Εγκατάσταση εφαρμογής.
+Το [πρωτότυπο Kotlin/Jetpack Compose project](native-android/source/) και το [επαληθευμένο ZIP](native-android/EKAB-Spoudi-V2-Exact-Android-Source.zip) περιλαμβάνουν 86 αμετάβλητα αρχεία του εξαγόμενου Android project. Η ανεξάρτητη διαδικασία [Android APK build](.github/workflows/native-android-apk.yml) **ολοκληρώθηκε επιτυχώς**:
+[Κατέβασε το δοκιμαστικό APK από τα Artifacts](https://github.com/6d9757cmp5-creator/ekab-spoudi-v2/actions/runs/40794001465).
 
-**Σημείωση:** Αν η ρύθμιση Pages δεν ενεργοποιηθεί, ο παραπάνω σύνδεσμος δεν είναι ακόμη ενεργός. Δεν έχει γίνει παραγωγή native APK ή IPA.
+Το Android build αλλάζει προσωρινά μόνο το `applicationId` σε `com.ekabspoudi.v2` και τον εμφανιζόμενο τίτλο ώστε να είναι ξεχωριστό. Δεν έγινε πλήρης δοκιμή σε πραγματική Android συσκευή. Ο MENTOR AI με Firebase απαιτεί δικό του ανεξάρτητο backend για ζωντανές κλήσεις.
 
-Μην συγχωνεύετε με το αρχικό GitHub. Μην μεταφέρετε το αρχικό `google-services.json`, `.env` ή προσωπικά στοιχεία.
+**Πιστότητα:** Το native Android χρησιμοποιεί τον αρχικό κώδικα Compose και τις αρχικές οθόνες. Η ιστοσελίδα αποτελεί ξεχωριστή **web ανακατασκευή** και δεν αποδίδει ακόμη όλες τις οθόνες και λειτουργίες του βίντεο 1:1. Για χρήση σε iPhone χρειάζεται επιπλέον υλοποίηση/μεταφορά. Δεν υπάρχει υπογεγραμμένο iOS IPA.
 
+Δεν τροποποιούμε το αρχικό repository `ekab-spoudi` και δεν μεταφέρουμε παλαιά Firebase config, μυστικά ή προσωπικά δεδομένα.
 
 ## Πιστότητα με το πρωτότυπο (29/10/2026)
 
