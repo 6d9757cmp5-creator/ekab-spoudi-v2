@@ -13,6 +13,9 @@ const elements={'#app':{innerHTML:'Φόρτωση εφαρμογής…'},'#nav'
 const listeners={};
 const document={title:'',querySelector:s=>elements[s]||null,body:{addEventListener:(event,fn)=>{listeners[event]=fn;}}};
 const sandbox={document,window:{},localStorage:{getItem:()=>null,setItem:()=>{}},history:{pushState:()=>{}},location:{hash:''},scrollTo:()=>{},alert:()=>{}};
+// In browsers window and globalThis identify the same realm; mirror this in VM.
+sandbox.window=sandbox;
+sandbox.addEventListener=()=>{};
 vm.createContext(sandbox);
 for(const file of scripts)vm.runInContext(fs.readFileSync(path.join(site,file),'utf8'),sandbox,{filename:file,timeout:10000});
 if(elements['#app'].innerHTML.includes('Φόρτωση εφαρμογής')||!elements['#app'].innerHTML.includes('Εκπαιδευτικές Ενότητες'))throw Error('App did not finish booting');
