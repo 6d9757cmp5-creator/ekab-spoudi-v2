@@ -1,0 +1,47 @@
+name: Transfer public EKAB 1 archive into independent V2
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/snapshot-v1-public.py'
+      - '.github/workflows/snapshot-v1-public.yml'
+permissions:
+  contents: write
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Checkout independent V2
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Fetch public V1 as read-only source
+        run: git clone --quiet --depth 1 --branch main https://github.com/6d9757cmp5-creator/ekab-spoudi.git "$RUNNER_TEMP/ekab-v1-readonly"
+      - name: Copy safe published educational source to isolated V2 archive
+        run: python3 scripts/snapshot-v1-public.py "$RUNNER_TEMP/ekab-v1-readonly" v1-archive
+      - name: Confirm archive isolation and coverage
+        run: |
+          python3 - <<'PY'
+          import json, pathlib
+          report=json.loads(pathlib.Path('v1-archive/MIGRATION_MANIFEST.json').read_text())
+          assert report['copied_files']>=260, report['copied_files']
+          assert report['excluded_files']>0
+          for path in ['index.html','main.js','data.js','extra-data.js']:
+              assert pathlib.Path(path).is_file(), path
+          print('Archive:',report['copied_files'],'safe files;',report['excluded_files'],'excluded; V2 UI untouched')
+          PY
+      - name: Commit archive only if contents changed
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add v1-archive
+          if git diff --cached --quiet; then
+            echo "No changes to archive"
+          else
+            git commit -m "data(v2): snapshot complete safe published V1 project in isolated archive"
+            git push origin HEAD:main
+          fi
