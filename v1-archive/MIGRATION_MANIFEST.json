@@ -1,12 +1,12 @@
 {
   "source": "public GitHub 6d9757cmp5-creator/ekab-spoudi",
   "source_commit": "859f7d0bf2b432b2ec1818cea15ace38712beb72",
-  "generated_utc": "2026-10-29T01:54:00.355891+00:00",
+  "generated_utc": "2026-10-29T01:55:00.332200+00:00",
   "note": "Archived for V2 migration; not loaded automatically, never overwrites V2 UI.",
   "total_source_files": 368,
-  "copied_files": 299,
-  "copied_bytes": 10371556,
-  "excluded_files": 69,
+  "copied_files": 302,
+  "copied_bytes": 10768686,
+  "excluded_files": 66,
   "files": [
     {
       "path": "AUDIT_CHAPTER_B_07_01.md",
@@ -517,6 +517,21 @@
       "path": "farmaka.html",
       "size": 31977,
       "sha256": "11e154ec0c1c6664e275ae5a629e2ff7544e4c123ac16fe0b52226be07763a28"
+    },
+    {
+      "path": "functions/answer-grader/eoppep-rubrics.json",
+      "size": 230784,
+      "sha256": "e34d6dafc3a4c3ad92e2f71845027033966dbc0a24fe9dbc87bdef27473c4c14"
+    },
+    {
+      "path": "functions/answer-grader/saek-exam-rubrics.json",
+      "size": 137051,
+      "sha256": "a44a93cdfc45eb51a654c2e69466b265138ff3b634704ac8fb71224c2f8475e7"
+    },
+    {
+      "path": "functions/answer-grader/seminar-rubrics.json",
+      "size": 29295,
+      "sha256": "f70176fbb6e0f3b597c5767dfbe629687c88ae9632290ed23c8e969332f62f12"
     },
     {
       "path": "fysiologia.html",
@@ -1646,10 +1661,6 @@
       "reason": "backend/workflow/vendor isolated from V2"
     },
     {
-      "path": "functions/answer-grader/eoppep-rubrics.json",
-      "reason": "backend/workflow/vendor isolated from V2"
-    },
-    {
       "path": "functions/answer-grader/free-providers.js",
       "reason": "backend/workflow/vendor isolated from V2"
     },
@@ -1659,14 +1670,6 @@
     },
     {
       "path": "functions/answer-grader/package.json",
-      "reason": "backend/workflow/vendor isolated from V2"
-    },
-    {
-      "path": "functions/answer-grader/saek-exam-rubrics.json",
-      "reason": "backend/workflow/vendor isolated from V2"
-    },
-    {
-      "path": "functions/answer-grader/seminar-rubrics.json",
       "reason": "backend/workflow/vendor isolated from V2"
     },
     {
