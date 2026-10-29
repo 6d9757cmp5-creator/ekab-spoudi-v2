@@ -27,6 +27,11 @@ tracked=subprocess.check_output(["git","-C",str(src),"ls-files","-z"]).split(b"\
 files=[p.decode("utf-8") for p in tracked if p]
 # Files can be included in a future revision only after security/license review.
 excluded_dirs=(".github/","functions/","workers/","vendor/")
+public_academic_rubrics={
+ "functions/answer-grader/eoppep-rubrics.json",
+ "functions/answer-grader/saek-exam-rubrics.json",
+ "functions/answer-grader/seminar-rubrics.json",
+}
 excluded_exact={
  "AGENTS.md","original.pdf","eoppep-source.pdf","ekab-spoudi-safe-updates-v22.zip",
  "docs/APPWRITE.md","docs/AI-GRADING.md",
@@ -53,6 +58,7 @@ skipped=[]
 def exclude(path):
     name=Path(path).name
     if path in excluded_exact: return "credentials, authentication, cloud sync, or unneeded placeholder"
+    if path in public_academic_rubrics: return None
     if any(path.startswith(d) for d in excluded_dirs): return "backend/workflow/vendor isolated from V2"
     if any(name.startswith(p) for p in excluded_prefixes): return "image scan requires source-rights review"
     if name.startswith(".env") or Path(name).suffix.lower() in excluded_ext: return "configuration or secret material"
@@ -110,5 +116,5 @@ manifest={
  "αβέβαιων δικαιωμάτων PDF/σκαναρισμένο περιεχόμενο δεν μεταφέρονται.\n",
  encoding="utf-8")
 print(json.dumps({k:manifest[k] for k in ("source_commit","total_source_files","copied_files","copied_bytes","excluded_files")},ensure_ascii=False))
-if len(copied)<260:
+if len(copied)<300:
     raise RuntimeError("Unexpectedly few safe source files. Aborting.")
