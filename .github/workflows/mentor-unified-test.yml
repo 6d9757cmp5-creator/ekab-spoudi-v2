@@ -26,7 +26,7 @@ jobs:
         run: |
           git clone --quiet --depth 1 --branch main https://github.com/6d9757cmp5-creator/ekab-spoudi.git "$RUNNER_TEMP/ekab-v1-public"
           mkdir -p _site/assets
-          cp index.html main.js mentor-adaptive.js data.js extra-data.js _site/
+          cp index.html main.js mentor-adaptive.js v1-study-library.js data.js extra-data.js _site/
           python3 scripts/import-v1-data.py "$RUNNER_TEMP/ekab-v1-public" _site
       - name: Verify V2 boot and one-MENTOR screen
         run: node scripts/smoke-v2-web.cjs _site
