@@ -1,6 +1,6 @@
 // Independent ΕΚΑΒ Σπουδή V2 service worker: network-first for boot scripts.
-const CACHE='ekab-spoudi-v2-offline-v4-boot-fix';
-const ASSETS=['./','./index.html','./main.js','./data.js','./extra-data.js','./manifest.webmanifest','./assets/icon-192.png','./assets/icon-512.png','./assets/ic_launcher_ekab.jpg','./assets/ekab_hero_banner.jpg'];
+const CACHE='ekab-spoudi-v2-offline-v5-mentor-one';
+const ASSETS=['./','./index.html','./main.js','./mentor-adaptive.js','./data.js','./extra-data.js','./manifest.webmanifest','./assets/icon-192.png','./assets/icon-512.png','./assets/ic_launcher_ekab.jpg','./assets/ekab_hero_banner.jpg'];
 self.addEventListener('install',event=>{
   event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(ASSETS)).then(()=>self.skipWaiting()));
 });
