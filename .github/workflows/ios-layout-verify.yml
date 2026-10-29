@@ -1,0 +1,47 @@
+name: V2 iOS layout and live-update safety
+on:
+  push:
+    branches: [feature/ipa-safe-area-live-updates]
+  pull_request:
+    paths:
+      - 'ios/**'
+      - 'index.html'
+      - 'auto-update.js'
+      - 'mentor-adaptive.js'
+      - 'project.yml'
+      - '.github/workflows/ios-ipa.yml'
+      - 'scripts/test-ipa-layout.cjs'
+permissions:
+  contents: read
+jobs:
+  web-layout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --check auto-update.js
+      - run: node --check mentor-adaptive.js
+      - run: node scripts/test-ipa-layout.cjs
+      - run: node scripts/test-mentor-adaptive.cjs
+  native-build:
+    runs-on: macos-15
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install XcodeGen if needed
+        run: if ! command -v xcodegen >/dev/null 2>&1; then brew install xcodegen; fi
+      - name: Create web resources and app icon
+        shell: bash
+        run: |
+          mkdir -p ios/WebAssets/assets ios/Assets.xcassets/AppIcon.appiconset
+          cp index.html main.js data.js extra-data.js auto-update.js mentor-adaptive.js v1-study-library.js manifest.webmanifest sw.js ios/WebAssets/
+          cp -R assets/. ios/WebAssets/assets/
+          sips -z 1024 1024 assets/icon-512.png --out ios/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png >/dev/null
+          echo '{"images":[{"filename":"AppIcon-1024.png","idiom":"universal","platform":"ios","size":"1024x1024"}],"info":{"author":"xcode","version":1}}' > ios/Assets.xcassets/AppIcon.appiconset/Contents.json
+      - name: Compile native WKWebView on iPhone target
+        shell: bash
+        run: |
+          xcodegen generate --spec project.yml
+          xcodebuild -project EKABSpoudiV2.xcodeproj -scheme EKABSpoudiV2 -configuration Release -sdk iphoneos -destination 'generic/platform=iOS' CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO build > "$RUNNER_TEMP/ios-build.log" 2>&1 || (tail -150 "$RUNNER_TEMP/ios-build.log" && exit 1)
