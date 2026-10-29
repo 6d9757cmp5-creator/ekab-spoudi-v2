@@ -126,6 +126,25 @@ if pharma_path.is_file():
             report["transferred"].append({"path":"farmaka-catalog.js (structured medicines only)","bytes":len(raw)})
         except json.JSONDecodeError:
             report["warnings"].append("V1 pharmacology catalog is not pure JSON; V2 pharmacology left unchanged.")
+# Import the six additional catalog entries from the V1 clinical expansion.
+# No untrusted JS is executed; only an embedded literal JSON array is parsed.
+clinical_path=source/"farmaka-clinical-2026.js"
+if clinical_path.is_file() and medications:
+    clinical_src=clinical_path.read_text(encoding="utf-8")
+    clinical_match=re.search(r"var added\s*=\s*(\[[\s\S]*?\])\s*;", clinical_src)
+    if clinical_match:
+        try:
+            additional=json.loads(clinical_match.group(1))
+            existing={str(m.get("name","")).strip().casefold() for m in medications}
+            for med in additional:
+                if isinstance(med,dict) and med.get("name") and str(med["name"]).strip().casefold() not in existing:
+                    medications.append(med)
+                    existing.add(str(med["name"]).strip().casefold())
+            (raw_dir/"farmaka-expanded-catalog.json").write_text(json.dumps(medications,ensure_ascii=False,indent=2),encoding="utf-8")
+            report["transferred"].append({"path":"farmaka-clinical-2026.js (six additional structured cards only)","count":len(additional)})
+        except (json.JSONDecodeError,TypeError) as ex:
+            report["warnings"].append("V1 pharmacology expansion not parsed: "+str(ex)[:100])
+
 report["counts"]["medicines_catalog"]=len(medications)
 
 # These modules cannot be honestly marked functional by copying their data.
@@ -187,7 +206,7 @@ window.EKAB_V2_V1_IMPORT=Object.freeze({sourceCommit:imported.origin_commit,
     encoding="utf-8")
 (site/"v1-content"/"migration-report.json").write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding="utf-8")
 (site/"v1-content"/"build-version.json").write_text(json.dumps({"v2":"web-v2","sourceCommit":report["source_commit"],"builtAt":report["generated_utc"]}),encoding="utf-8")
-if report["counts"]["saek_chapters"]!=247 or report["counts"]["sos_questions"]!=314 or report["counts"]["medical_terms"]!=203:
+if report["counts"]["saek_chapters"]!=247 or report["counts"]["sos_questions"]!=314 or report["counts"]["medical_terms"]!=203 or report["counts"]["medicines_catalog"]!=76:
     raise RuntimeError("V1 inventory unexpected: "+str(report["counts"]))
 print("V1 migration summary",json.dumps(report["counts"],ensure_ascii=False))
 print("Origin",report["source_commit"])
