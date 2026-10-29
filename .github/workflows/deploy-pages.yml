@@ -21,8 +21,14 @@ jobs:
       - uses: actions/configure-pages@v5
         with:
           enablement: true
+      - name: Prepare isolated Safari website
+        shell: bash
+        run: |
+          mkdir -p _site/assets
+          cp index.html main.js data.js sw.js manifest.webmanifest _site/
+          cp assets/* _site/assets/
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: _site
       - id: deployment
         uses: actions/deploy-pages@v4
