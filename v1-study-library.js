@@ -20,11 +20,11 @@ function records(){
  if(state.tab==='practice')return (source.exercises||[]).map((x,i)=>({key:x.id||i,
   heading:x.category+' · '+x.question,
   body:(x.options||[]).map((a,n)=>String(n+1)+'. '+a).join('\n')+
-    '\\nΕνδεικτική απάντηση: '+((x.options||[])[x.answer]||'')+
-    '\\nΕπεξήγηση: '+(x.explanation||''),source:x.source,status:'Εκπαιδευτική άσκηση, όχι επίσημη εξέταση'}));
+    '\nΕνδεικτική απάντηση: '+((x.options||[])[x.answer]||'')+
+    '\nΕπεξήγηση: '+(x.explanation||''),source:x.source,status:'Εκπαιδευτική άσκηση, όχι επίσημη εξέταση'}));
  if(state.tab==='written')return (source.written||[]).map((x,i)=>({key:x.id||i,
   heading:'Ερώτηση '+(x.number||i+1)+' · '+(x.category||''),
-  body:(x.question||'')+'\\nΕνδεικτική απάντηση: '+(x.modelAnswer||''),
+  body:(x.question||'')+'\nΕνδεικτική απάντηση: '+(x.modelAnswer||''),
   source:x.answerUrl,status:'Παλαιού τύπου – εκπαιδευτική απάντηση'}));
  if(state.tab==='bib')return (source.bibliography||[]).map((x,i)=>({key:x.id||i,
   heading:x.title||x.id||'Βιβλιογραφία',
